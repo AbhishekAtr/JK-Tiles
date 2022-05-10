@@ -5537,6 +5537,7 @@ small {
     font-size: 15px;
     text-align: center;
     font-weight: 500;
+    border-bottom: 1px dashed lightgray;
 }
 
 .bg-light .dropdown .dropdown-item:hover
@@ -5568,7 +5569,7 @@ small {
     left: -300px;
     width: 900px;
     padding: 20px!important;
-    background-color: white;
+    background-color: #fff;
 }
 
 @media only screen and (max-width: 967px) {
@@ -5579,8 +5580,13 @@ small {
     }
     .carousel-indicators {
         right: 50px !important;
-        bottom: 28px !important;
+        bottom: -73px !important;
         left: 50px !important;
+    }
+
+    .wt-30, .w-30
+    {
+        display: none;
     }
 
     .dropdown:hover .mega-menu-content {
@@ -5593,6 +5599,17 @@ small {
     }
     .portfolio-container {
         text-align: center;
+    }
+
+    .about-us-section {
+        padding: 98px 0px;
+        background: #fff;
+    }
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        top: 87px;
     }
 }
 
@@ -5621,7 +5638,6 @@ small {
 /* Style the tab */
 .tab {
     float: left;
-    background-color: #fff;
   }
   
   /* Style the buttons inside the tab */

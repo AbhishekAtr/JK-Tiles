@@ -65,7 +65,14 @@
                             <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" href="#">Company</a>
                             <div class="dropdown-menu " aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="about-us.php">About Us</a>
-                                <a class="dropdown-item" href="career.php">Careers</a>
+                                <a class="dropdown-item" href="career.php">Manufacturing Facility</a>
+                                <a class="dropdown-item" href="about-us.php">Company Value</a>
+                                <a class="dropdown-item" href="career.php">Achievements</a>
+                                <a class="dropdown-item" href="about-us.php">Customer Review</a>
+                                <a class="dropdown-item" href="career.php">Technology</a>
+                                <a class="dropdown-item" href="about-us.php">Quality</a>
+                                <a class="dropdown-item" href="career.php">Vendor Registration Form</a>
+                                <a class="dropdown-item" href="about-us.php">Careers</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">

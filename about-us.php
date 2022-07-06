@@ -107,37 +107,11 @@
                     <div class="col-md-12 col-lg-6">
                         <div class="card border-0 shadow-sm text-white">
                             <img src="img/about-2.jpg" alt="video" class="img-fluid rounded shadow-sm">
-                            <div class="card-img-overlay text-center">
-                                <!-- <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="popup-youtube video-play-icon color-bip shadow"><span class="ti-control-play"></span> </a> -->
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-        <!-- <section class="about-us-section ptb-100">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-md-12 col-lg-6">
-                        <div class="card border-0 shadow-sm text-white">
-                            <img src="img/about-2.jpg" alt="video" class="img-fluid rounded shadow-sm">
-                            <div class="card-img-overlay text-center">
-                                <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="popup-youtube video-play-icon color-bip shadow"><span class="ti-control-play"></span> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-5">
-                        <div class="video-promo-content mb-md-4 mb-lg-0">
-                           
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-        <!--about us section end-->
 
         <section class="about-us-section my-5">
             <div class="container">
@@ -145,9 +119,6 @@
                 <div class="col-md-12 col-lg-6">
                         <div class="card border-0 shadow-sm text-white">
                             <img src="img/jk-logo.png" alt="video" class="">
-                            <!-- <div class="card-img-overlay text-center">
-                                <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="popup-youtube video-play-icon color-bip shadow"><span class="ti-control-play"></span> </a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-5">
@@ -172,71 +143,7 @@
             </div>
         </section>
 
-        <!-- our work process section start-->
-        <!-- <section class="work-process-new ptb-100 gray-light-bg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-9 col-lg-8">
-                        <div class="section-heading text-center mb-5">
-                            <h2>Our work process</h2>
-                            <p class="lead">Distinctively grow go forward manufactured products and optimal networks. Enthusiastically
-                                disseminate outsourcing through revolutionary.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="work-process-wrap text-center">
-                            <div class="single-work-process">
-                                <div class="work-process-icon-wrap secondary-bg rounded">
-                                    <i class="ti-vector icon-md text-white"></i>
-                                    <span class="process-step primary-bg text-white shadow-sm">1</span>
-                                </div>
-                                <span class="work-process-divider"></span>
-                                <div class="work-process-content mt-4">
-                                    <h5>Generate Ideas</h5>
-                                    <p>Compellingly harness reliable methodologies and web services. </p>
-                                </div>
-                            </div>
-                            <div class="single-work-process">
-                                <div class="work-process-icon-wrap secondary-bg rounded">
-                                    <i class="ti-layout-list-thumb icon-md text-white"></i>
-                                    <span class="process-step primary-bg text-white shadow-sm">2</span>
-                                </div>
-                                <span class="work-process-divider"></span>
-                                <div class="work-process-content mt-4">
-                                    <h5>Collect Contents</h5>
-                                    <p>Proactively pursue high-quality cooperative applications. </p>
-                                </div>
-                            </div>
-                            <div class="single-work-process">
-                                <div class="work-process-icon-wrap secondary-bg rounded">
-                                    <i class="ti-palette icon-md text-white"></i>
-                                    <span class="process-step primary-bg text-white shadow-sm">3</span>
-                                </div>
-                                <span class="work-process-divider"></span>
-                                <div class="work-process-content mt-4">
-                                    <h5>Create Design</h5>
-                                    <p>Continually exploit worldwide products maximizing alignments. </p>
-                                </div>
-                            </div>
-                            <div class="single-work-process">
-                                <div class="work-process-icon-wrap secondary-bg rounded">
-                                    <i class="ti-cup icon-md text-white"></i>
-                                    <span class="process-step primary-bg text-white shadow-sm">4</span>
-                                </div>
-                                <span class="work-process-divider"></span>
-                                <div class="work-process-content mt-4">
-                                    <h5>Launch Project</h5>
-                                    <p>Dramatically exploit strategic innovation market-driven schemas. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--our work process section end-->
+      
 
         <!--team two section start-->
         <section class="team-two-section my-5">
@@ -245,7 +152,6 @@
                     <div class="col-md-8 col-lg-8">
                         <div class="section-heading text-center mb-5">
                             <h2>Meet our lovely Directors</h2>
-                            <!-- <p class="lead">Distinctively grow go forward manufactured products and optimal networks. Globally administrate 24/7 interfaces and end-to-end platforms.</p> -->
                         </div>
                     </div>
                 </div>
@@ -360,87 +266,6 @@
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-between">
-                    <!-- <div class="col-md-5 col-lg-5">
-                    <div class="owl-carousel owl-theme client-testimonial-1 custom-dot">
-                        <div class="item">
-                            <div class="testimonial-quote-wrap">
-                                <div class="client-say">
-                                    <p><span class="fas fa-quote-left"></span> Interactively optimize
-                                        fully researched expertise vis-a-vis plug-and-play relationships. Intrinsicly
-                                        develop viral core competencies for fully tested customer service.
-                                        Enthusiastically create next-generation growth strategies and.</p>
-                                </div>
-                                <div class="media author-info my-3">
-                                    <div class="author-img mr-3">
-                                        <img src="img/client-1.jpg" alt="client" class="img-fluid rounded-circle">
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="mb-0">John Charles</h5>
-                                        <span>BizBite</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-quote-wrap">
-                                <div class="client-say">
-                                    <p><span class="fas fa-quote-left"></span> Rapidiously develop user
-                                        friendly growth strategies after extensive initiatives. Conveniently grow
-                                        innovative benefits through fully tested deliverables. Rapidiously utilize
-                                        focused platforms through end-to-end schemas.</p>
-                                </div>
-                                <div class="media author-info my-3">
-                                    <div class="author-img mr-3">
-                                        <img src="img/client-2.jpg" alt="client" class="img-fluid rounded-circle">
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="mb-0">Arabella Ora</h5>
-                                        <span>BizBite</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-quote-wrap">
-                                <div class="client-say">
-                                    <p><span class="fas fa-quote-left"></span> Objectively synthesize
-                                        client-centered e-tailers for maintainable channels. Holisticly administrate
-                                        customer directed vortals whereas tactical functionalities. Energistically
-                                        monetize reliable imperatives through client-centric best practices.
-                                        Collaboratively.</p>
-                                </div>
-                                <div class="media author-info my-3">
-                                    <div class="author-img mr-3">
-                                        <img src="img/client-3.jpg" alt="client" class="img-fluid rounded-circle">
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="mb-0">Jeremy Jere</h5>
-                                        <span>BizBite</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-quote-wrap">
-                                <div class="client-say">
-                                    <p><span class="fas fa-quote-left"></span> Enthusiastically innovate
-                                        B2C data without clicks-and-mortar convergence. Monotonectally deliver
-                                        compelling testing procedures vis-a-vis B2B testing procedures. Competently
-                                        evisculate integrated resources whereas global processes. Enthusiastically.</p>
-                                </div>
-                                <div class="media author-info my-3">
-                                    <div class="author-img mr-3">
-                                        <img src="img/client-4.jpg" alt="client" class="img-fluid rounded-circle">
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="mb-0">John Charles</h5>
-                                        <span>BizBite</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
                     <div class="col-md-12 col-lg-12">
                         <div class="row">
                             <div class="col-md-3">

@@ -57,53 +57,53 @@ include './admin/partials/db_connect.php';
             </div>
         </section>
         <!--header section end-->
-
+       
         <!--blog section start-->
         <div class="module ptb-100">
             <div class="container">
                 <div class="row">
-                    <?php
-                    $id = $_GET['id'];
-                    $sql = "SELECT * from `blog` where id = $id";
-                    if (mysqli_query($conn, $sql)) {
-                        echo "";
-                    } else {
-                        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                    }
-                    $count = 1;
-                    $result = mysqli_query($conn, $sql);
-                    if (mysqli_num_rows($result) > 0) {
-                        while ($row = mysqli_fetch_array($result)) {
-                    ?>
-                            <div class="col-lg-8 col-md-8">
-                                <!-- Post-->
-                                <article class="post">
-                                    <div class="post-preview"><img src="<?php echo $url . $row['image_url'] ?>" alt="article" class="img-fluid" /></div>
-                                    <div class="post-wrapper">
-                                        <div class="post-header">
-                                            <h1 class="post-title"><?php echo $row['blog_title'] ?></h1>
-                                            <ul class="post-meta">
-                                                <li><?php echo $row['date'] ?></li>
-                                                <!-- <li>In <a href="#">Branding</a>, <a href="#">Design</a></li>
+                <?php
+                $id = $_GET['id'];
+                $sql = "SELECT * from `blog`";
+                if (mysqli_query($conn, $sql)) {
+                    echo "";
+                } else {
+                    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                $count = 1;
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_array($result)) {
+                ?>
+                    <div class="col-lg-8 col-md-8">
+                        <!-- Post-->
+                        <article class="post">
+                            <div class="post-preview"><img src="<?php echo $url . $row['image_url'] ?>" alt="article" class="img-fluid" /></div>
+                            <div class="post-wrapper">
+                                <div class="post-header">
+                                    <h1 class="post-title"><?php echo $row['blog_title'] ?></h1>
+                                    <ul class="post-meta">
+                                        <li><?php echo $row['date'] ?></li>
+                                        <!-- <li>In <a href="#">Branding</a>, <a href="#">Design</a></li>
                                         <li><a href="#">3 Comments</a></li> -->
-                                            </ul>
-                                        </div>
-                                        <div class="post-content">
-                                            <p><?php echo $row['description'] ?></p>
-                                        </div>
-                                        <!-- <div class="post-footer">
+                                    </ul>
+                                </div>
+                                <div class="post-content">
+                                    <p><?php echo $row['description'] ?></p>
+                                </div>
+                                <!-- <div class="post-footer">
                                 <div class="post-tags"><a href="#">Lifestyle</a><a href="#">Music</a><a href="#">News</a><a href="#">Travel</a></div>
                             </div> -->
-                                    </div>
-                                </article>
-                                <!-- Post end-->
-
                             </div>
+                        </article>
+                        <!-- Post end-->
 
-                    <?php
-                        }
+                    </div>
+                    
+                <?php
                     }
-                    ?>
+                }
+                ?>
                     <div class="col-lg-4 col-md-4">
                         <div class="sidebar-right pl-4">
                             <!-- Recent entries widget-->
@@ -112,7 +112,7 @@ include './admin/partials/db_connect.php';
                                     <h6>Recent Posts</h6>
                                 </div>
                                 <ul>
-                                    <?php
+                                <?php
                                     $sql = "SELECT * from `blog`";
                                     if (mysqli_query($conn, $sql)) {
                                         echo "";
@@ -132,7 +132,6 @@ include './admin/partials/db_connect.php';
                                         }
                                     }
                                     ?>
-
                                 </ul>
                             </aside>
                         </div>

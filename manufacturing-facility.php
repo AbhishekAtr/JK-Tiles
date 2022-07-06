@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-md-12 col-lg-6">
                         <div class="card border-0 shadow-sm text-white">
-                            <img src="img/about-2.jpg" alt="video" class="img-fluid rounded shadow-sm">
+                            <img src="img/testing.jpg" alt="video" class="img-fluid rounded shadow-sm">
                             <div class="card-img-overlay text-center">
                                 <!-- <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="popup-youtube video-play-icon color-bip shadow"><span class="ti-control-play"></span> </a> -->
                             </div>

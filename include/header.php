@@ -105,57 +105,52 @@ include './admin/partials/db_connect.php';
                                             $sql = "SELECT * from `categories`";
                                             $result = mysqli_query($conn, $sql);
                                             $num = mysqli_num_rows($result);
-                                            for ($i = 1; $i <= $num; $i++) {
-                                                $row = mysqli_fetch_array($result);
+                                            while ($row = mysqli_fetch_array($result)) {
                                             ?>
-                                                <?php
-                                                if ($i == 1) {
-                                                ?>
-                                                    <button class="tablinks active" onmouseover="openCity(event, '<?php echo $row['cat_title'] ?>')"><?php echo $row['cat_title'] ?></button>
-                                                <?php
-                                                } else {
-                                                ?>
-                                                    <button class="tablinks" onmouseover="openCity(event, '<?php echo $row['cat_title'] ?>')"><?php echo $row['cat_title'] ?></button>
-                                            <?php }
+                                                <button class="tablinks" onmouseover="openCity(event, '<?php echo $row['cat_id'] ?>')"><?php echo $row['cat_title'] ?></button>
+                                            <?php
                                             }
                                             ?>
                                         </div>
-                                        <?php 
-                                          $sql = "SELECT * from `categories`";
-                                           $result = mysqli_query($conn, $sql);
-                                          while($tab1 =mysqli_fetch_array($result)) { 
-                                           ?>
-                                        <div id="<?php echo $row['cat_title'] ?>" class="tabcontent tab-active">
-                                            <div class="row card-content">
-                                                <?php
-                                                $sql = "SELECT * from `products`";
-                                                if (mysqli_query($conn, $sql)) {
-                                                    echo "";
-                                                } else {
-                                                    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                                                }
-                                                $count = 1;
-                                                $result = mysqli_query($conn, $sql);
-                                                if (mysqli_num_rows($result) > 0) {
-                                                    while ($row = mysqli_fetch_array($result)) {
-                                                ?>
-                                                        <div class="col-md-6 col-lg-4 col-sm-6">
-                                                            <div class="card menu-card">
-                                                                <img src="<?php echo $url . $row['product_img'] ?>" class="card-img-top" alt="...">
+                                        <?php
+                                        $count = 1;
+                                        $sql = "SELECT * from `categories`";
+                                        $result = mysqli_query($conn, $sql);
+                                        while ($row = mysqli_fetch_array($result)) {
+                                        ?>
+                                            <div id="<?php echo $row['cat_id'] ?>" class="tabcontent ">
+                                                <div class="row card-content">
+                                                    <?php
+
+                                                    $sql = "SELECT * from `products` where p_id =" . $row["cat_id"];
+                                                    if (mysqli_query($conn, $sql)) {
+                                                        echo "";
+                                                    } else {
+                                                        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                                                    }
+                                                    $count = 1;
+                                                    $result = mysqli_query($conn, $sql);
+                                                    if (mysqli_num_rows($result) > 0) {
+                                                        while ($row = mysqli_fetch_array($result)) {
+                                                    ?>
+                                                            <div class="col-md-6 col-lg-4 col-sm-6">
+                                                                <div class="card menu-card">
+                                                                    <img src="<?php echo $url . $row['product_img'] ?>" class="card-img-top" alt="...">
+                                                                </div>
+                                                                <div class="card-content content text-center">
+                                                                    <a href="">
+                                                                        <p><?php echo $row['product_title'] ?></p>
+                                                                        <p><?php echo $row['product_cat'] ?></p>
+                                                                    </a>
+                                                                    <button class="btn accent-solid-btn btn-dark"><a href="img/jk.pdf" target="_blank">Download Brochure <span class="fa fa-download"></span></a> </button>
+                                                                </div>
                                                             </div>
-                                                            <div class="card-content content text-center">
-                                                                <a href="">
-                                                                    <p><?php echo $row['product_title'] ?></p>
-                                                                    <p><?php echo $row['product_cat'] ?></p>
-                                                                </a>
-                                                                <button class="btn accent-solid-btn btn-dark"><a href="img/jk.pdf" target="_blank">Download Brochure <span class="fa fa-download"></span></a> </button>
-                                                            </div>
-                                                        </div>
-                                                <?php }
-                                                } ?>
+                                                    <?php }
+                                                    } ?>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <?php } ?> 
+                                        <?php }
+                                        $count++; ?>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>

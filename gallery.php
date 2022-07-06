@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <!-- <div class="col-md-12">
                         <div class="text-center pb-2">
                             <button type="button" class="filter-btn" data-mixitup-control data-filter="all">All</button>
                             <button type="button" class="filter-btn" data-mixitup-control data-filter=".branding">Blocks Machine</button>
@@ -83,7 +83,6 @@
                                         <div class="content-details fadeIn-bottom text-white">
                                             <a href="https://www.youtube.com/watch?v=Mwi7m0llr3I" data-lity class="play-video"><span class="fa fa-play icon-sm"></span>
                                                 <h5 class="text-white mb-1">Paver Molds</h5>
-                                                <!-- <p>Design</p> -->
                                             </a>
                                         </div>
                                     </a>
@@ -97,7 +96,6 @@
                                         <div class="content-details fadeIn-bottom text-white">
                                             <a href="https://www.youtube.com/watch?v=Mwi7m0llr3I" data-lity class="play-video"><span class="fa fa-play icon-sm"></span>
                                                 <h5 class="text-white mb-1">Blocks Making Machine</h5>
-                                                <!-- <p>Web, Design</p> -->
                                             </a>
                                         </div>
                                     </a>
@@ -111,7 +109,6 @@
                                         <div class="content-details fadeIn-bottom text-white">
                                             <a href="https://www.youtube.com/watch?v=Mwi7m0llr3I" data-lity class="play-video"><span class="fa fa-play icon-sm"></span>
                                                 <h5 class="text-white mb-1">Cement Brick Making Machine</h5>
-                                                <!-- <p>Flyer Design</p> -->
                                             </a>
                                         </div>
                                     </a>
@@ -125,7 +122,6 @@
                                         <div class="content-details fadeIn-bottom text-white">
                                             <a href="https://www.youtube.com/watch?v=Mwi7m0llr3I" data-lity class="play-video"><span class="fa fa-play icon-sm"></span>
                                                 <h5 class="text-white mb-1">Vibrating Table</h5>
-                                                <!-- <p>Web, Design</p> -->
                                             </a>
                                         </div>
                                     </a>
@@ -139,7 +135,6 @@
                                         <div class="content-details fadeIn-bottom text-white">
                                             <a href="https://www.youtube.com/watch?v=Mwi7m0llr3I" data-lity class="play-video"><span class="fa fa-play icon-sm"></span>
                                                 <h5 class="text-white mb-1">Automatic Cement Block Making Machine</h5>
-                                                <!-- <p>Painting Design</p> -->
                                             </a>
                                         </div>
                                     </a>
@@ -153,7 +148,6 @@
                                         <div class="content-details fadeIn-bottom text-white">
                                             <a href="https://www.youtube.com/watch?v=Mwi7m0llr3I" data-lity class="play-video"><span class="fa fa-play icon-sm"></span>
                                                 <h5 class="text-white mb-1">Concrete Block Making Machinesn</h5>
-                                                <!-- <p>Corporate Design</p> -->
                                             </a>
                                         </div>
                                     </a>
@@ -163,7 +157,24 @@
                             <div class="gap"></div>
                             <div class="gap"></div>
                         </div>
-                    </div>
+                    </div> -->
+                    <?php
+                            $sql = "SELECT * from `gallery`";
+                            if (mysqli_query($conn, $sql)) {
+                                echo "";
+                            } else {
+                                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                            }
+                            $count = 1;
+                            $result = mysqli_query($conn, $sql);
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_array($result)) {
+                            ?>
+                                    <div class="col-lg-4 col-md-6">
+                                        <img src="<?php echo $url . $row['image_url'] ?>" alt="client logo" class="client-img w-100">
+                                    </div>
+                            <?php }
+                            } ?>
                 </div>
             </div>
         </section>

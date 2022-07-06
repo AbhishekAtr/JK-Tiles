@@ -9,15 +9,19 @@
                     <div class="row footer-top-wrap">
                         <div class="col-md-4 col-sm-4">
                             <div class="footer-nav-wrap footer-about text-white">
-                                <img src="img/logo-footer.png" alt="">
-                                <p>J K TILES MACHINERY Introduces itself as the leading manufacturers & exporters of Paver block making machine ,hollow block making machine ,Fly-Ash Bricks making machine, Interlocking Paver Block making machine, Concrete Block making machine, Designer tiles making machine ,Founded in the years 1995 placed in Noida Uttar Pradesh state (India) 201304.now we have 3 another branches Assam ,Odisha and Telangana . coved all over India </p>
+                                <img src="img/jk-logo.png" alt="">
+                                <p>J K TILES MACHINERY Introduces itself as the leading manufacturers & 
+                                    exporters of Paver block making machine ,
+                                    hollow block making machine ,Fly-Ash Bricks making machine, 
+                                    Interlocking Paver Block making machine, Concrete Block making machine
+                                   <p><a href="about-us.php" class="text-primary">Read More...</a></p>
                             </div>
                         </div>
                         <div class="col-md-1 col-sm-1">
                         </div>
                         <div class="col-md-3 col-sm-3">
-                            <div class="footer-nav-wrap text-white">
-                                <h4 class="text-white">QUICK LINKS</h4>
+                            <div class="footer-nav-wrap text-dark">
+                                <h4 class="text-dark">QUICK LINKS</h4>
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Home</a>
@@ -35,8 +39,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4">
-                            <div class="footer-nav-wrap text-white">
-                                <h4 class="text-white">Our Products</h4>
+                            <div class="footer-nav-wrap text-dark">
+                                <h4 class="text-dark">Our Products</h4>
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Rubber Moulds</a>
@@ -61,8 +65,8 @@
                 <div class="col-md-3">
                     <div class="row footer-top-wrap">
                         <div class="col-12">
-                            <div class="footer-nav-wrap text-white">
-                                <h4 class="text-white">GET IN TOUCH</h4>
+                            <div class="footer-nav-wrap text-dark">
+                                <h4 class="text-dark">GET IN TOUCH</h4>
                                 <ul class="get-in-touch-list">
                                     <li class="d-flex1 align-items-center py-2"><span class="fas fa-map-marker-alt mr-2"></span>Near Pradhan Mkt Vill Sarfabad Sector-73 Noida Gautam Buddha Nagar, Noida - 201304, Gautam Budh Nagar, Uttar Pradesh, India</li>
                                     <li class="d-flex1 align-items-center py-2"><span class="fas fa-envelope mr-2"></span> <a href="mailto:info@jktilesmachinery.com">info@jktilesmachinery.com</a> </li>
@@ -90,21 +94,21 @@
                     <div class="social-nav text-right">
                         <ul class="list-unstyled social-list mb-0">
                             <li class="list-inline-item tooltip-hover">
-                                <a href="#" class="rounded"><span class="ti-facebook"></span></a>
+                                <a href="https://www.facebook.com/jktilesmachinerynoida/?show_switched_toast=1&show_invite_to_[…]unity_review_changes=0&show_follower_visibility_disclosure=0" class="rounded" target="_blank"><span class="ti-facebook"></span></a>
                                 <div class="tooltip-item">Facebook</div>
                             </li>
-                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-twitter"></span></a>
+                            <li class="list-inline-item tooltip-hover"><a href="https://twitter.com/imrankh57057258" class="rounded" target="_blank"><span class="ti-twitter"></span></a>
                                 <div class="tooltip-item">Twitter</div>
                             </li>
-                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-linkedin"></span></a>
+                            <li class="list-inline-item tooltip-hover"><a href="https://www.linkedin.com/in/imran-khan-3aabb1232/" class="rounded" target="_blank"><span class="ti-linkedin"></span></a>
                                 <div class="tooltip-item">Linkedin</div>
                             </li>
-                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-instagram"></span></a>
+                            <li class="list-inline-item tooltip-hover"><a href="https://www.instagram.com/jktilesmachinerynoida/" class="rounded" target="_blank"><span class="ti-instagram"></span></a>
                                 <div class="tooltip-item">Instagram</div>
                             </li>
-                            <li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-youtube"></span></a>
-                                <div class="tooltip-item">Youtube</div>
-                            </li>
+                            <!--<li class="list-inline-item tooltip-hover"><a href="#" class="rounded"><span class="ti-youtube"></span></a>-->
+                            <!--    <div class="tooltip-item">Youtube</div>-->
+                            <!--</li>-->
                         </ul>
                     </div>
                 </div>

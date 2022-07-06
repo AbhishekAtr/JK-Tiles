@@ -5,7 +5,10 @@
  Author: https://themeforest.net/user/themetags
 =======================*/
 
+
 /*TABLE OF CONTENTS*/
+
+
 /*=====================
 01. RESET CSS
 02. BASE TYPOGRAPHY
@@ -38,9 +41,11 @@
 29. BACK TO TOP CSS
 =======================*/
 
+
 /* -----------------------------------------
 			   01. RESET CSS
 -------------------------------------------- */
+
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -136,7 +141,9 @@ video {
     vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -182,6 +189,7 @@ html {
     overflow-y: scroll;
     font-size: 15px;
 }
+
 
 /* -----------------------------------------
            02. BASE TYPOGRAPHY
@@ -288,9 +296,11 @@ b {
     border-radius: 15px;
 }
 
+
 /*========================================
         03. PRE DEFINE CLASS CSS
 ==========================================*/
+
 .ptb-100 {
     padding: 100px 0;
 }
@@ -341,7 +351,7 @@ b {
 }
 
 .gradient-bg {
-    background: linear-gradient(75deg, #0a4da7 10%, #0058d3) !important;
+    background: rgb(234 234 234) !important;
 }
 
 .white-bg {
@@ -422,7 +432,6 @@ a:hover {
 .solid-white-btn,
 .outline-white-btn,
 .secondary-outline-btn,
-.accent-solid-btn,
 .accent-outline-btn {
     padding: 12px 30px !important;
     font-family: 'Montserrat', sans-serif;
@@ -431,24 +440,31 @@ a:hover {
     transition: all .25s ease-in-out;
 }
 
+.accent-solid-btn {
+    padding: 12px 10px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all .25s ease-in-out;
+}
 
 .primary-solid-btn {
     border: 1px solid #1351a8;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .15);
     background-image: linear-gradient(to bottom, #1A2C79, #0e206d);
     color: #ffffff;
-
 }
 
-
 .modal-content {
-    width: 65% !important;
-    border: 4px solid #0e206d;
+    width: 900px !important;
+    border: 4px solid #0e206d !important;
+    background: #0e206d !important;
+    color: white !important;
 }
 
 .accent-solid-btn {
     background: white !important;
-    color: black !important;
+    color: #3051a8 !important;
 }
 
 .accent-solid-btn:hover {
@@ -552,7 +568,9 @@ a:hover {
     color: #1351a8;
 }
 
+
 /*icon size*/
+
 .icon-sm {
     font-size: 25px;
     line-height: 25px;
@@ -576,7 +594,9 @@ a:hover {
     font-weight: 600;
 }
 
+
 /*form field css*/
+
 .form-control {
     border-color: #ebebeb;
     padding: .75rem 0.85rem;
@@ -662,12 +682,12 @@ select.form-control.has-value {
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
-
     .hero-shape,
     .shape-four {
         display: none;
     }
 }
+
 
 /*app download btn*/
 
@@ -700,11 +720,13 @@ select.form-control.has-value {
     border-color: #1351a8 !important;
 }
 
+
 /*=========================================
             04. HEADER CSS
 ============================================*/
+
 .affix {
-    background-color: #ffffff;
+    background-color: rgb(234, 234, 234);
     -webkit-transition: padding 0.4s ease-out;
     -moz-transition: padding 0.4s ease-out;
     -o-transition: padding 0.4s ease-out;
@@ -712,7 +734,9 @@ select.form-control.has-value {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
+
 /*header topbar*/
+
 .topbar-text ul li {
     font-size: 13px;
     font-weight: 500;
@@ -752,7 +776,6 @@ select.form-control.has-value {
     vertical-align: middle;
 }
 
-
 .white-bg.affix,
 .custom-nav.affix {
     background: #ffffff;
@@ -772,8 +795,24 @@ select.form-control.has-value {
     opacity: 1;
 }
 
+.bg-transparent .dropdown .dropdown-item {
+    color: black !important;
+    padding: 10px !important;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 1px dashed lightgray;
+}
+
+.bg-transparent .dropdown .dropdown-item:hover {
+    background: #143f86 !important;
+    color: white !important;
+}
+
 .bg-transparent ul li a {
-    color: #ffffff;
+    color: #000000;
 }
 
 .bg-transparent ul li a:hover,
@@ -782,10 +821,8 @@ select.form-control.has-value {
 }
 
 .bg-transparent.affix {
-    background: linear-gradient(75deg, #0049a7 5%, #1351a8) !important;
+    background: rgb(234, 234, 234)!important;
 }
-
-
 
 .bg-transparent.affix .top_header_area_men {
     display: none;
@@ -796,9 +833,11 @@ select.form-control.has-value {
     color: #ffffff;
 }
 
+
 /*main menu new style*/
+
 .header nav.navbar {
-    padding: 0;
+    padding: 10px 0;
     transition: all .3s ease-in-out;
 }
 
@@ -810,9 +849,10 @@ select.form-control.has-value {
     color: #fff;
 }
 
-.top_header_area_men {
+
+/* .top_header_area_men {
     background: #d75127;
-}
+} */
 
 .top_header_area p a {
     color: #fff;
@@ -830,20 +870,20 @@ select.form-control.has-value {
 }
 
 .header .bg-transparent {
-    background-color: #0049a5 !important;
+    background-color: rgb(255, 255, 255) !important;
 }
 
 .navbar-brand {
-    /* font-size: inherit; */
+    font-size: inherit;
     height: auto;
-    /* margin-bottom: -8px; */
-    background: white;
-    border-radius: 60px;
+    width: 25%;
+    margin-bottom: 39px;
+    position: absolute;
 }
 
 .navbar-brand img {
-    width: 100px;
-    border-radius: 50%;
+        width: 80%;
+    height: 130px;
 }
 
 .menu {
@@ -925,7 +965,6 @@ select.form-control.has-value {
     left: 2px;
     vertical-align: middle;
 }
-
 
 .menu ul li {
     display: block;
@@ -1017,67 +1056,53 @@ select.form-control.has-value {
 
 @media (min-width: 320px) and (max-width: 992px) {
     .navbar.bg-transparent {
-        background: linear-gradient(75deg, #054ba7 5%, #1351a8) !important;
+        background: rgb(234, 234, 234) !important;
         padding: .45rem 1rem !important;
     }
-
     .navbar.custom-nav {
         background: #ffffff;
     }
-
     .navbar.custom-nav .navbar-toggler {
         color: #1351a8 !important;
     }
-
     .navbar.custom-nav .navbar-toggler:focus {
         outline: none;
     }
-
     .menu li {
         display: block;
     }
-
     .white-bg.affix,
     .custom-nav.affix,
     .navbar.white-bg {
         background: #ffffff !important;
         border-bottom: 1px solid #ebebeb;
     }
-
     .white-bg.custom-nav ul li a,
     .custom-nav ul li a {
         color: #1351a8 !important;
     }
-
     .white-bg.custom-nav ul li ul.sub-menu li a:hover,
     .custom-nav ul li ul.sub-menu li a:hover {
         color: #ffffff !important;
     }
-
     .white-bg.navbar .navbar-toggler span {
         color: #1351a8;
     }
-
     .ptb-100 {
         padding: 55px 0;
     }
-
     .pt-100 {
         padding-top: 55px;
     }
-
     .pb-100 {
         padding-bottom: 55px;
     }
-
     .pt-165 {
         padding-top: 100px;
     }
-
     .mt--165 {
         margin-top: 0 !important;
     }
-
     .hero-equal-height {
         min-height: auto !important;
     }
@@ -1087,15 +1112,12 @@ select.form-control.has-value {
     .mainWrap {
         width: 768px;
     }
-
     .menu ul {
         top: 37px;
     }
-
     .menu li a {
         padding: 8px 15px;
     }
-
     a.homer {
         background: #374147;
     }
@@ -1105,36 +1127,28 @@ select.form-control.has-value {
     .responsive-menu {
         display: block;
     }
-
     .header nav.navbar {
         padding: 0.5rem 1rem;
     }
-
     .mainWrap {
         width: auto;
         padding: 50px 20px;
     }
-
     nav {
         margin: 0;
         background: none;
     }
-
     .menu li {
         display: block;
         margin: 0;
     }
-
     .menu li a {
         padding: 8px 15px;
     }
-
     .menu li a:hover,
     .menu li:hover>a {
-        background: #1351a8;
         color: #fff;
     }
-
     .menu ul {
         visibility: hidden;
         opacity: 0;
@@ -1143,25 +1157,19 @@ select.form-control.has-value {
         width: 100%;
         transform: initial;
     }
-
     .menu li:hover>ul {
         visibility: visible;
         opacity: 1;
         position: relative;
         transform: initial;
     }
-
     .menu ul ul {
         left: 0;
         transform: initial;
     }
-
     .menu li>ul ul:hover {
         transform: initial;
     }
-
-
-
 }
 
 
@@ -1178,7 +1186,6 @@ select.form-control.has-value {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
-
     100% {
         transform: translateY(35px);
     }
@@ -1274,7 +1281,6 @@ select.form-control.has-value {
     height: 100%;
 }
 
-
 .video-box {
     max-width: 550px;
     margin: 0 auto;
@@ -1285,8 +1291,6 @@ select.form-control.has-value {
 .video-box img {
     z-index: 0;
 }
-
-
 
 .shape-img-2 {
     position: absolute;
@@ -1300,7 +1304,6 @@ select.form-control.has-value {
     max-height: 100%;
     max-width: 20.7vw;
 }
-
 
 .shape-wrap {
     position: relative;
@@ -1338,6 +1341,7 @@ select.form-control.has-value {
 
 
 /*group shape*/
+
 .group-shape-1,
 .group-shape-2,
 .group-shape-3 {
@@ -1372,20 +1376,17 @@ select.form-control.has-value {
         -ms-transform: scale(1);
         transform: scale(1);
     }
-
     50% {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2);
     }
-
     100% {
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
         transform: scale(1);
     }
 }
-
 
 .hero-equal-height {
     position: relative;
@@ -1418,7 +1419,6 @@ select.form-control.has-value {
     width: 100%;
     margin: 0 auto;
 }
-
 
 .hero-bg-1,
 .hero-bg-2 {
@@ -1455,7 +1455,6 @@ select.form-control.has-value {
     font-weight: 700;
 }
 
-
 .slider-bg-image,
 .gradient-overlay {
     position: relative;
@@ -1482,7 +1481,6 @@ select.form-control.has-value {
     height: 100%;
     top: 0;
     left: 0;
-
 }
 
 .video-section-wrap .background-video-overly {
@@ -1491,9 +1489,6 @@ select.form-control.has-value {
     justify-content: center;
     background-image: linear-gradient(75deg, rgba(19, 81, 168, 0.85) 10%, rgba(22, 46, 102, 0.85)) !important;
 }
-
-
-
 
 .gradient-overly-right-light,
 .gradient-overly-right-color,
@@ -1532,13 +1527,11 @@ select.form-control.has-value {
 .gradient-overly-right-light:before {
     background: -webkit-gradient(linear, left top, right top, color-stop(0, #054ba7), to(transparent));
     background: linear-gradient(to right, #fff4f4 30%, rgba(26, 44, 121, 0.18) 100%);
-
 }
 
 .gradient-overly-right-color:before {
     background: -webkit-gradient(linear, left top, right top, color-stop(0, #054ba7), to(transparent));
     background: linear-gradient(to right, #054ba7 30%, rgba(26, 44, 121, 0.18) 100%);
-
 }
 
 .gradient-overly-left:before {
@@ -1557,8 +1550,8 @@ select.form-control.has-value {
 }
 
 
-
 /*dot indicator css*/
+
 .dot-indicator-center .owl-dots {
     position: absolute;
     width: 100%;
@@ -1580,12 +1573,12 @@ select.form-control.has-value {
     outline: none !important;
 }
 
+
 /*custom dot style*/
 
 .custom-dot.owl-theme .owl-dots,
 .custom-arrow.owl-theme .owl-nav {
     position: absolute;
-
 }
 
 .custom-dot.owl-theme .owl-dots {
@@ -1655,7 +1648,9 @@ select.form-control.has-value {
     margin: 2px;
 }
 
+
 /*custom arrow*/
+
 .custom-arrow.owl-theme .owl-nav button {
     width: 30px;
     background: transparent;
@@ -1701,6 +1696,7 @@ select.form-control.has-value {
     right: -35px;
 }
 
+
 /*heighlight feature list*/
 
 .highlight-list li {
@@ -1721,7 +1717,9 @@ select.form-control.has-value {
     font-size: 13px;
 }
 
+
 /*slider */
+
 .custom-indicators {
     position: absolute;
     bottom: 0;
@@ -1763,13 +1761,15 @@ select.form-control.has-value {
     .hero-equal-height.hero-tab-slider {
         min-height: 500px !important;
     }
-
     .custom-indicators li {
         min-width: auto;
     }
-
     .custom-indicators li button {
         padding: 6px 8px;
+    }
+    .modal-content
+    {
+        width:100% !important;
     }
 }
 
@@ -1782,46 +1782,38 @@ select.form-control.has-value {
         display: block;
         width: 100%;
     }
-
     .animation-one {
         -webkit-animation: move-one 7s ease-in-out infinite;
         animation: move-one 7s ease-in-out infinite;
     }
-
     @keyframes move-one {
         0% {
             -webkit-transform: translateX(0) translateY(5px);
             transform: translateX(0) translateY(5px)
         }
-
         50% {
             -webkit-transform: translateX(0) translateY(-5px);
             transform: translateX(0) translateY(-5px)
         }
-
         100% {
             -webkit-transform: translateX(0) translateY(5px);
             transform: translateX(0) translateY(5px)
         }
     }
-
     @-webkit-keyframes move-one {
         0% {
             -webkit-transform: translateX(0) translateY(5px);
             transform: translateX(0) translateY(5px)
         }
-
         50% {
             -webkit-transform: translateX(0) translateY(-5px);
             transform: translateX(0) translateY(-5px)
         }
-
         100% {
             -webkit-transform: translateX(0) translateY(5px);
             transform: translateX(0) translateY(5px)
         }
     }
-
     .animation-two {
         position: absolute;
         bottom: 50px;
@@ -1830,130 +1822,107 @@ select.form-control.has-value {
         left: -10px;
         z-index: 1;
     }
-
     @-webkit-keyframes move-two {
         0% {
             -webkit-transform: translateX(-25px) translateY(-225px);
             transform: translateX(-25px) translateY(-225px)
         }
-
         50% {
             -webkit-transform: translateX(-25px) translateY(-205px);
             transform: translateX(-25px) translateY(-205px)
         }
-
         100% {
             -webkit-transform: translateX(-25px) translateY(-225px);
             transform: translateX(-25px) translateY(-225px)
         }
     }
-
     @keyframes move-two {
         0% {
             -webkit-transform: translateX(-25px) translateY(-225px);
             transform: translateX(-25px) translateY(-225px)
         }
-
         50% {
             -webkit-transform: translateX(-25px) translateY(-205px);
             transform: translateX(-25px) translateY(-205px)
         }
-
         100% {
             -webkit-transform: translateX(-25px) translateY(-225px);
             transform: translateX(-25px) translateY(-225px)
         }
     }
-
     .animation-three {
         position: absolute;
         -webkit-animation: move-three 9s ease-in-out infinite;
         animation: move-three 9s ease-in-out infinite
     }
-
     @-webkit-keyframes move-three {
         0% {
             -webkit-transform: translateX(-45px) translateY(-225px);
             transform: translateX(-45px) translateY(-225px)
         }
-
         50% {
             -webkit-transform: translateX(-45px) translateY(-205px);
             transform: translateX(-45px) translateY(-205px)
         }
-
         100% {
             -webkit-transform: translateX(-45px) translateY(-225px);
             transform: translateX(-45px) translateY(-225px)
         }
     }
-
     @keyframes move-three {
         0% {
             -webkit-transform: translateX(-45px) translateY(-225px);
             transform: translateX(-45px) translateY(-225px)
         }
-
         50% {
             -webkit-transform: translateX(-45px) translateY(-205px);
             transform: translateX(-45px) translateY(-205px)
         }
-
         100% {
             -webkit-transform: translateX(-45px) translateY(-225px);
             transform: translateX(-45px) translateY(-225px)
         }
     }
-
     .animation-four {
         position: absolute;
         -webkit-animation: move-four 6s ease-in-out infinite;
         animation: move-four 6s ease-in-out infinite
     }
-
     .animation-new {
         position: absolute;
         bottom: 10px;
     }
-
     @-webkit-keyframes move-four {
         0% {
             -webkit-transform: translateX(330px) translateY(-215px);
             transform: translateX(330px) translateY(-215px)
         }
-
         50% {
             -webkit-transform: translateX(330px) translateY(-240px);
             transform: translateX(330px) translateY(-240px)
         }
-
         100% {
             -webkit-transform: translateX(330px) translateY(-215px);
             transform: translateX(330px) translateY(-215px)
         }
     }
-
     @keyframes move-four {
         0% {
             -webkit-transform: translateX(330px) translateY(-215px);
             transform: translateX(330px) translateY(-215px)
         }
-
         50% {
             -webkit-transform: translateX(330px) translateY(-240px);
             transform: translateX(330px) translateY(-240px)
         }
-
         100% {
             -webkit-transform: translateX(330px) translateY(-215px);
             transform: translateX(330px) translateY(-215px)
         }
     }
-
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
     .animation-four,
     .animation-new {
         display: none !important;
@@ -1961,12 +1930,13 @@ select.form-control.has-value {
 }
 
 
-
 /*=========================================
         06. CEO MESSAGE SECTION CSS
 ============================================*/
 
+
 /*core services css*/
+
 .core-services-single {
     position: relative;
     display: block;
@@ -2003,8 +1973,8 @@ select.form-control.has-value {
     background: #ffffff;
 }
 
-/*our services style two*/
 
+/*our services style two*/
 
 .services-block-three>a {
     display: block;
@@ -2064,6 +2034,7 @@ select.form-control.has-value {
 /*=========================================
         07. FEATURE SECTION CSS
 ============================================*/
+
 .icon-box-left {
     position: relative;
     padding-left: 60px;
@@ -2090,7 +2061,9 @@ select.form-control.has-value {
     transform: translateY(-5px);
 }
 
+
 /*feature box css*/
+
 .features-box {
     position: relative;
     display: block;
@@ -2117,9 +2090,11 @@ select.form-control.has-value {
     padding-left: 20px;
 }
 
+
 /*=========================================
         08. PROGRESSBAR CSS
 ============================================*/
+
 .progress {
     position: relative;
     display: -ms-flexbox;
@@ -2159,8 +2134,8 @@ select.form-control.has-value {
     font-weight: 500;
 }
 
-/*progressbar animation*/
 
+/*progressbar animation*/
 
 .progress span {
     display: block;
@@ -2179,7 +2154,6 @@ select.form-control.has-value {
     0% {
         width: 0;
     }
-
     100% {
         width: 100%;
     }
@@ -2189,7 +2163,6 @@ select.form-control.has-value {
     0% {
         width: 0;
     }
-
     100% {
         width: 100%;
     }
@@ -2272,11 +2245,11 @@ select.form-control.has-value {
     .switchable .container>.row {
         flex-flow: row-reverse;
     }
-
     .switchable.switchable-content .container>.row {
         flex-flow: row;
     }
 }
+
 
 /*=========================================
             10. MAIN SERVICES CSS
@@ -2335,11 +2308,13 @@ button.filter-btn:focus {
     margin-left: .85rem;
 }
 
+
 /*portfolio container*/
 
 .portfolio-container {
     text-align: justify;
 }
+
 
 /*portfolio grid*/
 
@@ -2355,7 +2330,9 @@ button.filter-btn:focus {
     position: relative;
 }
 
+
 /*portfolio hover*/
+
 .portfolio-wrapper {
     position: relative;
     display: block;
@@ -2447,7 +2424,9 @@ button.filter-btn:focus {
     left: 80%;
 }
 
+
 /*portfolio grid brack point*/
+
 
 /* 2 Columns */
 
@@ -2456,39 +2435,41 @@ button.filter-btn:focus {
     width: calc(100% / 2 - (((2 - 1) * 1rem) / 1));
 }
 
+
 /* 3 Columns */
 
 @media screen and (min-width: 541px) {
-
     .portfolio-item,
     .gap {
         width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
     }
 }
+
 
 /* 4 Columns */
 
 @media screen and (min-width: 961px) {
-
     .portfolio-item,
     .gap {
         width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
     }
 }
+
 
 /* 5 Columns */
 
 @media screen and (min-width: 1281px) {
-
     .portfolio-item,
     .gap {
         width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
     }
 }
 
+
 /*=========================================
             12. BLOG SECTION CSS
 ============================================*/
+
 .single-blog-card {
     margin-bottom: 25px;
 }
@@ -2531,7 +2512,6 @@ a.detail-link {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 a.detail-link span {
     font-size: 12px;
     vertical-align: middle;
@@ -2539,7 +2519,6 @@ a.detail-link span {
     transition-duration: .3s;
     color: #054ba7;
 }
-
 
 a.detail-link:hover {
     color: #054ba7;
@@ -2551,10 +2530,10 @@ a.detail-link:hover span {
 }
 
 
-
 /*=========================================
             13. WORK PROCESS CSS
 ============================================*/
+
 .work-process-list {
     width: 100%;
     display: block;
@@ -2609,10 +2588,10 @@ a.detail-link:hover span {
 
 
 /*work process scrolling style css*/
+
 .step {
     position: relative;
     padding: 5.625rem 20% 20% 0;
-
 }
 
 .step.step-highlight::before {
@@ -2716,7 +2695,9 @@ a.detail-link:hover span {
     padding: 10px !important;
 }
 
+
 /*work process new style*/
+
 .work-process-wrap {
     margin: 20px -15px -60px;
     display: -webkit-box;
@@ -2748,7 +2729,6 @@ a.detail-link:hover span {
     width: calc(25% - 30px);
 }
 
-
 .work-process-icon-wrap {
     position: relative;
     display: inline-block;
@@ -2760,11 +2740,9 @@ a.detail-link:hover span {
     .single-work-process {
         width: calc(50% - 30px);
     }
-
     .work-process-divider {
         width: calc(100% - 145px);
     }
-
     .single-work-process:nth-child(2n) .work-process-divider {
         display: none;
     }
@@ -2777,7 +2755,6 @@ a.detail-link:hover span {
         text-align: center;
         padding: 0 30px;
     }
-
     .work-process-divider {
         display: none;
     }
@@ -2809,7 +2786,6 @@ a.detail-link:hover span {
     font-size: 20px;
 }
 
-
 .work-process-icon-wrap i {
     position: absolute;
     left: 50%;
@@ -2839,10 +2815,10 @@ a.detail-link:hover span {
 }
 
 
-
 /*=========================================
             14. COUNTER SECTION CSS
 ============================================*/
+
 .counter-wrap {
     width: 100%;
     display: block;
@@ -2885,7 +2861,6 @@ a.detail-link:hover span {
     min-width: 175px;
 }
 
-
 .single-counter span {
     font-size: 35px;
     line-height: 38px;
@@ -2901,6 +2876,7 @@ a.detail-link:hover span {
 /*=========================================
             15. TAB SECTION CSS
 ============================================*/
+
 .feature-tabs-wrap {
     margin-top: 30px;
 }
@@ -2961,9 +2937,11 @@ a.detail-link:hover span {
     }
 }
 
+
 /*=========================================
             16. TEAM SECTION CSS
 ============================================*/
+
 .team-1-wrap {
     position: relative;
     z-index: 1;
@@ -3007,9 +2985,7 @@ a.detail-link:hover span {
     opacity: 0;
     -webkit-transform: translate(-50%, -50%) scale(0);
     transform: translate(-50%, -50%) scale(0);
-
 }
-
 
 .team-overly-content {
     width: 100%;
@@ -3081,7 +3057,9 @@ a.detail-link:hover span {
     padding: 15px;
 }
 
+
 /*team two style css*/
+
 .staff-member {
     position: relative;
     display: block;
@@ -3113,7 +3091,6 @@ a.detail-link:hover span {
     color: #757575;
     display: inline-block;
 }
-
 
 .staff-member .overlay {
     background: #054ba7;
@@ -3306,7 +3283,6 @@ a.video-play-icon-without-bip:hover {
         -webkit-box-shadow: 0 0 0 0 rgba(50, 100, 245, .15), 0 0 0 20px rgba(50, 100, 245, .15), 0 0 0 40px rgba(50, 100, 245, .15);
         box-shadow: 0 0 0 0 rgba(50, 100, 245, .15), 0 0 0 20px rgba(50, 100, 245, .15), 0 0 0 40px rgba(50, 100, 245, .15)
     }
-
     100% {
         -webkit-box-shadow: 0 0 0 20px rgba(50, 100, 245, .15), 0 0 0 40px rgba(50, 100, 245, .15), 0 0 0 60px rgba(50, 100, 245, 0);
         box-shadow: 0 0 0 20px rgba(50, 100, 245, .15), 0 0 0 40px rgba(50, 100, 245, .15), 0 0 0 60px rgba(50, 100, 245, 0)
@@ -3318,7 +3294,6 @@ a.video-play-icon-without-bip:hover {
         -webkit-box-shadow: 0 0 0 0 rgba(50, 100, 245, .15), 0 0 0 20px rgba(50, 100, 245, .15), 0 0 0 40px rgba(50, 100, 245, .15);
         box-shadow: 0 0 0 0 rgba(50, 100, 245, .15), 0 0 0 20px rgba(50, 100, 245, .15), 0 0 0 40px rgba(50, 100, 245, .15)
     }
-
     100% {
         -webkit-box-shadow: 0 0 0 20px rgba(50, 100, 245, .15), 0 0 0 40px rgba(50, 100, 245, .15), 0 0 0 60px rgba(50, 100, 245, 0);
         box-shadow: 0 0 0 20px rgba(50, 100, 245, .15), 0 0 0 40px rgba(50, 100, 245, .15), 0 0 0 60px rgba(50, 100, 245, 0)
@@ -3330,7 +3305,6 @@ a.video-play-icon-without-bip:hover {
         -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1)
     }
-
     100% {
         -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0);
         box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0)
@@ -3342,7 +3316,6 @@ a.video-play-icon-without-bip:hover {
         -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1)
     }
-
     100% {
         -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0);
         box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0)
@@ -3361,6 +3334,7 @@ a.video-play-icon-without-bip:hover {
 
 
 /*promo new*/
+
 .box-1 {
     background: #fff;
     box-shadow: 0 20px 50px rgba(111, 118, 217, 0.15);
@@ -3371,9 +3345,11 @@ a.video-play-icon-without-bip:hover {
     box-shadow: 0 20px 50px rgba(111, 118, 217, 0.15);
 }
 
+
 /*======================================
       18. PROMO BLOCK WITH HOVER BG IMAGE
 =========================================*/
+
 .single-promo-block {
     display: block;
     overflow: hidden;
@@ -3455,17 +3431,14 @@ not all {
         -webkit-transition: all 0.17s ease-out 0.18s;
         transition: all 0.17s ease-out 0.18s;
     }
-
     .single-promo-block.hover-image:hover:before,
     .single-promo-block.hover-image:hover:after {
         top: 0;
     }
-
     .single-promo-block.hover-image:hover .promo-block-content h5,
     .single-promo-block.hover-image:hover .promo-block-icon span {
         color: #ffffff;
     }
-
     .single-promo-block.hover-image:hover .promo-block-content p {
         color: rgba(255, 255, 255, 0.75);
     }
@@ -3485,7 +3458,9 @@ not all {
     color: #707070;
 }
 
+
 /*promo counter*/
+
 .dot-bg-shape {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -3521,6 +3496,7 @@ not all {
     width: 100%;
 }
 
+
 /*=========================================
       19. TESTIMONIAL CSS
 ============================================*/
@@ -3540,7 +3516,9 @@ not all {
     bottom: -30px;
 }
 
+
 /*owl carousel slider*/
+
 .owl-carousel .owl-item .client-img img {
     width: 60px;
     display: initial;
@@ -3593,7 +3571,6 @@ not all {
     -webkit-box-orient: vertical;
     margin-bottom: 0;
 }
-
 
 .client-say {
     position: relative;
@@ -3695,6 +3672,7 @@ not all {
 
 
 /*client section css*/
+
 .client-section-wrap ul {
     display: block;
 }
@@ -3761,7 +3739,6 @@ not all {
     position: relative;
     z-index: 2;
     width: 100%;
-
 }
 
 .shape-img img {
@@ -3851,18 +3828,15 @@ not all {
     animation: thumb-scale-up-one 7s infinite linear;
 }
 
-
 @-webkit-keyframes thumb-thumb-scale-up-one {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     40% {
         -webkit-transform: scale(.5);
         transform: scale(.5);
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -3874,12 +3848,10 @@ not all {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     40% {
         -webkit-transform: scale(.5);
         transform: scale(.5);
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -3891,12 +3863,10 @@ not all {
         -webkit-transform: scale(.5);
         transform: scale(.5);
     }
-
     40% {
         -webkit-transform: scale(.8);
         transform: scale(.8);
     }
-
     100% {
         -webkit-transform: scale(.5);
         transform: scale(.5);
@@ -3908,12 +3878,10 @@ not all {
         -webkit-transform: scale(.5);
         transform: scale(.5);
     }
-
     40% {
         -webkit-transform: scale(.8);
         transform: scale(.8);
     }
-
     100% {
         -webkit-transform: scale(.5);
         transform: scale(.5);
@@ -3925,12 +3893,10 @@ not all {
         -webkit-transform: scale(.7);
         transform: scale(.7);
     }
-
     40% {
         -webkit-transform: scale(.4);
         transform: scale(.5);
     }
-
     100% {
         -webkit-transform: scale(.7);
         transform: scale(.7);
@@ -3942,12 +3908,10 @@ not all {
         -webkit-transform: scale(.7);
         transform: scale(.7);
     }
-
     40% {
         -webkit-transform: scale(.4);
         transform: scale(.5);
     }
-
     100% {
         -webkit-transform: scale(.7);
         transform: scale(.7);
@@ -3993,6 +3957,7 @@ not all {
 .subscribe-form-footer input.button {
     border-radius: 50px;
 }
+
 
 /*=========================================
         21. ACCORDION FAQ CSS
@@ -4048,6 +4013,7 @@ not all {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+
 
 /*=========================================
            22. CONTENT BOX CSS
@@ -4124,15 +4090,12 @@ figure {
     .service-block-one .inner-box .image-box {
         position: relative;
     }
-
     .service-block-one .inner-box .image-box a {
         display: block;
     }
-
     .service-section .service-block-one .inner-box .content-box {
         padding-top: 40px !important;
     }
-
     .service-block-one .inner-box .content-box {
         padding-left: 30px;
     }
@@ -4142,6 +4105,7 @@ figure {
 /*=========================================
             23. PRICING CSS
 ============================================*/
+
 .card.single-pricing-pack {
     transition: all 0.2s ease 0s;
     box-shadow: 0 0 0 1px #ebebeb;
@@ -4204,6 +4168,7 @@ figure {
     line-height: 28px;
 }
 
+
 /*price new style*/
 
 .popular-price {
@@ -4261,14 +4226,15 @@ a.pricing-value {
     color: #757575;
 }
 
+
 /*=========================================
            24. SINGLE PAGE HEADER CSS
 ============================================*/
+
 @media (min-width: 320px) and (max-width: 576px) {
     .page-header-content {
         padding-top: 3rem !important;
     }
-
 }
 
 .custom-breadcrumb ol {
@@ -4301,6 +4267,7 @@ a.pricing-value {
 /*=========================================
             25. CONTACT US CSS
 ============================================*/
+
 .single-promo-card {
     transition: all .2s ease;
 }
@@ -4338,9 +4305,11 @@ a.pricing-value {
     -webkit-backface-visibility: hidden;
 }
 
+
 /*=========================================
            26. FOOTER CSS
 ============================================*/
+
 .footer-top {
     padding: 65px 0;
 }
@@ -4366,6 +4335,7 @@ a.pricing-value {
 
 .footer-about p {
     text-align: justify;
+    color: black;
 }
 
 .footer-nav-wrap ul li a {
@@ -4421,7 +4391,6 @@ a.pricing-value {
     transition: all 0.3s ease-in;
 }
 
-
 .tooltip-hover {
     position: relative;
 }
@@ -4476,6 +4445,7 @@ a.pricing-value {
     font-size: 18px;
 }
 
+
 /*=========================================
             27. PRELOADER CSS
 ============================================*/
@@ -4500,7 +4470,6 @@ a.pricing-value {
 .loader1 span {
     vertical-align: middle;
     border-radius: 100%;
-
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -4531,7 +4500,6 @@ a.pricing-value {
     -webkit-animation-delay: -0.8s;
     animation-delay: -0.8s;
     background: rgba(41, 103, 230, 0.8);
-
 }
 
 .loader1 span:nth-child(5) {
@@ -4544,7 +4512,6 @@ a.pricing-value {
     from {
         transform: scale(0, 0);
     }
-
     to {
         transform: scale(1, 1);
     }
@@ -4554,7 +4521,6 @@ a.pricing-value {
     from {
         -webkit-transform: scale(0, 0);
     }
-
     to {
         -webkit-transform: scale(1, 1);
     }
@@ -4564,6 +4530,7 @@ a.pricing-value {
 /*=========================================
             28. BLOG PAGE CSS
 ============================================*/
+
 .row-post-thumbnail .post {
     border: 0;
     padding-bottom: 25px;
@@ -4650,7 +4617,9 @@ a.pricing-value {
     margin-top: 15px;
 }
 
+
 /*blog single css*/
+
 .post-content blockquote {
     border-left: 2px solid #eaeaea;
     padding: 10px 0 10px 40px;
@@ -4676,7 +4645,9 @@ a.pricing-value {
     margin: 15px 0 15px 40px;
 }
 
+
 /*comments css*/
+
 .comment,
 .comment-shop {
     border-bottom: 1px solid #f0f0f0;
@@ -4766,6 +4737,7 @@ a.pricing-value {
 
 
 /*pagination*/
+
 .custom-pagination-nav ul li {
     text-align: center;
     margin-right: 10px;
@@ -4797,7 +4769,6 @@ a.pricing-value {
 .custom-pagination-nav ul li.page-item:last-child .page-link {
     border: none;
     background: transparent;
-
 }
 
 .custom-pagination-nav ul li.page-item:first-child .page-link:hover,
@@ -4809,6 +4780,7 @@ a.pricing-value {
     background-color: #054ba7;
     border-color: #054ba7;
 }
+
 
 /*blog sidebar*/
 
@@ -4940,6 +4912,7 @@ button,
 /*=========================================
             29. BACK TO TOP CSS
 ============================================*/
+
 button.scroll-top:focus {
     outline: none;
 }
@@ -4983,9 +4956,8 @@ button.scroll-top:focus {
 }
 
 
-
-
 /*new css new update*/
+
 .full-screen {
     min-height: 100vh;
     position: relative;
@@ -5004,6 +4976,7 @@ button.scroll-top:focus {
 
 
 /*404 page*/
+
 .error-content .notfound-404 {
     position: relative;
     height: 280px;
@@ -5023,26 +4996,25 @@ button.scroll-top:focus {
     background-position: center;
 }
 
-
 @media (min-width: 320px) and (max-width: 767px) {
     .error-content .notfound-404 {
         height: auto;
         display: block;
         position: relative;
     }
-
     .error-content .notfound-404 h1 {
         font-size: 80px;
         position: relative;
     }
-
     .navbar-brand img {
-        width: 180px;
+        width: 100%;
+        height: auto;
     }
-
 }
 
+
 /*login css*/
+
 .login-signup-content {
     height: 100%;
     width: 100%;
@@ -5145,6 +5117,7 @@ small {
 
 
 /*login signup new style*/
+
 .login-signup-card {
     position: relative;
     z-index: 2;
@@ -5162,15 +5135,19 @@ small {
 
 
 /*testimonial author*/
+
 .author-info {
     display: flex;
     align-items: center;
 }
 
+
 /*subscribe form two*/
+
 .subscribe-form-footer.subscribe-form-two {
     top: 0;
 }
+
 
 /* .down_broch {
     position: fixed;
@@ -5218,12 +5195,9 @@ small {
     padding: 30px 0px 60px;
 }
 
-
-
 .heading {
     text-align: center;
     color: #454343;
-
     position: relative;
     margin-bottom: 70px;
     text-transform: uppercase;
@@ -5264,6 +5238,7 @@ small {
     color: #ffffff;
 }
 
+
 /*-----Testimonial-------*/
 
 .testimonial:after {
@@ -5280,7 +5255,6 @@ small {
 }
 
 .testimonial {
-
     position: relative;
     background: linear-gradient(182deg, #054ba8, transparent);
     /* background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg); */
@@ -5471,6 +5445,7 @@ small {
     height: 35px;
 }
 
+
 /* ------testimonial  close-------*/
 
 .btn-primary {
@@ -5483,6 +5458,7 @@ small {
     width: 450px !important;
 }
 
+
 /* .carousel-control-prev,.carousel-control-next
 {
     display: none !important;
@@ -5490,11 +5466,12 @@ small {
 
 @media only screen and (max-width: 967px) {
     .top_header_area_men {
-        display: none;
+        padding: 5px 19px;
     }
-
     .navbar-brand {
-        width: 60px;
+        width: 50%;
+        position: relative;
+        margin-bottom: 10px;
     }
 }
 
@@ -5518,18 +5495,15 @@ small {
     justify-content: center !important;
 }
 
-.bg-light
-{
-    background: #0049a5 !important;
+.bg-light {
+    background: rgb(255, 255, 255)!important;
 }
 
-.bg-light ul li a 
-{
-    color: white !important;
+.bg-light ul li a {
+    color: rgb(47, 47, 47) !important;
 }
 
-.bg-light .dropdown .dropdown-item 
-{
+.bg-light .dropdown .dropdown-item {
     color: black !important;
     padding: 10px !important;
     width: 100%;
@@ -5540,67 +5514,67 @@ small {
     border-bottom: 1px dashed lightgray;
 }
 
-.bg-light .dropdown .dropdown-item:hover
-{
+.bg-light .dropdown .dropdown-item:hover {
     background: #0049a5 !important;
     color: white !important;
 }
 
-.nowrap
-{
+.nowrap {
     flex-wrap: nowrap !important;
 }
 
-.btn-dark:hover a
-{
+.btn-dark:hover a {
     color: white !important;
 }
 
-.dropdown .dropdown-menu
-{
+.dropdown .dropdown-menu {
     padding: 10px !important;
 }
 
-.dropdown .mega-menu-content
-{
+.dropdown .mega-menu-content {
     overflow: hidden;
-    position:absolute;
+    position: absolute;
     display: none;
-    left: -300px;
-    width: 900px;
-    padding: 20px!important;
+    margin-left: 400px;
+    left: -450px;
+    width: 1000px;
     background-color: #fff;
 }
 
+.menu-card {
+    width: 14rem;
+}
+
 @media only screen and (max-width: 967px) {
-    .dropdown .mega-menu-content
-    {
+    .dropdown .mega-menu-content {
         width: auto;
         left: 0;
+        margin: 0;
+        position: relative;
+    }
+    .menu-card,
+    .menu-card1 {
+        width: auto;
     }
     .carousel-indicators {
         right: 50px !important;
         bottom: -73px !important;
         left: 50px !important;
     }
-
-    .wt-30, .w-30
-    {
+    .wt-30,
+    .w-30 {
         display: none;
     }
-
     .dropdown:hover .mega-menu-content {
         display: block;
         z-index: 9999999;
     }
-
     .app-download-list li a {
         margin-left: 85px;
     }
     .portfolio-container {
         text-align: center;
     }
-
     .about-us-section {
         padding: 98px 0px;
         background: #fff;
@@ -5613,35 +5587,34 @@ small {
     }
 }
 
-.mega-menu-content .dropdown-item
-{
+.mega-menu-content .dropdown-item {
     overflow: hidden;
     font-size: 15px;
 }
 
-.dropdown:hover .mega-menu-content
-{
+.dropdown:hover .mega-menu-content {
     display: block;
 }
 
-.dropdown:hover .dropdown-menu
-{
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.navbar-light .navbar-toggler
-{
+.navbar-light .navbar-toggler {
     background: #fff !important;
 }
 
 
 /* Style the tab */
+
 .tab {
     float: left;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
     display: block;
     background-color: inherit;
     color: black;
@@ -5653,70 +5626,76 @@ small {
     text-align: left;
     cursor: pointer;
     font-size: 17px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
     background-color: #0049a5 !important;
     color: white !important;
-  }
-  
-  /* Create an active/current "tab button" class */
-  .tab button.active {
+}
+
+
+/* Create an active/current "tab button" class */
+
+.tab button.active {
     background-color: #0049a5;
     color: white;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    float: left;
-    padding: 0px 12px;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    padding: 0px 20px;
     border-left: none;
     display: none;
-  }
-  
-  /* Clear floats after the tab */
-  .clearfix::after {
+}
+
+
+/* Clear floats after the tab */
+
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
-
-  .career-form {
+.career-form {
     background-color: #0049a5;
     border-radius: 5px;
     padding: 0 16px;
-  }
-  
-  .career-form .form-control {
+}
+
+.career-form .form-control {
     background-color: rgba(255, 255, 255, 0.2);
     border: 0;
     padding: 12px 15px;
     color: #fff;
-  }
-  
-  .career-form .form-control::-webkit-input-placeholder {
+}
+
+.career-form .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #fff;
-  }
-  
-  .career-form .form-control::-moz-placeholder {
+}
+
+.career-form .form-control::-moz-placeholder {
     /* Firefox 19+ */
     color: #fff;
-  }
-  
-  .career-form .form-control:-ms-input-placeholder {
+}
+
+.career-form .form-control:-ms-input-placeholder {
     /* IE 10+ */
     color: #fff;
-  }
-  
-  .career-form .form-control:-moz-placeholder {
+}
+
+.career-form .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: #fff;
-  }
-  
-  .career-form .custom-select {
+}
+
+.career-form .custom-select {
     background-color: #d75127;
     border: 0;
     padding: 12px 15px;
@@ -5726,19 +5705,19 @@ small {
     text-align: left;
     height: auto;
     background-image: none;
-  }
-  
-  .career-form .custom-select:focus {
+}
+
+.career-form .custom-select:focus {
     -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  
-  .career-form .select-container {
+    box-shadow: none;
+}
+
+.career-form .select-container {
     position: relative;
     cursor: pointer;
-  }
-  
-  .career-form .select-container:before {
+}
+
+.career-form .select-container:before {
     position: absolute;
     right: 15px;
     top: calc(50% - 14px);
@@ -5746,29 +5725,29 @@ small {
     color: #ffffff;
     content: '\f107';
     font-family: "FontAwesome";
-  }
-  
-  .filter-result .job-box {
+}
+
+.filter-result .job-box {
     -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
-            box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+    box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
     border-radius: 10px;
     padding: 10px 35px;
-  }
-  
-  ul {
-    list-style: none; 
-  }
-  
-  .list-disk li {
+}
+
+ul {
+    list-style: none;
+}
+
+.list-disk li {
     list-style: none;
     margin-bottom: 12px;
-  }
-  
-  .list-disk li:last-child {
+}
+
+.list-disk li:last-child {
     margin-bottom: 0;
-  }
-  
-  .job-box .img-holder {
+}
+
+.job-box .img-holder {
     height: 65px;
     width: 65px;
     background-color: #4e63d7;
@@ -5782,15 +5761,15 @@ small {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     border-radius: 65px;
-  }
-  
-  .career-title {
+}
+
+.career-title {
     background-color: #4e63d7;
     color: #fff;
     padding: 15px;
@@ -5798,62 +5777,354 @@ small {
     border-radius: 10px 10px 0 0;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(78, 99, 215, 0.9)), to(#5a85dd));
     background-image: linear-gradient(to right, rgba(78, 99, 215, 0.9) 0%, #5a85dd 100%);
-  }
-  
-  .job-overview {
+}
+
+.job-overview {
     -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
-            box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+    box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
     border-radius: 10px;
-  }
-  
-  @media (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
     .job-overview {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 70px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 70px;
     }
-  }
-  
-  .job-overview .job-detail ul {
+}
+
+.job-overview .job-detail ul {
     margin-bottom: 28px;
-  }
-  
-  .job-overview .job-detail ul li {
+}
+
+.job-overview .job-detail ul li {
     opacity: 0.75;
     font-weight: 600;
     margin-bottom: 15px;
-  }
-  
-  .job-overview .job-detail ul li i {
+}
+
+.job-overview .job-detail ul li i {
     font-size: 20px;
     position: relative;
     top: 1px;
-  }
-  
-  .job-overview .overview-bottom,
-  .job-overview .overview-top {
+}
+
+.job-overview .overview-bottom,
+.job-overview .overview-top {
     padding: 35px;
-  }
-  
-  .job-content ul li {
+}
+
+.job-content ul li {
     font-weight: 600;
     opacity: 0.75;
     border-bottom: 1px solid #ccc;
     padding: 10px 5px;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .job-content ul li {
-      border-bottom: 0;
-      padding: 0;
+        border-bottom: 0;
+        padding: 0;
     }
-  }
-  
-  .job-content ul li i {
+}
+
+.job-content ul li i {
     font-size: 20px;
     position: relative;
     top: 1px;
-  }
-  .mb-30 {
-      margin-bottom: 30px;
-  }
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.hydro:hover a {
+    color: rgb(175, 164, 164) !important;
+}
+
+.content p {
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.content a {
+    color: #000 !important;
+}
+
+.content a:hover {
+    color: #000 !important;
+}
+
+.tab-active {
+    display: block;
+}
+
+.image-hotspots {
+    position: relative;
+}
+
+.image-hotspot {
+    cursor: pointer;
+    position: absolute;
+}
+
+.image-hotspot strong {
+    color: #FFF;
+    z-index: 5;
+    font-size: 0.75em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    font-weight: 600 !important;
+}
+
+.image-hotspot-primary .ring,
+.image-hotspot .ring {
+    border-color: #0049a5;
+    border: 1px solid #0049a5;
+}
+
+.image-hotspot .ring {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2em;
+    height: 2em;
+    margin: -1em auto auto -1em;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border-radius: 50%;
+    border: 1px solid rgba(204, 204, 204, 0.9);
+    opacity: 0;
+    -webkit-animation: hotspot-pulsate 3s ease-out infinite;
+    animation: hotspot-pulsate 3s ease-out infinite;
+}
+
+html .image-hotspot-primary .circle,
+.image-hotspot .circle {
+    background: #0049a5 !important;
+}
+
+.image-hotspot .circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    margin: -0.666em auto auto -0.666em;
+    background: #CCC;
+    border-radius: 50%;
+    opacity: 0.6;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: opacity .2s ease-in, -webkit-transform .1s ease-out;
+    transition: opacity .2s ease-in, -webkit-transform .1s ease-out;
+    transition: opacity .2s ease-in, transform .1s ease-out;
+    transition: opacity .2s ease-in, transform .1s ease-out, -webkit-transform .1s ease-out;
+    color: white;
+    font-size: 1.5em;
+    padding: 0;
+    text-align: center;
+    line-height: 28px;
+    overflow: hidden;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.col-padding {
+    left: 15%;
+    top: -450px;
+    width: 70%;
+}
+
+.hydro {
+    display: inline-block;
+    transition: all 0.5s;
+    animation: rotate 5s ease-in infinite;
+    animation-direction: alternate;
+    /* -webkit-text-stroke: 1.5px #d75127; */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(50deg);
+        /* text-shadow:0 0 0 #d75127; */
+    }
+    100% {
+        transform: rotateY(0deg);
+        /* text-shadow:0.1em 0.1em .05em #d75127; */
+    }
+}
+
+.card-hover:hover {
+    transition: 2s;
+    transform: scaleY(1.1);
+}
+
+.why-us h2 {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.why-us h2::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    display: inline-block;
+    background: #FFC107;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    margin: 0 auto;
+}
+
+.why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.5s;
+    position: relative;
+    background-color: #333;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.why-us .box:hover {
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.why-us .box img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.why-us .box:hover img {
+    opacity: 1;
+}
+
+.why-us .box span {
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    color: #6b6060;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    line-height: normal;
+}
+
+.why-us .box h4 a {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #dadada;
+    text-decoration: none;
+}
+
+.why-us .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.why-us .box:hover span,
+.why-us .box:hover h4 a,
+.why-us .box:hover p {
+    color: #fff;
+}
+
+.animate-charcter {
+    /* background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%); */
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0) !important;
+    background-clip: text;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    background-image: linear-gradient(315deg, #121212 0%, #d56961 70%);
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.affix .navbar-brand {
+    margin: 0 !important;
+}
+
+.affix .navbar-brand img {
+    width: 50% !important;
+    height: 50px !important;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .mega-menu-content {
+        left: -765px !important;
+    }
+}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    .mega-menu-content {
+        left: -765px !important;
+    }
+}
+
+
+.btn3d {
+    transition:all .08s linear;
+    position:relative;
+    outline:medium none;
+    -moz-outline-style:none;
+    border:1px;
+    margin-right:10px;
+    margin-top:15px;
+}
+.btn3d:focus {
+    outline:medium none;
+    -moz-outline-style:none;
+}
+.btn3d:active {
+    top:9px;
+}
+.btn-default {
+    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #adadad, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#fff;
+}
+
+
+.phone-icon
+{
+    position: fixed;
+    bottom: 100px;
+    left: 2.6%;
+    z-index: 9999;
+}
+}

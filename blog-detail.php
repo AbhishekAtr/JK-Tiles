@@ -1,3 +1,7 @@
+<?php
+include './admin/partials/db_connect.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -53,40 +57,39 @@
             </div>
         </section>
         <!--header section end-->
-
+       
         <!--blog section start-->
         <div class="module ptb-100">
             <div class="container">
                 <div class="row">
+                <?php
+                $id = $_GET['id'];
+                $sql = "SELECT * from `blog`";
+                if (mysqli_query($conn, $sql)) {
+                    echo "";
+                } else {
+                    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                $count = 1;
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_array($result)) {
+                ?>
                     <div class="col-lg-8 col-md-8">
                         <!-- Post-->
                         <article class="post">
-                            <div class="post-preview"><img src="img/blog/1-w.jpg" alt="article" class="img-fluid" /></div>
+                            <div class="post-preview"><img src="<?php echo $url . $row['image_url'] ?>" alt="article" class="img-fluid" /></div>
                             <div class="post-wrapper">
                                 <div class="post-header">
-                                    <h1 class="post-title">Minimalist Chandelier</h1>
+                                    <h1 class="post-title"><?php echo $row['blog_title'] ?></h1>
                                     <ul class="post-meta">
-                                        <li>November 18, 2016</li>
-                                        <li>In <a href="#">Branding</a>, <a href="#">Design</a></li>
-                                        <li><a href="#">3 Comments</a></li>
+                                        <li><?php echo $row['date'] ?></li>
+                                        <!-- <li>In <a href="#">Branding</a>, <a href="#">Design</a></li>
+                                        <li><a href="#">3 Comments</a></li> -->
                                     </ul>
                                 </div>
                                 <div class="post-content">
-                                    <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Seitan High Life reprehenderit consectetur cupidatat kogi about me. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi.</p>
-                                    <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko.</p>
-                                    <blockquote class="blockquote">
-                                        <p>To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.</p>
-                                        <footer class="blockquote-footer">Amanda Pollock, Google Inc.</footer>
-                                    </blockquote>
-                                    <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Seitan High Life reprehenderit consectetur cupidatat kogi about me. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.</p>
-                                    <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Seitan High Life reprehenderit consectetur cupidatat kogi about me. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi.</p>
-                                    <ol>
-                                        <li>Digital Strategy</li>
-                                        <li>Software Development</li>
-                                        <li>Interaction Design</li>
-                                    </ol>
-                                    <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Seitan High Life reprehenderit consectetur cupidatat kogi about me. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.</p>
-                                    <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean shorts fixie consequat flexitarian four loko.</p>
+                                    <p><?php echo $row['description'] ?></p>
                                 </div>
                                 <!-- <div class="post-footer">
                                 <div class="post-tags"><a href="#">Lifestyle</a><a href="#">Music</a><a href="#">News</a><a href="#">Travel</a></div>
@@ -96,6 +99,11 @@
                         <!-- Post end-->
 
                     </div>
+                    
+                <?php
+                    }
+                }
+                ?>
                     <div class="col-lg-4 col-md-4">
                         <div class="sidebar-right pl-4">
                             <!-- Recent entries widget-->

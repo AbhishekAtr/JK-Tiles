@@ -76,26 +76,50 @@
         <!--promo section end-->
 
         <!--about us section start-->
-        <section class="about-us-section ptb-100">
+        <section class="about-us-section my-5">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-md-12 col-lg-5">
                         <div class="video-promo-content mb-md-4 mb-lg-0">
-                            <h2>About JK Tiles</h2>
-                            <p>Interactively develop timely niche markets before extensive imperatives. Professionally
-                                repurpose interoperable growth strategies before effective core competencies.</p>
-                            <ul class="list-unstyled tech-feature-list">
-                                <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Cost</strong>
-                                    Accounting Fundamentals
-                                </li>
-                                <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Corporate</strong>
-                                    Cash Management
-                                </li>
-                                <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>SEO</strong> Optimization Services</li>
-                                <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Company</strong> Brand Solutions</li>
-                            </ul>
+                            <h2>JK Tiles</h2>
+                            <h5>Machinery with brain</h5>
+                            <p><strong>JK TILES MACHINERY</strong> is a leading Manufacturer & Exporter of high Demand Tiles
+                                making machine product since 1995 and is work like a industry leader in Tiles making machine .
+                                We have a very large factory setup with 4 branches in India 1-Delhi & NCR 2-Bhuvneshwar,
+                                Odisha 3- Guwahati, Assam 4- Hyderabad, Telangana Manufacturing high quality- fly ash brick
+                                Making machine ,Paver block making Machine, Concrete block making Machine,
+                                Hollow block making Machine, Interlocking bricks making machine and cement brick making machine etc.
+                            </p>
+                            <p><strong>JK TILES MACHINERY</strong> headquarter is in Delhi & NCR and apparat from this we have
+                                3 more branches in India 1 - Bhuvneshwar, Odisha 2- Guwahati, Assam 3- Hyderabad, Telangana .
+                                It is equipped with the latest Technology and state of art manufacturing facilities.
+                                They also have a very good Corporate office setup along with modern communication facilities.
+                                The in-house manufacturing capabilities help them to response prompt at each and every stage
+                                of the manufacturing process.</p>
+                            <p>At <strong>JK TILES MACHINERY,</strong> they have a large experienced and
+                                expert team of professionals. They strive continually to provide excellent
+                                quality Product & Service that are of International standards.
+                                The team consisted of very good Young, Energetic and Enthusiastic
+                                and Experienced members.
+                            </p>
                         </div>
                     </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="card border-0 shadow-sm text-white">
+                            <img src="img/about-2.jpg" alt="video" class="img-fluid rounded shadow-sm">
+                            <div class="card-img-overlay text-center">
+                                <!-- <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="popup-youtube video-play-icon color-bip shadow"><span class="ti-control-play"></span> </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section class="about-us-section ptb-100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
                     <div class="col-md-12 col-lg-6">
                         <div class="card border-0 shadow-sm text-white">
                             <img src="img/about-2.jpg" alt="video" class="img-fluid rounded shadow-sm">
@@ -104,13 +128,52 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-12 col-lg-5">
+                        <div class="video-promo-content mb-md-4 mb-lg-0">
+                           
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+        <!--about us section end-->
+
+        <section class="about-us-section my-5">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                <div class="col-md-12 col-lg-6">
+                        <div class="card border-0 shadow-sm text-white">
+                            <img src="img/jk-logo.png" alt="video" class="">
+                            <!-- <div class="card-img-overlay text-center">
+                                <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="popup-youtube video-play-icon color-bip shadow"><span class="ti-control-play"></span> </a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-5">
+                        <div class="video-promo-content mb-md-4 mb-lg-0">
+                            <h2>Founder</h2>
+                            <h4>Mr. Islam Khan</h4>
+                            <ul>
+                                <li>SINCE: 1995: Experience of more than a decade
+                                    in manufacturing Tiles making product machine
+                                </li>
+                                <li>Latest vibro + hydro German Technology vibro + hydro Technology</li>
+                                <li>Revolution in Tiles Making Making machine.</li>
+                                <li>100% Focus on Customer Satisfaction:</li>
+                                <li>Providing quality product & service globally.</li>
+                                <li>Complete Business Setup solution</li>
+                                <li>Our Technical Advisory and years of experience offers End to End solution under one roof.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
-        <!--about us section end-->
 
-        <!--our work process section start-->
-        <section class="work-process-new ptb-100 gray-light-bg">
+        <!-- our work process section start-->
+        <!-- <section class="work-process-new ptb-100 gray-light-bg">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-9 col-lg-8">
@@ -172,40 +235,37 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--our work process section end-->
 
         <!--team two section start-->
-        <section class="team-two-section ptb-100">
+        <section class="team-two-section my-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8">
                         <div class="section-heading text-center mb-5">
-                            <h2>Meet our lovely team</h2>
-                            <p class="lead">Distinctively grow go forward manufactured products and optimal networks. Globally administrate 24/7 interfaces and end-to-end platforms.</p>
+                            <h2>Meet our lovely Directors</h2>
+                            <!-- <p class="lead">Distinctively grow go forward manufactured products and optimal networks. Globally administrate 24/7 interfaces and end-to-end platforms.</p> -->
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="staff-member">
                             <div class="card gray-light-bg text-center border-0">
-                                <img src="img/team-1.png" alt="team image" class="card-img-top">
+                                <img src="img/noida.png" alt="team image" class="card-img-top">
                             </div>
                             <div class="overlay d-flex align-items-center justify-content-center">
                                 <div class="overlay-inner">
-                                    <!-- <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a
-                                    href="#" class="teacher-name">
-                                <h5 class="mb-0 teacher text-white">Richard Ford</h5></a>
-                                <span class="teacher-field text-white">Instructor of Mathematics</span>
-                                <ul class="list-inline py-4 social">
-                                    <li class="list-inline-item"><a href="#" target="_blank"><span
-                                            class="ti-facebook"></span></a></li>
-                                    <li class="list-inline-item"><a href="#" target="_blank"><span
-                                            class="ti-linkedin"></span></a></li>
-                                    <li class="list-inline-item"><a href="#" target="_blank"><span
-                                            class="ti-dribbble"></span></a></li>
-                                </ul> -->
+                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
+                                        <h5 class="mb-0 teacher text-white">Richard Ford</h5>
+                                    </a>
+                                    <span class="teacher-field text-white">Managing Director- Noida</span>
+                                    <ul class="list-inline py-4 social">
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-facebook"></span></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
+                                    </ul>
                                     <p class="teacher-see-profile">
                                         <a href="contact-us.php" class="btn outline-white-btn">Contact Us</a>
                                     </p>
@@ -213,13 +273,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="staff-member">
                             <div class="card gray-light-bg text-center border-0">
-                                <img src="img/team-3.png" alt="team image" class="card-img-top">
+                                <img src="img/assam.png" alt="team image" class="card-img-top">
                             </div>
                             <div class="overlay d-flex align-items-center justify-content-center">
                                 <div class="overlay-inner">
+                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
+                                        <h5 class="mb-0 teacher text-white">Mr. Imran Khan</h5>
+                                    </a>
+                                    <span class="teacher-field text-white">Managing Director- Assam</span>
+                                    <ul class="list-inline py-4 social">
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-facebook"></span></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
+                                    </ul>
                                     <p class="teacher-see-profile">
                                         <a href="contact-us.php" class="btn outline-white-btn">Contact Us</a>
                                     </p>
@@ -227,13 +296,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="staff-member">
                             <div class="card gray-light-bg text-center border-0">
-                                <img src="img/team-2.png" alt="team image" class="img-fluid">
+                                <img src="img/assam.png" alt="team image" class="card-img-top">
                             </div>
                             <div class="overlay d-flex align-items-center justify-content-center">
                                 <div class="overlay-inner">
+                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
+                                        <h5 class="mb-0 teacher text-white">Mr. Imran Khan</h5>
+                                    </a>
+                                    <span class="teacher-field text-white">Managing Director- Odisha</span>
+                                    <ul class="list-inline py-4 social">
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-facebook"></span></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
+                                    </ul>
+                                    <p class="teacher-see-profile">
+                                        <a href="contact-us.php" class="btn outline-white-btn">Contact Us</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="staff-member">
+                            <div class="card gray-light-bg text-center border-0">
+                                <img src="img/hydra.png" alt="team image" class="card-img-top">
+                            </div>
+                            <div class="overlay d-flex align-items-center justify-content-center">
+                                <div class="overlay-inner">
+                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
+                                        <h5 class="mb-0 teacher text-white">Mr. Irfan Khan</h5>
+                                    </a>
+                                    <span class="teacher-field text-white">Managing Director- Hyderabad</span>
+                                    <ul class="list-inline py-4 social">
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-facebook"></span></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
+                                    </ul>
                                     <p class="teacher-see-profile">
                                         <a href="contact-us.php" class="btn outline-white-btn">Contact Us</a>
                                     </p>
@@ -244,10 +345,10 @@
                 </div>
             </div>
         </section>
-        <!--team two section end-->
+        <!--team two section end -->
 
         <!--testimonial section start-->
-        <section class="customer-testimonial-section ptb-100 gray-light-bg">
+        <section class="customer-testimonial-section my-5 gray-light-bg">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8">
@@ -379,7 +480,10 @@
 
 
         <!--client section start-->
-        <div class="client-section ptb-100">
+        <div class="client-section my-5">
+        <div class="heading white-heading">
+                    <h2 class=" bold">Our Key Clients</h2>
+            </div>
             <div class="container">
                 <!--clients logo start-->
                 <div class="row align-items-center">

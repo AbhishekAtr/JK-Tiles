@@ -3,7 +3,28 @@
 <?php include "include/header.php"; ?>
 
 
-<div class="container mb-3">
+<!--header section start-->
+<section class="hero-section ptb-100 pt-165 gradient-overlay" style="background: url('img/header-bg-5.jpg')no-repeat center center / cover">
+            <div class="hero-bottom-shape-two" style="background: url('img/hero-bottom-shape.svg')no-repeat bottom center"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-7">
+                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
+                            <h1 class="text-white mb-0">Career</h1>
+                            <div class="custom-breadcrumb">
+                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
+                                    <li class="list-inline-item breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="list-inline-item breadcrumb-item active">Career</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--header section end-->
+
+<div class="container my-5">
             <div class="row">
                  <div class="col-lg-10 mx-auto mb-4">
                     <div class="section-title text-center ">
@@ -29,9 +50,10 @@
                                     <div class="select-container">
                                         <select class="custom-select">
                                             <option selected="">Location</option>
-                                            <option value="1">Jaipur</option>
-                                            <option value="2">Pune</option>
-                                            <option value="3">Bangalore</option>
+                                            <option value="1">Noida</option>
+                                            <option value="2">Guwahati</option>
+                                            <option value="3">Odisha</option>
+                                            <option value="3">Hyderabad</option>
                                         </select>
                                     </div>
                                 </div>

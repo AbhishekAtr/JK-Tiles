@@ -30,204 +30,313 @@
     <?php include "include/header.php"; ?>
 
     <!--body content wrap start-->
-    <div class="main">
 
-        <!--header section start-->
-        <section class="hero-section ptb-100 pt-165 gradient-overlay" style="background: url('img/header-bg-5.jpg')no-repeat center center / cover">
-            <div class="hero-bottom-shape-two" style="background: url('img/hero-bottom-shape.svg')no-repeat bottom center"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Our Product</h1>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Product</li>
-                                </ol>
-                            </div>
+
+    <!--header section start-->
+    <section class="hero-section ptb-100 pt-165 gradient-overlay" style="background: url('img/header-bg-5.jpg')no-repeat center center / cover">
+        <div class="hero-bottom-shape-two" style="background: url('img/hero-bottom-shape.svg')no-repeat bottom center"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-7">
+                    <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
+                        <h1 class="text-white mb-0">Our Product</h1>
+                        <div class="custom-breadcrumb">
+                            <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
+                                <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
+                                <li class="list-inline-item breadcrumb-item active">Product</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--header section end-->
-
-        <!--services section start-->
-        <section class="services-section ptb-100 gray-light-bg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="section-heading text-center mb-5">
-                            <h2>We Provide Best Products</h2>
-                            <p class="lead">Efficiently aggregate end-to-end core competencies without maintainable ideas. Dynamically
-                                foster tactical solutions without enabled value.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <img src="img/products/tile-mould.png" alt="consulting" width="80" class="mb-3">
-                            <h5>Rubber Moulds</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                                partnerships.</p>
-                            <a href="product-details.php" class="detail-link mt-4">Read more <span class="ti-arrow-right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <img src="img/products/silicon-paver-mould.jpg" alt="consulting" width="80" class="mb-3">
-                            <h5>Silicon Paver Moulds</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                                partnerships.</p>
-                            <a href="product-details.php" class="detail-link mt-4">Read more <span class="ti-arrow-right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <img src="img/products/p11.png" alt="consulting" width="80" class="mb-3">
-                            <h5>Pan Mixer</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                                partnerships.</p>
-                            <a href="product-details.php" class="detail-link mt-4">Read more <span class="ti-arrow-right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <img src="img/products/hardener.jpg" alt="consulting" width="80" class="mb-3">
-                            <h5>Tiles Hardeners</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                                partnerships.</p>
-                            <a href="product-details.php" class="detail-link mt-4">Read more <span class="ti-arrow-right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <img src="img/products/fully-automatic-machine.jpg" alt="consulting" width="80" class="mb-3">
-                            <h5>Automatic Machine</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                                partnerships.</p>
-                            <a href="product-details.php" class="detail-link mt-4">Read more <span class="ti-arrow-right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <img src="img/products/paving-machine.png" alt="consulting" width="80" class="mb-3">
-                            <h5>Paver Making Machine</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                                partnerships.</p>
-                            <a href="product-details.php" class="detail-link mt-4">Read more <span class="ti-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--services section end-->
-
-        <!--contact us section start-->
-        <section class="contact-us-section ptb-100">
-            <div class="container">
-                <div class="row justify-content-around">
-                    <div class="col-md-6">
-                        <div class="contact-us-form gray-light-bg rounded p-5">
-                            <h4>Ready to get started?</h4>
-                            <form action="#" method="POST" id="contactForm1" class="contact-us-form" novalidate="novalidate">
-                                <div class="form-row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Enter name" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" placeholder="Enter email" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn" id="btnContactUs">
-                                            Send Message
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="contact-us-content">
-                            <h2>Looking for a excellent Business idea?</h2>
-                            <p class="lead">Seamlessly deliver pandemic e-services and next-generation initiatives.</p>
-                            <hr class="my-5">
-                            <h5>Our Headquarters</h5>
-                            <address>
-                                100 yellow house, Mn <br>
-                                Factory, United State, 13420
-                            </address>
-                            <br>
-                            <span>Phone: +1234567890123</span> <br>
-                            <span>Email: <a href="mailto:email@yourdomain.com" class="link-color">email@yourdomain.com</a></span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--contact us section end-->
-
-
-        <!--client section start-->
-        <div class="client-section ptb-100 gray-light-bg">
-            <div class="container">
-                <!--clients logo start-->
-                <div class="row align-items-center">
-                    <div class="col-md-12">
-                        <div class="owl-carousel owl-theme clients-carousel dot-indicator">
-                            <div class="item single-client">
-                                <img src="img/clients-logo-01.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-02.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-03.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-04.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-05.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-06.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-07.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-08.png" alt="client logo" class="client-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--clients logo end-->
             </div>
         </div>
-        <!--client section start-->
+    </section>
+    <!--header section end-->
+
+    <!--services section start-->
+    <section class="services-section gray-light-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-heading text-center mb-5">
+                        <h2>JK ML1618</h2>
+                        <p class="lead">Concrete block making machine</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-md-12 center">
+
+                    <div class="image-hotspots">
+                        <img src="img/products//slider/2C-automatic brick making machine.png" class="img-fluid">
+
+                        <a style="left: 30%; top: 18%;" class="image-hotspot image-hotspot-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <strong>1</strong>
+                            <span class="ring"></span><span class="circle"></span><span class="ring"></span><span class="circle"></span></a>
+
+                        <a style="left: 29%; top: 53%;" class="image-hotspot image-hotspot-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <strong>2</strong>
+                            <span class="ring"></span><span class="circle"></span><span class="ring"></span><span class="circle"></span></a>
+
+                        <a style="left: 53%; top: 7%;" class="image-hotspot image-hotspot-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <strong>3</strong>
+                            <span class="ring"></span><span class="circle"></span><span class="ring"></span><span class="circle"></span></a>
+
+                        <a style="left: 74%; top: 45%;" class="image-hotspot image-hotspot-light" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <strong>4</strong>
+                            <span class="ring"></span><span class="circle"></span><span class="ring"></span><span class="circle"></span></a>
+
+                        <a style="left: 82%; top: 62%;" class="image-hotspot image-hotspot-light" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                            <strong>5</strong>
+                            <span class="ring"></span><span class="circle"></span><span class="ring"></span><span class="circle"></span></a>
+
+                    </div>
+                </div>
 
 
+            </div>
+        </div>
+    </section>
+    <!--services section end-->
+    <section>
+        <div class="container-fluid section page-section" style="background-image: url(img/slider/slider-6.jpg); background-size: cover; padding:100px">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading-block center clearfix my-5">
+                    <h2 class="text-white">Technical Specs</h2>
+                    <div class="table-responsive bg-light">
+                    <table class="table text-dark">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Property</th>
+                                <th>HP/Cap.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Overall Dimension</td>
+                                <td>9500 x 5500 x 3962 mm</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Pallet size</td>
+                                <td>665 x 550 x 18 mm</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Cycle Time</td>
+                                <td>15 – 20 Sec.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Vibration Frequency</td>
+                                <td>50 – 90 Hz.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Installed Cap.</td>
+                                <td>47 HP (35 KW)</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Max. Product Height </td>
+                                <td>200 mm</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Machine Type</td>
+                                <td>Multipurpose - Automatic </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Hydraulic Oil Cap.</td>
+                                <td>270 Liter</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Material Compaction System</td>
+                                <td>Dual Vibration + Pressure Based</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Required Shed Area</td>
+                                <td>4000 Sq. Ft</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+   
+
+
+    <!--contact us section start-->
+    <section class="contact-us-section ptb-100">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-6">
+                    <div class="contact-us-form gray-light-bg rounded p-5">
+                        <h4>Ready to get started?</h4>
+                        <form action="#" method="POST" id="contactForm1" class="contact-us-form" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" placeholder="Enter name" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Enter email" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mt-3">
+                                    <button type="submit" class="btn secondary-solid-btn" id="btnContactUs">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="contact-us-content">
+                        <h2>Looking for a excellent Business idea?</h2>
+                        <p class="lead">Seamlessly deliver pandemic e-services and next-generation initiatives.</p>
+                        <hr class="my-5">
+                        <h5>Our Headquarters</h5>
+                        <address>
+                            100 yellow house, Mn <br>
+                            Factory, United State, 13420
+                        </address>
+                        <br>
+                        <span>Phone: +1234567890123</span> <br>
+                        <span>Email: <a href="mailto:email@yourdomain.com" class="link-color">email@yourdomain.com</a></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact us section end-->
+
+      
+
+    <!--client section start-->
+    <div class="client-section ptb-100 gray-light-bg">
+        <div class="container-fluid">
+            <!--clients logo start-->
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme clients-carousel dot-indicator">
+                    <div class="item single-client">
+                                <img src="img/products/slider/1A-MANUAL VIBRO.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/1A-MANUAL VIBRO.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/1C- FULLY AUTOMATIC PAVER.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/2 A-Manual brick making machine.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/2B-semi automatic double station brick making machine.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/2C-automatic brick making machine.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/3A- manual block making machine.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/3B-egg laying block making machine.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/3C-fully automatic block making machine.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/4A-silicon plastic mould.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/4B-PVC Rubber Mould.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/5 A-Tile's Top Layer SMF Based Hardener & shiner.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/products/slider/5B-Back Layer PCE Based Fast Setting & workability.png" alt="client logo" class="client-img">
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!--clients logo end-->
+        </div>
     </div>
-    <!--body content wrap end-->
+    <!--client section start-->
+<section>
+    <!-- bootstrap image gallery 1 -->
+<div class="container">
+  <h2 class="text-center">Concrete block making machine</h2>
+  <h4 class="text-center">Gallery</h4>
+
+  <div class="row">
+    <div class="col-md-4">
+      <img class="img-fluid" src="img/products/1A-MANUAL VIBRO.png">
+      <img class="img-fluid" src="img/products/1C- FULLY AUTOMATIC PAVER.png">
+    </div>
+
+    <div class="col-md-4">
+      <img class="img-fluid" src="img/products/2B-semi automatic double station brick making machine.png">
+      <img class="img-fluid" src="img/products/2B-semi automatic double station brick making machine.png">
+    </div>
+
+    <div class="col-md-4">
+      <img class="img-fluid" src="img/products/5 A-Tile's Top Layer SMF Based Hardener & shiner.png">
+      <img class="img-fluid" src="img/products/4A-silicon plastic mould.png">
+    </div>
+
+   
+
+  </div>
+</div>
+</section>
+
+    <section>
+         <div class="container my-5">
+             <div class="row">
+                 <div class="col-lg-12 text-center">
+                     <h2>COMPARE ALL MODELS</h2>
+                     <p>Compare all our different Fly Ash Machine models:</p>
+                     <button class="btn secondary-solid-btn">Buy Now</button>
+                 </div>
+             </div>
+         </div>
+     </section> 
 
     <!--footer section start-->
     <?php include "include/footer.php"; ?>
     <!--footer section end-->
 
     <?php include "include/js-url.php"; ?>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>

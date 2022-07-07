@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         session_start();
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
-        header("location: home-slider.php");
+        header("location: products.php");
     } 
     else {
         $showError = "Username and password are incorrect";

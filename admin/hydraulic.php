@@ -8,6 +8,7 @@ $statusMsg = false;
 
 if (isset($_POST["p_insert"])) {
     $product_title = $_POST['p_name'];
+    $product_cat = $_POST['p_cat'];
     $product_desc = $_POST['p_desc'];
     $status = 'error';
     if (!empty($_FILES["p_image"]["name"])) {
@@ -28,12 +29,12 @@ if (isset($_POST["p_insert"])) {
 
             if (move_uploaded_file($image, $destinationfile)) {
                 // Insert image content into database
-                $insert = "INSERT INTO `blog`(  `blog_title`, `image_url`, `date`, `description`) VALUES ('$product_title','$destinationfile', CURRENT_TIMESTAMP,'$product_desc')";
+                $insert = "INSERT INTO `hydraulic`( `cat`, `title`, `description`, `image_url`) VALUES ('$product_cat','$product_title','$product_desc','$destinationfile')";
                 $smt = $conn->prepare($insert);
                 $smt->execute();
                 if ($insert) {
                     $status = true;
-                    header("location: blog.php");
+                    header("location: hydraulic.php");
                 } else {
                     $statusMsg = "File upload failed, please try again.";
                 }
@@ -50,7 +51,7 @@ if (isset($_POST["p_insert"])) {
 <?php
 if (isset($_POST['delete_btn_set'])) {
     $id = $_POST['delete_id'];
-    $delete = mysqli_query($conn, $query = "DELETE FROM `blog` WHERE id='$id'");
+    $delete = mysqli_query($conn, $query = "DELETE FROM `hydraulic` WHERE id='$id'");
     $query = mysqli_query($conn, $delete);
 }
 ?>
@@ -84,17 +85,17 @@ if ($statusMsg) {
 <div class="content-body my-5 height-100 bg-light" id="main">
     <div class="container-fluid">
         <div class="card mt-5 mb-3">
-            <form class="mt-5" method="post" action="blog.php" enctype="multipart/form-data">
+            <form class="mt-5" method="post" action="hydraulic.php" enctype="multipart/form-data">
                 <div class="row page-titles mx-0">
                     <div class="col-md-3 col-sm-6">
                         <div class="form-group">
-                            <label for="productname" class="control-label">Blog Title<sup class="mandatory">*</sup></label>
+                            <label for="productname" class="control-label">Product Name <sup class="mandatory">*</sup></label>
                             <input type="text" class="form-control" id="p_name" name="p_name" placeholder="Enter category name" required>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="form-group">
-                            <label for="image" class="control-label">Blog Image <sup class="mandatory">*</sup></label>
+                            <label for="image" class="control-label">Product Image <sup class="mandatory">*</sup></label>
                             <div class="input-group mb-3">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="p_image" name="p_image" file-input="packageFile" accept=".jpg, .jpeg, .png, .gif" required>
@@ -103,7 +104,12 @@ if ($statusMsg) {
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <label for="category" class="control-label">Category<sup class="mandatory">*</sup> </label>
+                            <input type="text" class="form-control" id="p_cat" name="p_cat" placeholder="Enter category name" required>
+                        </div>
+                    </div>
                     <div class="col-md-12 my-2">
                         <textarea id="mytextarea" class="form-control" rows="5" placeholder="Description" spellcheck="false" name="p_desc"> </textarea>
                     </div>
@@ -117,7 +123,7 @@ if ($statusMsg) {
                     <div class="col-md-1 mt-2">
                         <div class="form-group">
                             <div class="input-group mt-4">
-                                <a href="blog.php" name="cancel" title="cancel" class="btn btn-danger btn-block">Cancel</a>
+                                <a href="products.php" name="cancel" title="cancel" class="btn btn-danger btn-block">Cancel</a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +142,9 @@ if ($statusMsg) {
                                     <tr>
                                         <th>S.no</th>
                                         <th>Image</th>
+                                        <!-- <th>Other Image</th> -->
                                         <th>Title</th>
+                                        <th>Category</th>
                                         <th class="wd-10">Action</th>
                                     </tr>
                                 </thead>
@@ -145,7 +153,7 @@ if ($statusMsg) {
                                     <?php
 
                                     include 'partials/db_connect.php';
-                                    $sql = "SELECT * from `blog`";
+                                    $sql = "SELECT * from `hydraulic`";
                                     if (mysqli_query($conn, $sql)) {
                                         echo "";
                                     } else {
@@ -162,13 +170,11 @@ if ($statusMsg) {
                                                 <td>
                                                     <img class="wd-120" src="<?php echo $row['image_url']; ?>" alt="" height="100" width="100">
                                                 </td>
-                                                <!-- <td>
-                                                    <img class="wd-120" src="<?php echo $row['other_img']; ?>" alt="" height="100" width="100">
-                                                </td> -->
-                                                <td><?php echo $row['blog_title']; ?></td>
+                                                <td><?php echo $row['title']; ?></td>
+                                                <td><?php echo $row['cat']; ?></td>
                                                 <td>
                                                     <input type="hidden" class="delete_id_value" value="<?php echo $row['id'] ?>">
-                                                    <a href='editblog.php?id=<?php echo $row['id']; ?>' type="button" class="btn btn-primary mr-1"><i class="fa fa-edit"></i>
+                                                    <a href='edithydraulic.php?id=<?php echo $row['id']; ?>' type="button" class="btn btn-primary mr-1"><i class="fa fa-edit"></i>
                                                         <a href="javascript:void(0)" class="btn btn-danger delete_btn_ajax"><i class="fa fa-trash"></i></a>
                                                 </td>
                                             </tr>
@@ -232,7 +238,7 @@ if ($statusMsg) {
                     if (willDelete) {
                         $.ajax({
                             type: "POST",
-                            url: "blog.php",
+                            url: "hydraulic.php",
                             data: {
                                 "delete_btn_set": 1,
                                 "delete_id": deleteid,

@@ -9,7 +9,8 @@ $statusMsg = false;
 if (isset($_POST['c_update'])) {
     $Id = $_GET['id'];
     $cat_title = $_POST['category'];
-    $sql = "UPDATE `categories` SET  `cat_title` = '$cat_title' WHERE  `cat_id` = '$Id'";
+    $cat_slug = $_POST['slug']; 
+    $sql = "UPDATE `categories` SET  `cat_title` = '$cat_title', `slug` = '$cat_slug' WHERE  `cat_id` = '$Id'";
     $smt = $conn->prepare($sql);
     $smt->execute();
     if ($sql) {
@@ -103,6 +104,12 @@ $row = mysqli_fetch_array($query);
                             <input type="text" class="form-control" value="<?php echo $row['cat_title']; ?>" name="category" placeholder="Enter category name">
                         </div>
                     </div>
+                    <div class="col-md-3 col-sm-6">
+                    <div class="form-group">
+                        <label for="cat_desc" class="control-label">Category ID <sup class="mandatory">*</sup></label>
+                        <input type="number" class="form-control" id="slug" name="slug" placeholder="Enter id" maximum="2" minimum="1" value="<?php echo $row['slug']; ?>">
+                    </div>
+                </div>
                     <div class="col-md-2 col-sm-6">
                         <label></label>
                         <div class="input-group mt-2">

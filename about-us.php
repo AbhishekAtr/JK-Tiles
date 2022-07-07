@@ -118,7 +118,7 @@
                 <div class="row justify-content-between align-items-center">
                 <div class="col-md-12 col-lg-6">
                         <div class="card border-0 shadow-sm text-white">
-                            <img src="img/jk-logo.png" alt="video" class="">
+                            <img src="img/founder.jpeg" alt="video" class="">
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-5">
@@ -173,7 +173,7 @@
                                         <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
                                     </ul>
                                     <p class="teacher-see-profile">
-                                        <a href="contact-us.php" class="btn outline-white-btn">Contact Us</a>
+                                        <a href="Noida.php" class="btn outline-white-btn">Contact Us</a>
                                     </p>
                                 </div>
                             </div>
@@ -219,7 +219,7 @@
                                         <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
                                     </ul>
                                     <p class="teacher-see-profile">
-                                        <a href="contact-us.php" class="btn outline-white-btn">Contact Us</a>
+                                        <a href="Odisha.php" class="btn outline-white-btn">Contact Us</a>
                                     </p>
                                 </div>
                             </div>
@@ -242,7 +242,7 @@
                                         <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
                                     </ul>
                                     <p class="teacher-see-profile">
-                                        <a href="contact-us.php" class="btn outline-white-btn">Contact Us</a>
+                                        <a href="Hyderabad.php" class="btn outline-white-btn">Contact Us</a>
                                     </p>
                                 </div>
                             </div>

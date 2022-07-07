@@ -81,36 +81,36 @@ if ($statusMsg) {
 
 <div class="content-body my-5 height-100 bg-light" id="main">
     <div class="container-fluid">
-     <div class="card mt-5 mb-3">
-        <form class="mt-5" method="post" action="gallery.php" enctype="multipart/form-data">
-            <div class="row page-titles mx-0">
-                <div class="col-md-3 col-sm-6">
-                    <div class="form-group">
-                        <label for="image" class="control-label">Product Image <sup class="mandatory">*</sup></label>
-                        <div class="input-group mb-3">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="p_image" name="p_image" file-input="packageFile" accept=".jpg, .jpeg, .png, .gif" required>
-                                <label class="custom-file-label">Choose file</label>
+        <div class="card mt-5 mb-3">
+            <form class="mt-5" method="post" action="gallery.php" enctype="multipart/form-data">
+                <div class="row page-titles mx-0">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <label for="image" class="control-label">Product Image <sup class="mandatory">*</sup></label>
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="p_image" name="p_image" file-input="packageFile" accept=".jpg, .jpeg, .png, .gif" required>
+                                    <label class="custom-file-label">Choose file</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 mt-2">
+                        <div class="form-group">
+                            <div class="input-group mt-4">
+                                <button type="submit" name="p_insert" title="Submit" class="btn btn-warning btn-block">Upload</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 mt-2">
+                        <div class="form-group">
+                            <div class="input-group mt-4">
+                                <a href="gallery.php" name="cancel" title="cancel" class="btn btn-danger btn-block">Cancel</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-1 mt-2">
-                    <div class="form-group">
-                        <div class="input-group mt-4">
-                            <button type="submit" name="p_insert" title="Submit" class="btn btn-warning btn-block">Upload</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-1 mt-2">
-                    <div class="form-group">
-                        <div class="input-group mt-4">
-                            <a href="gallery.php" name="cancel" title="cancel" class="btn btn-danger btn-block">Cancel</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
+            </form>
         </div>
     </div>
     <div class="container-fluid">
@@ -168,6 +168,26 @@ if ($statusMsg) {
                             </table>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 mt-4">
+                <div class="dataTables_paginate paging_simple_numbers" id="order-listing_paginate">
+                    <ul class="pagination">
+                        <li class="paginate_button page-item previous disabled" id="order-listing_previous">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                        </li>
+                        <li class="paginate_button page-item active">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                        </li>
+                        <li class="paginate_button page-item next" id="order-listing_next">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="3" tabindex="0" class="page-link">Next</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

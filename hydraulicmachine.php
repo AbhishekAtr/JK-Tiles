@@ -51,11 +51,11 @@ include './admin/partials/db_connect.php';
                                 <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
                                 <?php
                                 $id = $_GET['id'];
-                                $sql = "select * from products where product_id = $id";
+                                $sql = "select * from hydraulic where id = $id";
                                 $result = mysqli_query($conn, $sql);
                                 while ($row = mysqli_fetch_assoc($result)) {
                                 ?>
-                                    <li class="list-inline-item breadcrumb-item active"><?php echo $row['product_cat'] ?></li>
+                                    <li class="list-inline-item breadcrumb-item active"><?php echo $row['cat'] ?></li>
                                 <?php } ?>
                             </ol>
                         </div>
@@ -73,13 +73,13 @@ include './admin/partials/db_connect.php';
                 <div class="col-md-8">
                     <?php
                     $id = $_GET['id'];
-                    $sql = "select * from products where product_id = $id";
+                    $sql = "select * from hydraulic where id = $id";
                     $result = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_assoc($result)) {
                     ?>
                         <div class="section-heading text-center mb-5">
-                            <h2><?php echo $row['product_title']; ?></h2>
-                            <p class="lead"><?php echo $row['product_cat']; ?></p>
+                            <h2><?php echo $row['title']; ?></h2>
+                            <p class="lead"><?php echo $row['cat']; ?></p>
                         </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@ include './admin/partials/db_connect.php';
                 <div class="col-md-12 center">
 
                     <div class="image-hotspots">
-                        <img src="<?php echo $url . $row['product_img']; ?>" class="img-fluid">
+                        <img src="<?php echo $url . $row['image_url']; ?>" class="img-fluid">
 <!-- 
                         <a style="left: 30%; top: 18%;" class="image-hotspot image-hotspot-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
                             <strong>1</strong>
@@ -127,14 +127,14 @@ include './admin/partials/db_connect.php';
                 <div class="col-md-12">
                 <?php
                     $id = $_GET['id'];
-                    $sql = "select * from products where product_id = $id";
+                    $sql = "select * from hydraulic where id = $id";
                     $result = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_assoc($result)) {
                     ?>
                     <div class="heading-block center clearfix my-5">
                         <h2 class="text-white">Technical Specs</h2>
                         <div class="table-responsive bg-light">
-                            <p><?php echo $row['product_desc'] ?></p>
+                            <p><?php echo $row['description'] ?></p>
                         </div>
                     </div>
                     <?php

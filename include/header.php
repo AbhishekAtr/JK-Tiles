@@ -1,5 +1,45 @@
 <?php
 include './admin/partials/db_connect.php';
+$tab_query = "SELECT * FROM categories ORDER BY cat_id ASC";
+$tab_result = mysqli_query($conn, $tab_query);
+$tab_menu = '';
+$tab_content = '';
+$i = 0;
+while ($row = mysqli_fetch_array($tab_result)) {
+    if ($i == 0) {
+        $tab_menu .= '
+  <button class="tablinks active" onmouseover="openCity(event, ' . $row["cat_id"] . ')">' . $row["cat_title"] . '</button>';
+        $tab_content .= '
+   <div id="' . $row["cat_id"] . '" class="tab-content active">
+   <div class="row card-content">';
+    } else {
+        $tab_menu .= '
+        <button class="tablinks" onmouseover="openCity(event, ' . $row["cat_id"] . ')">' . $row["cat_title"] . '</button>';
+        $tab_content .= '<div id="' . $row["cat_id"] . '" class="tab-content"><div class="row card-content">';
+    }
+    $product_query = "SELECT * FROM `products` WHERE `p_id` = '" . $row["cat_id"] . "'";
+    $product_result = mysqli_query($conn, $product_query);
+    while ($sub_row = mysqli_fetch_array($product_result)) {
+        $tab_content .= '
+        <div class="col-md-6 col-lg-6 col-sm-6">
+        
+        <div class="card menu-card">
+        <img src="' . $url . $sub_row["product_img"] . '" class="card-img-top w-100" />
+        </div>
+        <div class="card-content content text-center">
+            <a href="products.php?id=' . $sub_row["product_id"] . '">
+                <p>' . $sub_row["product_title"] . '</p>
+                <p>' . $sub_row["product_cat"] . '</p>
+            </a>
+            <button class="btn accent-solid-btn btn-dark"><a href="img/jk.pdf" target="_blank">Download Brochure <span class="fa fa-download"></span></a> </button>
+        </div>
+    </div>
+   
+  ';
+    }
+    $tab_content .= '</div></div>';
+    $i++;
+}
 ?>
 
 
@@ -57,10 +97,10 @@ include './admin/partials/db_connect.php';
                                     Contact Us
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item contact_btn1" href="contact2.php">Noida Branch</a>
-                                    <a class="dropdown-item contact_btn2" href="contact-us.php">Guwahati Branch</a>
-                                    <a class="dropdown-item contact_btn3" href="contact3.php">Odisha Branch</a>
-                                    <a class="dropdown-item contact_btn4" href="contact1.php">Hyderabad Branch</a>
+                                    <a class="dropdown-item contact_btn1" href="Noida.php">Noida Branch</a>
+                                    <a class="dropdown-item contact_btn2" href="Assam.php">Assam Branch</a>
+                                    <a class="dropdown-item contact_btn3" href="Odisha.php">Odisha Branch</a>
+                                    <a class="dropdown-item contact_btn4" href="Hyderabad.php">Hyderabad Branch</a>
                                 </div>
                             </li>
                         </ul>
@@ -102,55 +142,15 @@ include './admin/partials/db_connect.php';
                                     <div class="row">
                                         <div class="tab col-lg-3">
                                             <?php
-                                            $sql = "SELECT * from `categories`";
-                                            $result = mysqli_query($conn, $sql);
-                                            $num = mysqli_num_rows($result);
-                                            while ($row = mysqli_fetch_array($result)) {
-                                            ?>
-                                                <button class="tablinks" onmouseover="openCity(event, '<?php echo $row['cat_id'] ?>')"><?php echo $row['cat_title'] ?></button>
-                                            <?php
-                                            }
+                                            echo $tab_menu;
                                             ?>
                                         </div>
-                                        <?php
-                                        $count = 1;
-                                        $sql = "SELECT * from `categories`";
-                                        $result = mysqli_query($conn, $sql);
-                                        while ($row = mysqli_fetch_array($result)) {
-                                        ?>
-                                            <div id="<?php echo $row['cat_id'] ?>" class="tabcontent ">
-                                                <div class="row card-content">
-                                                    <?php
+                                        <div class="tab_content">
+                                                <?php
+                                                echo $tab_content;
+                                                ?>
+                                        </div>
 
-                                                    $sql = "SELECT * from `products` where p_id =" . $row["cat_id"];
-                                                    if (mysqli_query($conn, $sql)) {
-                                                        echo "";
-                                                    } else {
-                                                        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                                                    }
-                                                    $count = 1;
-                                                    $result = mysqli_query($conn, $sql);
-                                                    if (mysqli_num_rows($result) > 0) {
-                                                        while ($row = mysqli_fetch_array($result)) {
-                                                    ?>
-                                                            <div class="col-md-6 col-lg-4 col-sm-6">
-                                                                <div class="card menu-card">
-                                                                    <img src="<?php echo $url . $row['product_img'] ?>" class="card-img-top" alt="...">
-                                                                </div>
-                                                                <div class="card-content content text-center">
-                                                                    <a href="">
-                                                                        <p><?php echo $row['product_title'] ?></p>
-                                                                        <p><?php echo $row['product_cat'] ?></p>
-                                                                    </a>
-                                                                    <button class="btn accent-solid-btn btn-dark"><a href="img/jk.pdf" target="_blank">Download Brochure <span class="fa fa-download"></span></a> </button>
-                                                                </div>
-                                                            </div>
-                                                    <?php }
-                                                    } ?>
-                                                </div>
-                                            </div>
-                                        <?php }
-                                        $count++; ?>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
@@ -160,10 +160,22 @@ include './admin/partials/db_connect.php';
                             <a class="nav-link btn3d btn btn-default btn-lg" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Hydraulic Machine</a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item contact_btn1" href="products.php">JK Hydro + Vibro</a>
-                                <a class="dropdown-item contact_btn2" href="products.php">Hydraulic Cement & Flyash</a>
+                                <?php
+                                $sql = "SELECT * from `hydraulic`";
+                                $result = mysqli_query($conn, $sql);
+                                $num = mysqli_num_rows($result);
+                                while ($row = mysqli_fetch_array($result)) {
+                                ?>
+                                    <a class="dropdown-item contact_btn1" href="hydraulicmachine.php?id=<?php echo $row['id'] ?>"><?php echo $row['title'] ?> <br>
+                                        <p style="font-size:18px; font-weight:600; color:gray"><?php echo $row['cat'] ?></p>
+                                    </a>
+                                <?php
+                                }
+                                ?>
+
+                                <!-- <a class="dropdown-item contact_btn2" href="products.php">Hydraulic Cement & Flyash</a>
                                 <a class="dropdown-item contact_btn3" href="products.php">JK Multi Purpose Hydrulic</a>
-                                <a class="dropdown-item contact_btn4" href="products.php">JK Semi-auto Double Station</a>
+                                <a class="dropdown-item contact_btn4" href="products.php">JK Semi-auto Double Station</a> -->
                             </div>
                         </li>
 
@@ -184,8 +196,9 @@ include './admin/partials/db_connect.php';
 
 <script>
     function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
+
+        var i, tabcontent, tablinks, city;
+        tabcontent = document.getElementsByClassName("tab-content");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
         }

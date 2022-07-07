@@ -11,6 +11,7 @@ if (isset($_POST["p_insert"])) {
     $product_cat = $_POST['p_cat'];
     $product_qty = $_POST['p_qty'];
     $product_desc = $_POST['p_desc'];
+    $cat_id = $_POST['c_id'];
     $status = 'error';
     if (!empty($_FILES["p_image"]["name"])) {
 
@@ -30,7 +31,7 @@ if (isset($_POST["p_insert"])) {
 
             if (move_uploaded_file($image, $destinationfile)) {
                 // Insert image content into database
-                $insert = "INSERT INTO `products`( `product_cat`, `product_title`, `product_qty`, `product_desc`, `product_img`) VALUES ('$product_cat','$product_title','$product_qty','$product_desc','$destinationfile')";
+                $insert = "INSERT INTO `products`( `product_cat`, `product_title`, `product_qty`, `product_desc`, `product_img`, `p_id`) VALUES ('$product_cat','$product_title','$product_qty','$product_desc','$destinationfile', ' $cat_id')";
                 $smt = $conn->prepare($insert);
                 $smt->execute();
                 if ($insert) {
@@ -85,77 +86,83 @@ if ($statusMsg) {
 
 <div class="content-body my-5 height-100 bg-light" id="main">
     <div class="container-fluid">
-     <div class="card mt-5 mb-3">
-        <form class="mt-5" method="post" action="products.php" enctype="multipart/form-data">
-            <div class="row page-titles mx-0">
-                <div class="col-md-3 col-sm-6">
-                    <div class="form-group">
-                        <label for="productname" class="control-label">Product Name <sup class="mandatory">*</sup></label>
-                        <input type="text" class="form-control" id="p_name" name="p_name" placeholder="Enter category name" required>
+        <div class="card mt-5 mb-3">
+            <form class="mt-5" method="post" action="products.php" enctype="multipart/form-data">
+                <div class="row page-titles mx-0">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <label for="productname" class="control-label">Product Name <sup class="mandatory">*</sup></label>
+                            <input type="text" class="form-control" id="p_name" name="p_name" placeholder="Enter category name" required>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="form-group">
-                        <label for="image" class="control-label">Product Image <sup class="mandatory">*</sup></label>
-                        <div class="input-group mb-3">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="p_image" name="p_image" file-input="packageFile" accept=".jpg, .jpeg, .png, .gif" required>
-                                <label class="custom-file-label">Choose file</label>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <label for="image" class="control-label">Product Image <sup class="mandatory">*</sup></label>
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="p_image" name="p_image" file-input="packageFile" accept=".jpg, .jpeg, .png, .gif" required>
+                                    <label class="custom-file-label">Choose file</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <label for="category" class="control-label">Category<sup class="mandatory">*</sup> </label>
+                            <select class="form-control " name="p_cat" id="p_cat" required>
+                                <option selected>Select Category</option>
+                                <?php
+
+                                include 'partials/db_connect.php';
+                                $sql = "SELECT * from `categories`";
+                                if (mysqli_query($conn, $sql)) {
+                                    echo "";
+                                } else {
+                                    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                                }
+                                $count = 1;
+                                $result = mysqli_query($conn, $sql);
+                                if (mysqli_num_rows($result) > 0) {
+
+                                    while ($row = mysqli_fetch_array($result)) { ?>
+
+
+                                        <option value="<?php echo $row['cat_title']; ?>"><?php echo $row['cat_title']; ?> </option>
+                                <?php
+                                        $count++;
+                                    }
+                                } else {
+                                    echo '0 results';
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <label for="categoryId" class="control-label">Category ID <sup class="mandatory">*</sup></label>
+                            <input type="text" class="form-control" id="c_id" name="c_id" placeholder="Enter category id" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12 my-2">
+                        <textarea id="mytextarea" class="form-control" rows="5" placeholder="Description" spellcheck="false" name="p_desc"> </textarea>
+                    </div>
+                    <div class="col-md-1 mt-2">
+                        <div class="form-group">
+                            <div class="input-group mt-4">
+                                <button type="submit" name="p_insert" title="Submit" class="btn btn-warning btn-block">Upload</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 mt-2">
+                        <div class="form-group">
+                            <div class="input-group mt-4">
+                                <a href="products.php" name="cancel" title="cancel" class="btn btn-danger btn-block">Cancel</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="form-group">
-                        <label for="category" class="control-label">Category<sup class="mandatory">*</sup> </label>
-                        <select class="form-control " name="p_cat" id="p_cat" required>
-                            <option selected>Select Category</option>
-                            <?php
-
-                            include 'partials/db_connect.php';
-                            $sql = "SELECT * from `categories`";
-                            if (mysqli_query($conn, $sql)) {
-                                echo "";
-                            } else {
-                                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                            }
-                            $count = 1;
-                            $result = mysqli_query($conn, $sql);
-                            if (mysqli_num_rows($result) > 0) {
-
-                                while ($row = mysqli_fetch_array($result)) { ?>
-
-
-                                    <option value="<?php echo $row['cat_title']; ?>"><?php echo $row['cat_title']; ?> </option>
-                            <?php
-                                    $count++;
-                                }
-                            } else {
-                                echo '0 results';
-                            }
-                            ?>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-12 my-2">
-                    <textarea id="mytextarea" class="form-control" rows="5" placeholder="Description" spellcheck="false" name="p_desc"> </textarea>
-                </div>
-                <div class="col-md-1 mt-2">
-                    <div class="form-group">
-                        <div class="input-group mt-4">
-                            <button type="submit" name="p_insert" title="Submit" class="btn btn-warning btn-block">Upload</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-1 mt-2">
-                    <div class="form-group">
-                        <div class="input-group mt-4">
-                            <a href="products.php" name="cancel" title="cancel" class="btn btn-danger btn-block">Cancel</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
+            </form>
         </div>
     </div>
     <div class="container-fluid">
@@ -221,6 +228,26 @@ if ($statusMsg) {
                             </table>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 mt-4">
+                <div class="dataTables_paginate paging_simple_numbers" id="order-listing_paginate">
+                    <ul class="pagination">
+                        <li class="paginate_button page-item previous disabled" id="order-listing_previous">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                        </li>
+                        <li class="paginate_button page-item active">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                        </li>
+                        <li class="paginate_button page-item next" id="order-listing_next">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="3" tabindex="0" class="page-link">Next</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

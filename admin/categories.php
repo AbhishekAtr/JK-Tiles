@@ -14,8 +14,9 @@ $showAlert = false;
 $showError = false;
 
 if (isset($_POST["c_insert"])) {
-    $cat_title = $_POST['category']; 
-    $insert = "INSERT INTO `categories`( `cat_title`) VALUES ('$cat_title')";
+    $cat_title = $_POST['category'];
+    $cat_slug = $_POST['slug'];
+    $insert = "INSERT INTO `categories`( `cat_title`, `slug`) VALUES ('$cat_title', '$cat_slug')";
     $smt = $conn->prepare($insert);
     $smt->execute();
     if ($insert) {
@@ -96,21 +97,21 @@ if ($showError) {
 <div class="content-body my-5 height-100 bg-light" id="main">
     <div class="container-fluid">
         <div class="card p-4">
-        <form  method="post" action="categories.php" enctype="multipart/form-data">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="form-group">
-                        <label for="category" class="control-label">Category Name <sup class="mandatory">*</sup></label>
-                        <input type="text" class="form-control" id="category" name="category" placeholder="Enter category name" required>
+            <form method="post" action="categories.php" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <label for="category" class="control-label">Category Name <sup class="mandatory">*</sup></label>
+                            <input type="text" class="form-control" id="category" name="category" placeholder="Enter category name" required>
+                        </div>
                     </div>
-                </div>
-                <!-- <div class="col-md-3 col-sm-6">
-                    <div class="form-group">
-                        <label for="cat_desc" class="control-label">Category Description <sup class="mandatory">*</sup></label>
-                        <input type="text" class="form-control" id="cat_desc" name="cat_desc" placeholder="Enter Description" required>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <label for="cat_desc" class="control-label">Category ID <sup class="mandatory">*</sup></label>
+                            <input type="number" class="form-control" id="slug" name="slug" placeholder="Enter id" maximum="2" minimum="1" required>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
+                    <!-- <div class="col-md-4 col-sm-6">
                     <div class="form-group">
                         <label>Image (png,jpeg,jpg) (1920x800 in pixel, Max size 1MB)<sup class="mandatory">*</sup> </label>
                         <div class="input-group mb-3">
@@ -121,16 +122,16 @@ if ($showError) {
                         </div>
                     </div>
                 </div> -->
-                <div class="col-md-2 col-sm-6">
-                    <label></label>
-                    <div class="input-group mr-tp-1-per">
-                        <button type="submit" name="c_insert" title="Submit" class="btn btn-warning btn-block">Add Category</button>
-                        <!-- <button type="button" title="Cancel" class="btn btn-danger mr-lf-2-per" ng-click="cancel()">Cancel</button> -->
+                    <div class="col-md-2 col-sm-6">
+                        <label></label>
+                        <div class="input-group mr-tp-1-per">
+                            <button type="submit" name="c_insert" title="Submit" class="btn btn-warning btn-block">Add Category</button>
+                            <!-- <button type="button" title="Cancel" class="btn btn-danger mr-lf-2-per" ng-click="cancel()">Cancel</button> -->
+                        </div>
                     </div>
-                </div>
 
-            </div>
-        </form>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -202,6 +203,26 @@ if ($showError) {
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 mt-4">
+                <div class="dataTables_paginate paging_simple_numbers" id="order-listing_paginate">
+                    <ul class="pagination">
+                        <li class="paginate_button page-item previous disabled" id="order-listing_previous">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                        </li>
+                        <li class="paginate_button page-item active">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                        </li>
+                        <li class="paginate_button page-item next" id="order-listing_next">
+                            <a href="#" aria-controls="order-listing" data-dt-idx="3" tabindex="0" class="page-link">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <?php include "include/js-url.php"; ?>
@@ -246,7 +267,7 @@ if ($showError) {
     });
 </script>
 <script>
-if ( window.history.replaceState ) {
-  window.history.replaceState( null, null, window.location.href );
-}
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
 </script>

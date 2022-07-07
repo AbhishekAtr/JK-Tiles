@@ -882,7 +882,7 @@ select.form-control.has-value {
 }
 
 .navbar-brand img {
-        width: 80%;
+    width: 80%;
     height: 130px;
 }
 
@@ -1767,9 +1767,8 @@ select.form-control.has-value {
     .custom-indicators li button {
         padding: 6px 8px;
     }
-    .modal-content
-    {
-        width:100% !important;
+    .modal-content {
+        width: 100% !important;
     }
 }
 
@@ -6097,34 +6096,33 @@ html .image-hotspot-primary .circle,
     }
 }
 
-
 .btn3d {
-    transition:all .08s linear;
-    position:relative;
-    outline:medium none;
-    -moz-outline-style:none;
-    border:1px;
-    margin-right:10px;
-    margin-top:15px;
+    transition: all .08s linear;
+    position: relative;
+    outline: medium none;
+    -moz-outline-style: none;
+    border: 1px;
+    margin-right: 10px;
+    margin-top: 15px;
 }
+
 .btn3d:focus {
-    outline:medium none;
-    -moz-outline-style:none;
+    outline: medium none;
+    -moz-outline-style: none;
 }
+
 .btn3d:active {
-    top:9px;
+    top: 9px;
 }
+
 .btn-default {
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #adadad, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color:#fff;
+    box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 2px 0 0 #adadad, 0 2px 0 1px rgba(0, 0, 0, 0.4), 0 2px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
 }
 
-
-.phone-icon
-{
+.phone-icon {
     position: fixed;
     bottom: 100px;
     left: 2.6%;
     z-index: 9999;
-}
 }

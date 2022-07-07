@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-
 }
 
 .p-5 {
@@ -32,7 +31,6 @@
     height: 40px;
     margin: 5px 0px;
     padding: 8px 0px 0px 14px;
-
 }
 
 .sidebar {
@@ -72,8 +70,6 @@
     left: 26%;
     top: 58px;
     z-index: 99;
-
-
 }
 
 .content-box {
@@ -84,7 +80,6 @@
 
 #alertBox .success {
     box-shadow: 0px 0px 15px #00000042;
-
     color: white;
     background: green;
     padding: 10px 5px;
@@ -157,7 +152,6 @@ label::after {
 }
 
 .accordion-content .description {
-
     color: #4f4f4f;
     cursor: pointer;
     padding: 5px 5px 5px 25px;
@@ -176,7 +170,6 @@ label::after {
 .accordion-content .title {
     margin: 10px 0px;
     font-weight: normal;
-
     padding: 0px 0px;
     cursor: pointer;
     font-size: 15px;
@@ -199,11 +192,8 @@ label::after {
 
 .accordion-content.hide .title::after {
     content: " ";
-
-
     padding: 0px 0px;
     font-size: 22px;
-
     font-size: 19px;
     font-weight: normal;
     /* float: right; */
@@ -214,14 +204,10 @@ label::after {
 
 .accordion-content.show .title::after {
     content: "  ";
-
-
     padding: 0px 0px;
     font-size: 22px;
-
     font-size: 19px;
     font-weight: normal;
-
     position: absolute;
     top: 6px;
     right: -47px;
@@ -315,18 +301,14 @@ label::after {
     margin-bottom: 1.5rem !important;
 }
 
-.btn-login
-{
-    background: linear-gradient(80deg, #cc1919 , #e17272);
+.btn-login {
+    background: linear-gradient(80deg, #cc1919, #e17272);
 }
 
-.bg-logo
-{
-    background: linear-gradient(80deg, #cc1919 , #e17272);
+.bg-logo {
+    background: linear-gradient(80deg, #cc1919, #e17272);
 }
 
-.text-right .fa
-{
+.text-right .fa {
     font-size: 25px;
 }
-

@@ -108,6 +108,9 @@
                         <div class="card border-0 shadow-sm text-white">
                             <img src="img/about-2.jpg" alt="video" class="img-fluid rounded shadow-sm">
                         </div>
+                        <div class="video mt-5">
+                        <iframe width="543" height="315" src="https://www.youtube.com/embed/V6t69rrrfiI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,32 +314,44 @@
             </div>
             <div class="container">
                 <!--clients logo start-->
-                <div class="row align-items-center">
+                  <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="owl-carousel owl-theme clients-carousel dot-indicator">
                             <div class="item single-client">
-                                <img src="img/clients-logo-01.png" alt="client logo" class="client-img">
+                                <img src="img/Key_one128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-02.png" alt="client logo" class="client-img">
+                            <img src="img/key_two128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-03.png" alt="client logo" class="client-img">
+                            <img src="img/key_three128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-04.png" alt="client logo" class="client-img">
+                            <img src="img/key_foue128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-05.png" alt="client logo" class="client-img">
+                            <img src="img/key_five128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-06.png" alt="client logo" class="client-img">
+                            <img src="img/key_six128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-07.png" alt="client logo" class="client-img">
+                            <img src="img/key_seven128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-08.png" alt="client logo" class="client-img">
+                            <img src="img/key_eight128.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                            <img src="img/key_nine128.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                            <img src="img/key_ten128.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                            <img src="img/key_eleven128.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                            <img src="img/key_12128.png" alt="client logo" class="client-img">
                             </div>
                         </div>
                     </div>
@@ -345,6 +360,132 @@
             </div>
         </div>
         <!--client section start-->
+        <div class="client-section ptb-100">
+            <div class="heading white-heading">
+                <h2 class="bold">OUR Esteemed Machinery Parts Manufacturers</h2>
+                <h5 class="bold">Helping us to create a best quality of machines</h5>
+            </div>
+            <div class="container">
+
+                <!--clients logo start-->
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme partners dot-indicator">
+                            <div class="item single-client">
+                                <img src="img/machine_one.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_two.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_three.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_four.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_five.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_six.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_seven.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_eight.png" alt="client logo" class="client-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--clients logo end-->
+            </div>
+        </div>
+        
+        <!-----Our esteemed partners end---->
+         <!--call to action section start-->
+         <section class="call-to-action py-5 gray-light-bg">
+            <div class="container">
+                <div class="row justify-content-around align-items-center mb-2">
+                    <div class="col-md-12">
+                        <div class="subscribe-content">
+                            <h2 class="mb-1 text-center">Get in Touch</h2>
+                            <p class="text-center">We are amongst the prominent manufacturers of the wide assortment of the Cement Floor Tiles and Hollow Block Making Machines. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around align-items-center mt-5">
+                    <div class="col-md-3">
+                        <div class="card single-promo-card single-promo-hover text-center shadow-sm">
+                            <div class="card-body">
+                                <div class="pb-2">
+                                    <span class="ti-location-pin icon-sm color-secondary"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Noida Branch</h5>
+                                    <p class="text-muted mb-0">Near Pradhan Mkt Vill Sarfabad Sector-73 Noida Gautam Buddha Nagar, Noida - 201304, Gautam Budh Nagar, Uttar Pradesh, India</p>
+                                    <p class="text-muted mb-0"> <a href="tel: +9178271 12429"> +91 78271 12429
+                                        </a>, <a href="tel:+917777000006">+91 7777000006</a></p>
+                                    <p class="text-muted mb-0"> <a href="mailto:Guwahati@jktilesmachinerynoida.com"> info@jktilesmachinery.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card single-promo-card single-promo-hover text-center shadow-sm">
+                            <div class="card-body">
+                                <div class="pb-2">
+                                    <span class="ti-location-pin icon-sm color-secondary"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Guwahati Branch</h5>
+                                    <p class="text-muted mb-0">C/O, Fatik Das, Azara, Dharapur, Kamrup Metropolitan Borjhar, Guwahati - 781017, Kamrup, Assam, India</p>
+                                    <p class="text-muted mb-0"> <a href="tel:+917086246108">+91 70862 46108</a>, <a href="tel:+916001344355">+91 60013 44355</a>, <a href="tel:+917896868124">+91 78968 68124</a></p>
+                                    <p class="text-muted mb-0"> <a href="mailto:Guwahati@jktilesmachinerynoida.com">Guwahati@jktilesmachinerynoida.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card single-promo-card single-promo-hover text-center shadow-sm">
+                            <div class="card-body">
+                                <div class="pb-2">
+                                    <span class="ti-location-pin icon-sm color-secondary"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Hyderabad Branch</h5>
+                                    <p class="text-muted mb-0">Landmark - Delhi Public School, Plot No:518, Village - Bowrampet, DPS Rd, Bachupally, Hyderabad, Telangana 500043</p>
+                                    <p class="text-muted mb-0"> <a href="tel:+919618440701">+91 96184 40701</a>
+                                        <a href="tel:+917303075275">+91 73030 75275</a>,<a href="tel:+917075632133">+91 70756 32133</a>
+                                    </p>
+                                    <p class="text-muted mb-0"> <a href="mailto:hyderabad@jktilesmachinerynoida.com">hyderabad@jktilesmachinerynoida.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card single-promo-card single-promo-hover text-center shadow-sm">
+                            <div class="card-body">
+                                <div class="pb-2">
+                                    <span class="ti-location-pin icon-sm color-secondary"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Bhuneswar  Branch </h5>
+                                    <p class="text-muted mb-0">PLOT NO-958,KHATA NO-405,KHARVEL ESTATE, NAKHARA,BHUBANESWAR, Khordha - 752101, Khorda, Odisha, India</p>
+                                    <p class="text-muted mb-0"> <a href="tel:+918046062438">+91 8046062438</a>
+                                        <a href="tel:+919667460380">+91 96674 60380</a>,<a href="tel:+917749038142">+91 77490 38142</a>
+                                    </p>
+                                    <p class="text-muted mb-0"> <a href="mailto:odisha@jktilesmachinerynoida.com">odisha@jktilesmachinerynoida.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--call to action section end-->
+
+
 
     </div>
     <!--body content wrap end-->

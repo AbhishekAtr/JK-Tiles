@@ -61,33 +61,34 @@ if (isset($_POST['delete_btn_set'])) {
 
 <?php include "partials/sidebar.php"; ?>
 
-<?php
 
-if ($status) {
 
-    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+<div class="content-body my-5 height-100 bg-light p-4" id="main">
+    <div class="container-fluid">
+        <div class="card mt-5 mb-3">
+            <form class="mt-5" method="post" action="products.php" enctype="multipart/form-data">
+                <?php
+
+                if ($status) {
+
+                    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
         <strong>Hurry !!!!</strong> Your Image uploaded successfully.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>';
-}
+                }
 
-if ($statusMsg) {
+                if ($statusMsg) {
 
-    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
         <strong>Error</strong> ' . $statusMsg . '
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>';
-}
-?>
-
-<div class="content-body my-5 height-100 bg-light" id="main">
-    <div class="container-fluid">
-        <div class="card mt-5 mb-3">
-            <form class="mt-5" method="post" action="products.php" enctype="multipart/form-data">
+                }
+                ?>
                 <div class="row page-titles mx-0">
                     <div class="col-md-3 col-sm-6">
                         <div class="form-group">
@@ -187,7 +188,14 @@ if ($statusMsg) {
                                     <?php
 
                                     include 'partials/db_connect.php';
-                                    $sql = "SELECT * from `products`";
+                                    if (isset($_GET['pageno'])) {
+                                        $pageno = $_GET['pageno'];
+                                    } else {
+                                        $pageno = 1;
+                                    }
+                                    $no_of_records_per_page = 6;
+                                    $offset = ($pageno - 1) * $no_of_records_per_page;
+                                    $sql = "SELECT * FROM products LIMIT $offset, $no_of_records_per_page";
                                     if (mysqli_query($conn, $sql)) {
                                         echo "";
                                     } else {
@@ -234,20 +242,24 @@ if ($statusMsg) {
         <div class="row">
             <div class="col-sm-12 col-lg-12 mt-4">
                 <div class="dataTables_paginate paging_simple_numbers" id="order-listing_paginate">
-                    <ul class="pagination">
-                        <li class="paginate_button page-item previous disabled" id="order-listing_previous">
-                            <a href="#" aria-controls="order-listing" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
-                        </li>
-                        <li class="paginate_button page-item active">
-                            <a href="#" aria-controls="order-listing" data-dt-idx="1" tabindex="0" class="page-link">1</a>
-                        </li>
-                        <li class="paginate_button page-item ">
-                            <a href="#" aria-controls="order-listing" data-dt-idx="2" tabindex="0" class="page-link">2</a>
-                        </li>
-                        <li class="paginate_button page-item next" id="order-listing_next">
-                            <a href="#" aria-controls="order-listing" data-dt-idx="3" tabindex="0" class="page-link">Next</a>
-                        </li>
-                    </ul>
+                    <?php
+
+                    $total_pages_sql = "SELECT * FROM products";
+                    $result = mysqli_query($conn, $total_pages_sql);
+                    $total_rows = mysqli_num_rows($result);
+                    $total_pages = ceil($total_rows / $no_of_records_per_page);
+                    /* echo  $total_pages; */
+                    $pagLink = "<nav aria-label='Page navigation example'><ul class='pagination'> 
+                    <li class='page-item'><a class='page-link' href='products.php?pageno=" . ($pageno - 1) . "'>Previous</a></li>";
+                    for ($i = 1; $i <= $total_pages; $i++) {
+                        $pagLink .= "
+                       
+                        <li class='page-item'><a class='page-link' href='products.php?pageno=" . $i . "'>" . $i . "</a></li>
+                        ";
+                    }
+                    echo $pagLink . "<li class='page-item'><a class='page-link' href='products.php?pageno=" . ($pageno + 1) . "'>Next</a></li></ul></nav>";
+                    ?>
+
                 </div>
             </div>
         </div>

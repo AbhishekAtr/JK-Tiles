@@ -183,9 +183,9 @@ include './admin/partials/db_connect.php';
                         <img src="img/products/about.png" alt="video" class="img-fluid">
                     </div> -->
                         <div class="card border-0 text-white">
-                            <img src="img/products/p2.png" alt="video" class="img-fluid rounded">
+                            <img src="img/service/1C- FULLY AUTOMATIC PAVER.png" alt="video" class="img-fluid rounded">
                             <div class="card-img-overlay text-center">
-                                <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="popup-youtube video-play-icon color-bip shadow"><span class="ti-control-play"></span> </a>
+                                <a href="https://www.youtube.com/watch?v=V6t69rrrfiI"  class="popup-youtube video-play-icon color-bip shadow"><span class="ti-control-play"></span> </a>
                             </div>
                         </div>
                     </div>
@@ -404,28 +404,40 @@ include './admin/partials/db_connect.php';
                     <div class="col-md-12">
                         <div class="owl-carousel owl-theme clients-carousel dot-indicator">
                             <div class="item single-client">
-                                <img src="img/clients-logo-01.png" alt="client logo" class="client-img">
+                                <img src="img/Key_one128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-02.png" alt="client logo" class="client-img">
+                            <img src="img/key_two128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-03.png" alt="client logo" class="client-img">
+                            <img src="img/key_three128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-04.png" alt="client logo" class="client-img">
+                            <img src="img/key_foue128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-05.png" alt="client logo" class="client-img">
+                            <img src="img/key_five128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-06.png" alt="client logo" class="client-img">
+                            <img src="img/key_six128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-07.png" alt="client logo" class="client-img">
+                            <img src="img/key_seven128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                                <img src="img/clients-logo-08.png" alt="client logo" class="client-img">
+                            <img src="img/key_eight128.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                            <img src="img/key_nine128.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                            <img src="img/key_ten128.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                            <img src="img/key_eleven128.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                            <img src="img/key_12128.png" alt="client logo" class="client-img">
                             </div>
                         </div>
                     </div>
@@ -434,6 +446,54 @@ include './admin/partials/db_connect.php';
             </div>
         </div>
         <!--client section start-->
+
+        <!-----Our esteemed partners start---->
+
+        <div class="client-section ptb-100">
+            <div class="heading white-heading">
+                <h2 class="bold">OUR Esteemed Machinery Parts Manufacturers</h2>
+                <h5 class="bold">Helping us to create a best quality of machines</h5>
+            </div>
+            <div class="container">
+
+                <!--clients logo start-->
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme partners dot-indicator">
+                            <div class="item single-client">
+                                <img src="img/machine_one.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_two.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_three.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_four.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_five.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_six.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_seven.png" alt="client logo" class="client-img">
+                            </div>
+                            <div class="item single-client">
+                                <img src="img/machine_eight.png" alt="client logo" class="client-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--clients logo end-->
+            </div>
+        </div>
+        
+        <!-----Our esteemed partners end---->
+
+
 
         <!--call to action section start-->
         <section class="call-to-action py-5 gray-light-bg">
@@ -485,12 +545,12 @@ include './admin/partials/db_connect.php';
                                     <span class="ti-location-pin icon-sm color-secondary"></span>
                                 </div>
                                 <div>
-                                    <h5 class="mb-0">Odisha Branch </h5>
-                                    <p class="text-muted mb-0">PLOT NO-958,KHATA NO-405,KHARVEL ESTATE, NAKHARA,BHUBANESWAR, Khordha - 752101, Khorda, Odisha, India</p>
-                                    <p class="text-muted mb-0"> <a href="tel:+918046062438">+91 8046062438</a>
-                                        <a href="tel:+919667460380">+91 96674 60380</a>,<a href="tel:+917749038142">+91 77490 38142</a>
+                                    <h5 class="mb-0">Hyderabad Branch</h5>
+                                    <p class="text-muted mb-0">Landmark - Delhi Public School, Plot No:518, Village - Bowrampet, DPS Rd, Bachupally, Hyderabad, Telangana 500043</p>
+                                    <p class="text-muted mb-0"> <a href="tel:+919618440701">+91 96184 40701</a>
+                                        <a href="tel:+917303075275">+91 73030 75275</a>,<a href="tel:+917075632133">+91 70756 32133</a>
                                     </p>
-                                    <p class="text-muted mb-0"> <a href="mailto:odisha@jktilesmachinerynoida.com">odisha@jktilesmachinerynoida.com</a></p>
+                                    <p class="text-muted mb-0"> <a href="mailto:hyderabad@jktilesmachinerynoida.com">hyderabad@jktilesmachinerynoida.com</a></p>
                                 </div>
                             </div>
                         </div>
@@ -502,12 +562,12 @@ include './admin/partials/db_connect.php';
                                     <span class="ti-location-pin icon-sm color-secondary"></span>
                                 </div>
                                 <div>
-                                    <h5 class="mb-0">Hyderabad Branch</h5>
-                                    <p class="text-muted mb-0">Landmark - Delhi Public School, Plot No:518, Village - Bowrampet, DPS Rd, Bachupally, Hyderabad, Telangana 500043</p>
-                                    <p class="text-muted mb-0"> <a href="tel:+919618440701">+91 96184 40701</a>
-                                        <a href="tel:+917303075275">+91 73030 75275</a>,<a href="tel:+917075632133">+91 70756 32133</a>
+                                    <h5 class="mb-0">Bhuneswar  Branch </h5>
+                                    <p class="text-muted mb-0">PLOT NO-958,KHATA NO-405,KHARVEL ESTATE, NAKHARA,BHUBANESWAR, Khordha - 752101, Khorda, Odisha, India</p>
+                                    <p class="text-muted mb-0"> <a href="tel:+918046062438">+91 8046062438</a>
+                                        <a href="tel:+919667460380">+91 96674 60380</a>,<a href="tel:+917749038142">+91 77490 38142</a>
                                     </p>
-                                    <p class="text-muted mb-0"> <a href="mailto:hyderabad@jktilesmachinerynoida.com">hyderabad@jktilesmachinerynoida.com</a></p>
+                                    <p class="text-muted mb-0"> <a href="mailto:odisha@jktilesmachinerynoida.com">odisha@jktilesmachinerynoida.com</a></p>
                                 </div>
                             </div>
                         </div>

@@ -12,35 +12,32 @@ if (isset($_POST['delete_btn_set'])) {
     $query = mysqli_query($conn, $delete);
 }
 ?>
-<?php
-if ($status) {
+<div class="content-body my-5 height-100 bg-light p-4" id="main">
+    <div class="container-fluid">
+        <div class="card mt-5 mb-3">
+            <form class="mt-5" method="post" action="home-slider.php" enctype="multipart/form-data">
+                <?php
 
-    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Hurry !!!!</strong> Login Successfully.
+                if ($status) {
+
+                    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Hurry !!!!</strong> Your Image uploaded successfully.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>';
-}
+                }
 
-if ($statusMsg) {
+                if ($statusMsg) {
 
-    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
         <strong>Error</strong> ' . $statusMsg . '
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>';
-}
-?>
-
-
-<div class="content-body my-5 height-100 bg-light" id="main">
-    <!-- row -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <form class="mt-4" method="post" action="home-slider.php" enctype="multipart/form-data" id="hide">
+                }
+                ?>
                     <div class="row">
                         <div class="col-md-5 col-sm-6">
                             <div class="form-group">

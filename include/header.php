@@ -1,6 +1,6 @@
 <?php
 include './admin/partials/db_connect.php';
-$tab_query = "SELECT * FROM categories ORDER BY cat_id ASC";
+$tab_query = "SELECT * FROM `categories` ORDER BY `categories`.`cat_id` ASC";
 $tab_result = mysqli_query($conn, $tab_query);
 $tab_menu = '';
 $tab_content = '';
@@ -37,7 +37,7 @@ while ($row = mysqli_fetch_array($tab_result)) {
    
   ';
     }
-    $tab_content .= '</div></div>';
+    $tab_content .= '</div><div style="clear:both clearfix"></div></div>';
     $i++;
 }
 ?>
@@ -67,11 +67,11 @@ while ($row = mysqli_fetch_array($tab_result)) {
                         <div class="top_header_area text-right">
                             <p>
                                 <a href="tel:+91-78271 12429"><i class="fas fa-phone-alt color_blue_font_17 icon space-right-5 text-dark"></i><span class="text-dark">+91-78271 12429 </span>&nbsp;</a>
-                                <a href="#" target="_blank"><i class="fa fa-facebook text-dark" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-twitter bo-social-twitter text-dark">&nbsp;</i></a>
-                                <a href="#" target="_blank"><i class="fa fa-linkedin bo-social-linkedin text-dark">&nbsp;</i></a>
-                                <a href="#" target="_blank"><i class="fa fa-instagram bo-social-instagram text-dark">&nbsp;</i></a>
-                                <a href="#" target="_blank"><i class="fa fa-youtube bo-social-youtube text-dark">&nbsp;</i></a>
+                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-twitter bo-social-twitter">&nbsp;</i></a>
+                                <a href="#" target="_blank"><i class="fa fa-linkedin bo-social-linkedin">&nbsp;</i></a>
+                                <a href="#" target="_blank"><i class="fa fa-instagram bo-social-instagram">&nbsp;</i></a>
+                                <a href="#" target="_blank"><i class="fa fa-youtube bo-social-youtube">&nbsp;</i></a>
                             </p>
                         </div>
                     </div>
@@ -99,8 +99,9 @@ while ($row = mysqli_fetch_array($tab_result)) {
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item contact_btn1" href="Noida.php">Noida Branch</a>
                                     <a class="dropdown-item contact_btn2" href="Assam.php">Assam Branch</a>
-                                    <a class="dropdown-item contact_btn3" href="Odisha.php">Odisha Branch</a>
                                     <a class="dropdown-item contact_btn4" href="Hyderabad.php">Hyderabad Branch</a>
+                                    <a class="dropdown-item contact_btn3" href="Odisha.php">Bhuneswar Branch</a>
+
                                 </div>
                             </li>
                         </ul>
@@ -146,12 +147,10 @@ while ($row = mysqli_fetch_array($tab_result)) {
                                             ?>
                                         </div>
                                         <div class="tab_content">
-                                                <?php
-                                                echo $tab_content;
-                                                ?>
+                                            <?php
+                                            echo $tab_content;
+                                            ?>
                                         </div>
-
-                                        <div class="clearfix"></div>
                                     </div>
                                 </div>
                             </div>
@@ -166,22 +165,15 @@ while ($row = mysqli_fetch_array($tab_result)) {
                                 $num = mysqli_num_rows($result);
                                 while ($row = mysqli_fetch_array($result)) {
                                 ?>
-                                    <a class="dropdown-item contact_btn1" href="hydraulicmachine.php?id=<?php echo $row['id'] ?>"><?php echo $row['title'] ?> <br>
+                                    <a class="dropdown-item contact_btn1" href="hydraulicmachine.php?id=<?php echo $row['id'] ?>">
+                                        <?php echo $row['title'] ?> <br>
                                         <p style="font-size:18px; font-weight:600; color:gray"><?php echo $row['cat'] ?></p>
                                     </a>
                                 <?php
                                 }
                                 ?>
-
-                                <!-- <a class="dropdown-item contact_btn2" href="products.php">Hydraulic Cement & Flyash</a>
-                                <a class="dropdown-item contact_btn3" href="products.php">JK Multi Purpose Hydrulic</a>
-                                <a class="dropdown-item contact_btn4" href="products.php">JK Semi-auto Double Station</a> -->
                             </div>
                         </li>
-
-                        <!--<li class="nav-item">-->
-                        <!--    <a class="nav-link btn accent-solid-btn btn-dark" href="#" data-toggle="modal" data-target="#exampleModal">Enquiry Now</a>-->
-                        <!--</li>-->
                         <button class="btn accent-solid-btn btn-dark " data-toggle="modal" data-target="#exampleModal">Enquiry Now</button>
                         <button class="btn accent-solid-btn btn-dark"><a href="img/jk.pdf" target="_blank">Download Brochure <span class="fa fa-download"></span></a> </button>
                     </ul>
@@ -192,11 +184,10 @@ while ($row = mysqli_fetch_array($tab_result)) {
 </header>
 
 <!--header section end-->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
     function openCity(evt, cityName) {
-
         var i, tabcontent, tablinks, city;
         tabcontent = document.getElementsByClassName("tab-content");
         for (i = 0; i < tabcontent.length; i++) {
@@ -222,15 +213,93 @@ while ($row = mysqli_fetch_array($tab_result)) {
                     <span aria-hidden="true" class="text-white">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="get-in-touch-list mt-2">
+                        <li class="text-center">
+                            <button class="btn btn-success">Noida</button>
+                            <button class="btn btn-success">Guwahati</button>
+                            <button class="btn btn-success">Hyderabad</button>
+                            <button class="btn btn-success">Bhuneswar</button>
+                        </li>
+                </div>
+            </div>
+            <div class="content mt-2">
+                <div class="container">
+                    <div class="row align-items-stretch no-gutters contact-wrap">
+                        <div class="col-md-4">
+                            <div class="contact_info h-100">
+                                <ul class="list-unstyled">
+                                    <div class="info_form text-center">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <li class="d-flex1 align-items-center bold text-white py-2">Near Pradhan Mkt Vill Sarfabad Sector-73 Noida Gautam Buddha Nagar, Noida - 201304, Gautam Budh Nagar, Uttar Pradesh, India</li>
+                                    </div>
+                                    <div class="info_form text-center">
+                                        <i class="fas fa-envelope"></i>
+                                        <li class="d-flex1 align-items-center py-2"><a href="mailto:info@jktilesmachinery.com" class=" bold text-white">info@jktilesmachinery.com</a> </li>
+                                    </div>
+                                    <div class="info_form text-center">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <li class="d-flex1 align-items-center bold text-white py-2"><a href="tel:+91-7827112429" class=" bold text-white">+91-78271 12429</a></li>
+                                    </div>
+                                    <div class="info_form text-center">
+                                        <i class="fa fa-whatsapp"></i>
+                                        <li class="d-flex1 align-items-center bold text-white py-2"><a href="https://api.whatsapp.com/send?phone=7777000006&amp;text=hi..." class=" bold text-white">+91-7777000006</a> </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form h-100">
+                                <h3>ENQUIRY NOW</h3>
+                                <form action="#" method="POST" id="contactForm1" class="contact-us-form" novalidate="novalidate">
+                                    <div class="form-row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="name" placeholder="Enter name" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="email" placeholder="Enter email" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control" name="phone" placeholder="Enter Phone" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="subject" placeholder="Enter Subject" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn accent-solid-btn btn-dark ml-1" id="btnContactUs">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="get-in-touch-list">
                             <li>
                                 <button class="btn btn-success">Noida</button>
                                 <button class="btn btn-success">Guwahati</button>
-                                <button class="btn btn-success">Odisha</button>
                                 <button class="btn btn-success">Hyderabad</button>
+                                <button class="btn btn-success">Bhuneswar</button>  
                             </li>
                             <li class="d-flex1 align-items-center bold text-white py-2"><span class="fas fa-map-marker-alt mr-2"></span>Near Pradhan Mkt Vill Sarfabad Sector-73 Noida Gautam Buddha Nagar, Noida - 201304, Gautam Budh Nagar, Uttar Pradesh, India</li>
                             <li class="d-flex1 align-items-center py-2"><span class="fas fa-envelope mr-2"></span> <a href="mailto:info@jktilesmachinery.com" class=" bold text-white">info@jktilesmachinery.com</a> </li>
@@ -272,12 +341,7 @@ while ($row = mysqli_fetch_array($tab_result)) {
                         </form>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer justify-content-center">
-                <button type="submit" class="btn accent-solid-btn btn-dark" id="btnContactUs">
-                    Send Message
-                </button>
-            </div>
-        </div>
+            </div> -->
     </div>
+</div>
 </div>

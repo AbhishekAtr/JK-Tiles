@@ -12,14 +12,14 @@
                                    <img src="../img/team-1.png" alt="Profile image" class="img-xs rounded-circle">
                                </a>
                                <div aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-right navbar-dropdown">
-                                   <a class="dropdown-item mt-2" href="#"> 
+                                   <!-- <a class="dropdown-item mt-2" href="#"> 
                                    <i class="fa fa-cog mr-3" aria-hidden="true"></i>
                                    <span class="nav_name">Manage Accounts  </span>
-                                   </a>
-                                   <a class="dropdown-item" href="#"> 
+                                   </a> -->
+                                   <!-- <a class="dropdown-item" href="#"> 
                                    <i class="fa fa-unlock mr-3" aria-hidden="true"></i>
                                    <span class="nav_name">Change Password </span>
-                                   </a>
+                                   </a> -->
                                    <a href="logout.php" class="dropdown-item">
                                        <i class='fa fa-sign-out  sign mr-3'></i>
                                        <span class="nav_name">SignOut</span>
@@ -36,38 +36,38 @@
                    <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse pt-4" id="navbarsExampleDefault">
-                   <ul class="navbar-nav p-2">
-                       <!-- <li class="nav-item">
+                   <ul class="navbar-nav p-2" id="nav">
+                       <li class="nav-item">
                            <a href="home-slider.php" class="nav-link active">
                                <i class='fa fa-home nav_icon mr-3'></i>
                                <span class="nav_name">Home-Slider</span>
                            </a>
-                       </li> -->
-                       <li class="nav-item">
-                           <a href="products.php" class="nav-link active">
+                       </li>
+                       <li class="nav-item active">
+                           <a href="products.php" class="nav-link">
                                <i class='fa fa-shopping-cart nav_icon mr-3'></i>
                                <span class="nav_name">Products</span>
                            </a>
                        </li>
-                       <li class="nav-item">
+                       <li class="nav-item active">
                            <a href="categories.php" class="nav-link">
                                <i class='fa fa-bookmark nav_icon mr-3'></i>
                                <span class="nav_name">Categories</span>
                            </a>
                        </li>
-                       <li class="nav-item">
+                       <li class="nav-item active">
                            <a href="gallery.php" class="nav-link">
                                <i class='fa fa-picture-o nav_icon mr-3'></i>
                                <span class="nav_name">Gallery</span>
                            </a>
                        </li>
-                       <li class="nav-item">
+                       <li class="nav-item active">
                            <a href="blog.php" class="nav-link">
                                <i class='fa fa-rss-square nav_icon mr-3'></i>
                                <span class="nav_name">Blog</span>
                            </a>
                        </li>
-                       <li class="nav-item">
+                       <li class="nav-item active">
                            <a href="hydraulic.php" class="nav-link">
                                <i class='fa fa-car nav_icon mr-3'></i>
                                <span class="nav_name">Hydraulic Machine</span>

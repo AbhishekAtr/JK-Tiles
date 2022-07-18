@@ -67,7 +67,7 @@
             <div class="row text-center offset-md-1">
                 <div class="col-md-2">
                     <div class="card border-0 card-hover">
-                        <img src="img/promo-img-2.svg" class="card-img-top" alt="..." height="250">
+                        <img src="img/fabrication.jpg" class="card-img-top" alt="..." height="250">
                         <div class="card-body">
                             <h5 class="card-title">Fabrication</h5>
                             <p class="card-text">We have a team of skilled fabricators which helps us manufacture good finished products.
@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="card border-0 card-hover">
-                        <img src="img/promo-img-2.svg" class="card-img-top" alt="..." height="250">
+                        <img src="img/Assembly.jpg" class="card-img-top" alt="..." height="250">
                         <div class="card-body">
                             <h5 class="card-title">Assembly</h5>
                             <p class="card-text">JK TILES MACHINERY Machines are manufactured and critical parts are assembled by a highly
@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="card border-0 card-hover">
-                        <img src="img/promo-img-2.svg" class="card-img-top" alt="..." height="250">
+                        <img src="img/testing.jpg" class="card-img-top" alt="..." height="250">
                         <div class="card-body">
                             <h5 class="card-title">Testing</h5>
                             <p class="card-text">We understand that proper testing increases the performance, accuracy and efficiency of a machine.
@@ -101,7 +101,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="card border-0 card-hover">
-                        <img src="img/promo-img-2.svg" class="card-img-top" alt="..." height="250">
+                        <img src="img/packaging.jpg" class="card-img-top" alt="..." height="250">
                         <div class="card-body">
                             <h5 class="card-title">Packaging</h5>
                             <p class="card-text">We ensure sturdy and reliable packaging which ensures that machine is not damaged during transport, handling and
@@ -112,7 +112,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="card border-0 card-hover">
-                        <img src="img/promo-img-2.svg" class="card-img-top" alt="..." height="250">
+                        <img src="img/dispatch.jpg" class="card-img-top" alt="..." height="250">
                         <div class="card-body">
                             <h5 class="card-title">Dispatch</h5>
                             <p class="card-text">We are well connected to transportation handlers for a timely and reliable dispatch for our clients.</p>

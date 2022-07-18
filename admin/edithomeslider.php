@@ -79,7 +79,6 @@ if ($statusMsg) {
     </div>';
 }
 ?>
-<div class="content-body my-5 height-100 bg-light" id="main">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-right mt-5">
@@ -119,5 +118,4 @@ if ($statusMsg) {
             </div>
         </div>
     </div>
-</div>
 <?php include "include/js-url.php"; ?>

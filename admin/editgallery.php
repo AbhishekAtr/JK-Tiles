@@ -79,7 +79,6 @@ $id = $_GET['id'];
 $query = mysqli_query($conn, "SELECT * from `gallery` where id='$id'");
 $row = mysqli_fetch_array($query);
 ?>
-<div class="content-body my-5 height-100 bg-light" id="main">
     <div class="container">
         <div class="card mt-5 mb-3 p-4">
             <div class="row">
@@ -119,5 +118,5 @@ $row = mysqli_fetch_array($query);
             </form>
         </div>
     </div>
-</div>
+
 <?php include "include/js-url.php"; ?>

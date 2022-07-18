@@ -85,7 +85,6 @@ if ($statusMsg) {
     </div>';
 }
 ?>
-<div class="content-body my-5 height-100 bg-light" id="main">
 
     <div class="container">
         <div class="card mt-5 mb-3 p-4">
@@ -180,6 +179,5 @@ if ($statusMsg) {
             </div>
         </div>
     </div>
-</div>
 
 <?php include "include/js-url.php"; ?>

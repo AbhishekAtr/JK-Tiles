@@ -1,5 +1,5 @@
   
-           <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+           <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background:#323a79;">
                <div class="container-fluid">
                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                        <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
                    </div>
                </div>
            </nav>
-           <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-left">
+           <nav class="navbar navbar-expand-md navbar-dark fixed-left" style="background:#323a79;">
                <a class="navbar-brand" href><img src="../img/jk-logo.jpg" style="width: 100%;"></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>

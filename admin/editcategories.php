@@ -87,8 +87,8 @@ $query = mysqli_query($conn, "SELECT * from `categories` where cat_id='$id'");
 $row = mysqli_fetch_array($query);
 ?>
 <div class="content-body my-5 height-100 bg-light" id="main">
-    <div class="container-fluid">
-        <div class="card p-4">
+    <div class="container">
+        <div class="card mt-5 mb-3 p-4">
             <div class="row">
                 <div class="col-md-12 text-right">
                     <a href="categories.php">
@@ -98,13 +98,13 @@ $row = mysqli_fetch_array($query);
             </div>
             <form method="post" action="editcategories.php?id=<?php echo $id; ?>" enctype="multipart/form-data">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="form-group">
                             <label for="category" class="control-label">Category Name <sup class="mandatory">*</sup></label>
                             <input type="text" class="form-control" value="<?php echo $row['cat_title']; ?>" name="category" placeholder="Enter category name">
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                     <div class="form-group">
                         <label for="cat_desc" class="control-label">Category ID <sup class="mandatory">*</sup></label>
                         <input type="number" class="form-control" id="slug" name="slug" placeholder="Enter id" maximum="2" minimum="1" value="<?php echo $row['slug']; ?>">
@@ -113,11 +113,15 @@ $row = mysqli_fetch_array($query);
                     <div class="col-md-2 col-sm-6">
                         <label></label>
                         <div class="input-group mt-2">
-                            <button type="submit" name="c_update" title="Submit" class="btn btn-warning btn-block">Update Category</button>
-                            <!-- <button type="button" title="Cancel" class="btn btn-danger mr-lf-2-per" ng-click="cancel()">Cancel</button> -->
+                            <button type="submit" name="c_update" title="Submit" class="btn btn-success btn-block">Update Category</button>
                         </div>
                     </div>
-
+                    <div class="col-md-2 col-sm-6">
+                        <label></label>
+                        <div class="input-group mt-2">
+                            <a href="categories.php" name="c_update" title="Submit" class="btn btn-danger btn-block">Cancel</a>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>

@@ -63,8 +63,8 @@ if (isset($_POST['delete_btn_set'])) {
 
 
 
-<div class="content-body my-5 height-100 bg-light p-4" id="main">
-    <div class="container-fluid">
+
+    <div class="container">
         <div class="card mt-5 mb-3">
             <form class="mt-5" method="post" action="products.php" enctype="multipart/form-data">
                 <?php
@@ -148,14 +148,14 @@ if (isset($_POST['delete_btn_set'])) {
                     <div class="col-md-12 my-2">
                         <textarea id="mytextarea" class="form-control" rows="5" placeholder="Description" spellcheck="false" name="p_desc"> </textarea>
                     </div>
-                    <div class="col-md-1 mt-2">
+                    <div class="col-md-2 mt-2">
                         <div class="form-group">
                             <div class="input-group mt-4">
-                                <button type="submit" name="p_insert" title="Submit" class="btn btn-warning btn-block">Upload</button>
+                                <button type="submit" name="p_insert" title="Submit" class="btn btn-success btn-block">Add Products</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-1 mt-2">
+                    <div class="col-md-2 mt-2">
                         <div class="form-group">
                             <div class="input-group mt-4">
                                 <a href="products.php" name="cancel" title="cancel" class="btn btn-danger btn-block">Cancel</a>
@@ -166,13 +166,13 @@ if (isset($_POST['delete_btn_set'])) {
             </form>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-hover">
+                            <table class="table table-hover" id="employee_data">
                                 <thead>
                                     <tr>
                                         <th>S.no</th>
@@ -186,16 +186,8 @@ if (isset($_POST['delete_btn_set'])) {
                                 <tbody>
 
                                     <?php
-
                                     include 'partials/db_connect.php';
-                                    if (isset($_GET['pageno'])) {
-                                        $pageno = $_GET['pageno'];
-                                    } else {
-                                        $pageno = 1;
-                                    }
-                                    $no_of_records_per_page = 6;
-                                    $offset = ($pageno - 1) * $no_of_records_per_page;
-                                    $sql = "SELECT * FROM products LIMIT $offset, $no_of_records_per_page";
+                                    $sql = "SELECT * FROM products";
                                     if (mysqli_query($conn, $sql)) {
                                         echo "";
                                     } else {
@@ -239,32 +231,8 @@ if (isset($_POST['delete_btn_set'])) {
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 col-lg-12 mt-4">
-                <div class="dataTables_paginate paging_simple_numbers" id="order-listing_paginate">
-                    <?php
-
-                    $total_pages_sql = "SELECT * FROM products";
-                    $result = mysqli_query($conn, $total_pages_sql);
-                    $total_rows = mysqli_num_rows($result);
-                    $total_pages = ceil($total_rows / $no_of_records_per_page);
-                    /* echo  $total_pages; */
-                    $pagLink = "<nav aria-label='Page navigation example'><ul class='pagination'> 
-                    <li class='page-item'><a class='page-link' href='products.php?pageno=" . ($pageno - 1) . "'>Previous</a></li>";
-                    for ($i = 1; $i <= $total_pages; $i++) {
-                        $pagLink .= "
-                       
-                        <li class='page-item'><a class='page-link' href='products.php?pageno=" . $i . "'>" . $i . "</a></li>
-                        ";
-                    }
-                    echo $pagLink . "<li class='page-item'><a class='page-link' href='products.php?pageno=" . ($pageno + 1) . "'>Next</a></li></ul></nav>";
-                    ?>
-
-                </div>
-            </div>
-        </div>
     </div>
-</div>
+
 
 
 <?php include "include/js-url.php"; ?>

@@ -87,7 +87,7 @@ if ($statusMsg) {
 ?>
 <div class="content-body my-5 height-100 bg-light" id="main">
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="card mt-5 mb-3 p-4">
             <div class="row">
                 <div class="col-md-12 text-right">
@@ -161,20 +161,20 @@ if ($statusMsg) {
                         <div class="col-md-12">
                             <textarea id="mytextarea" class="form-control" rows="5" placeholder=" " spellcheck="false" name="p_desc"><?php echo $row['product_desc']; ?> </textarea>
                         </div>
-                        <div class="col-md-1 mt-2">
+                        <div class="col-md-2 mt-2">
                             <div class="form-group">
                                 <div class="input-group  mt-4">
-                                    <button type="submit" name="p_insert" title="Submit" class="btn btn-info btn-block">Upload</button>
+                                    <button type="submit" name="p_insert" title="Submit" class="btn btn-success btn-block">Update</button>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-md-1 mt-2">
+                        <div class="col-md-2 mt-2">
                             <div class="form-group">
                                 <div class="input-group mt-4">
-                                    <a href="editproducts.php" name="cancel" title="cancel" class="btn btn-danger btn-block">Cancel</a>
+                                    <a href="products.php" class="btn btn-danger btn-block">Cancel</a>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </form>
             </div>

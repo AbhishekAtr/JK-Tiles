@@ -73,170 +73,126 @@ include "partials/sidebar.php";
 ?>
 
 
-<div class="content-body my-5 height-100 bg-light p-4" id="main">
-    <div class="container-fluid">
-        <div class="card mt-5 mb-3">
-            <form class="m-4" method="post" action="categories.php" enctype="multipart/form-data">
-                <?php
 
-                if ($showAlert) {
+<div class="container">
+    <div class="card mt-5 mb-3">
+        <form class="m-4" method="post" action="categories.php" enctype="multipart/form-data">
+            <?php
 
-                    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Hurry !!!!</strong> Your data is insert successfully.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>';
-                }
+            if ($showAlert) {
 
-                if ($showError) {
+                echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Hurry !!!!</strong> Your data is insert successfully.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>';
+            }
 
-                    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Error</strong> ' . $showError . '
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>';
-                }
-                ?>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="form-group">
-                            <label for="category" class="control-label">Category Name <sup class="mandatory">*</sup></label>
-                            <input type="text" class="form-control" id="category" name="category" placeholder="Enter category name" required>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="form-group">
-                            <label for="cat_desc" class="control-label">Category ID <sup class="mandatory">*</sup></label>
-                            <input type="number" class="form-control" id="slug" name="slug" placeholder="Enter id" maximum="2" minimum="1" required>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-4 col-sm-6">
+            if ($showError) {
+
+                echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Error</strong> ' . $showError . '
+                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                       </button>
+                   </div>';
+            }
+            ?>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
                     <div class="form-group">
-                        <label>Image (png,jpeg,jpg) (1920x800 in pixel, Max size 1MB)<sup class="mandatory">*</sup> </label>
-                        <div class="input-group mb-3">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="c_image" name="c_image" file-input="packageFile" accept=".jpg, .jpeg, .png" required>
-                                <label class="custom-file-label">Choose file</label>
-                            </div>
-                        </div>
+                        <label for="category" class="control-label">Category Name <sup class="mandatory">*</sup></label>
+                        <input type="text" class="form-control" id="category" name="category" placeholder="Enter category name" required>
                     </div>
-                </div> -->
-                    <div class="col-md-2 col-sm-6">
-                        <label></label>
-                        <div class="input-group mr-tp-1-per">
-                            <button type="submit" name="c_insert" title="Submit" class="btn btn-warning btn-block">Add Category</button>
-                            <!-- <button type="button" title="Cancel" class="btn btn-danger mr-lf-2-per" ng-click="cancel()">Cancel</button> -->
-                        </div>
-                    </div>
-
                 </div>
-            </form>
-        </div>
-    </div>
-
-
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="card ">
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table  table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>S.no</th>
-                                        <th>Name</th>
-                                        <!-- <th>Image</th>
-                                        <th>Description</th> -->
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <?php
-
-                                    include 'partials/db_connect.php';
-                                    if (isset($_GET['pageno'])) {
-                                        $pageno = $_GET['pageno'];
-                                    } else {
-                                        $pageno = 1;
-                                    }
-                                    $no_of_records_per_page = 6;
-                                    $offset = ($pageno - 1) * $no_of_records_per_page;
-                                    $sql = "SELECT * FROM `categories` LIMIT $offset, $no_of_records_per_page";
-                                    if (mysqli_query($conn, $sql)) {
-                                        echo "";
-                                    } else {
-                                        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                                    }
-                                    $count = 1;
-                                    $result = mysqli_query($conn, $sql);
-                                    if (mysqli_num_rows($result) > 0) {
-
-                                        while ($row = mysqli_fetch_array($result)) { ?>
-
-                                            <tr>
-                                                <td><?php echo $count; ?></td>
-
-                                                <td><?php echo $row['cat_title']; ?></td>
-                                                <!-- <td>
-                                                    <img src="<?php echo $row['cat_img']; ?>" alt="" width="100" height="100">
-                                                </td>
-                                                <td><?php echo $row['cat_desc']; ?></td> -->
-                                                <td>
-                                                    <input type="hidden" class="delete_id_value" value="<?php echo $row['cat_id'] ?>">
-                                                    <a href='editcategories.php?id=<?php echo $row['cat_id'] ?>' type="button" class="btn btn-primary mr-1"><i class="fa fa-edit"></i>
-                                                        <a href="javascript:void(0)" class="btn btn-danger delete_data"><i class="fa fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-
-                                    <?php
-                                            $count++;
-                                        }
-                                    } else {
-                                        echo '0 results';
-                                    }
-                                    ?>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div style="margin: 10px;">
-                            <dir-pagination-controls class="pull-right pagination" max-size="8" direction-links="true" boundary-links="true"></dir-pagination-controls>
-                        </div>
-
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <label for="cat_desc" class="control-label">Category ID <sup class="mandatory">*</sup></label>
+                        <input type="number" class="form-control" id="slug" name="slug" placeholder="Enter id" maximum="2" minimum="1" required>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <div class="input-group mr-tp-1-per">
+                        <button type="submit" name="c_insert" title="Submit" class="btn btn-success btn-block">Add Category</button>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <div class="input-group mr-tp-1-per">
+                        <a href="" class="btn btn-danger btn-block">Cancel</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-lg-12 mt-4">
-                <div class="dataTables_paginate paging_simple_numbers" id="order-listing_paginate">
-                    <?php
+        </form>
+    </div>
+</div>
 
-                    $total_pages_sql = "SELECT * FROM categories";
-                    $result = mysqli_query($conn, $total_pages_sql);
-                    $total_rows = mysqli_num_rows($result);
-                    $total_pages = ceil($total_rows / $no_of_records_per_page);
-                    /* echo  $total_pages; */
-                    $pagLink = "<nav aria-label='Page navigation example'><ul class='pagination'> 
-                    <li class='page-item'><a class='page-link' href='categories.php?pageno=" . ($pageno - 1) . "'>Previous</a></li>";
-                    for ($i = 1; $i <= $total_pages; $i++) {
-                        $pagLink .= "
-                       
-                        <li class='page-item'><a class='page-link' href='categories.php?pageno=" . $i . "'>" . $i . "</a></li>
-                        ";
-                    }
-                    echo $pagLink . "<li class='page-item'><a class='page-link' href='categories.php?pageno=" . ($pageno + 1) . "'>Next</a></li></ul></nav>";
-                    ?>
 
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card ">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table  table-hover" id="employee_data">
+                            <thead>
+                                <tr>
+                                    <th>S.no</th>
+                                    <th>Name</th>
+                                    <!-- <th>Image</th>
+                                        <th>Description</th> -->
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <?php
+
+                                include 'partials/db_connect.php';
+                                $sql = "SELECT * FROM `categories`";
+                                if (mysqli_query($conn, $sql)) {
+                                    echo "";
+                                } else {
+                                    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                                }
+                                $count = 1;
+                                $result = mysqli_query($conn, $sql);
+                                if (mysqli_num_rows($result) > 0) {
+
+                                    while ($row = mysqli_fetch_array($result)) { ?>
+
+                                        <tr>
+                                            <td><?php echo $count; ?></td>
+
+                                            <td><?php echo $row['cat_title']; ?></td>
+                                            <!-- <td>
+                                                    <img src="<?php echo $row['cat_img']; ?>" alt="" width="100" height="100">
+                                                </td>
+                                                <td><?php echo $row['cat_desc']; ?></td> -->
+                                            <td>
+                                                <input type="hidden" class="delete_id_value" value="<?php echo $row['cat_id'] ?>">
+                                                <a href='editcategories.php?id=<?php echo $row['cat_id'] ?>' type="button" class="btn btn-primary mr-1"><i class="fa fa-edit"></i>
+                                                    <a href="javascript:void(0)" class="btn btn-danger delete_data"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+
+                                <?php
+                                        $count++;
+                                    }
+                                } else {
+                                    echo '0 results';
+                                }
+                                ?>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <?php include "include/js-url.php"; ?>
 
 <?php include "include/deletemodal.php"; ?>

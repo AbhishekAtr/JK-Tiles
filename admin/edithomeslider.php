@@ -80,17 +80,13 @@ if ($statusMsg) {
 }
 ?>
 <div class="content-body my-5 height-100 bg-light" id="main">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-12 text-right mt-5">
                 <a href="home-slider.php">
-                <i class="fa fa-arrow-left text-success"></i>
+                    <i class="fa fa-arrow-left text-success"></i>
                 </a>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
             <div class="col-md-12">
                 <form class="mt-4" method="post" action="edithomeslider.php?id=<?php echo $id; ?>" enctype="multipart/form-data">
                     <div class="row">
@@ -114,10 +110,10 @@ if ($statusMsg) {
                         <div class="col-md-1 col-sm-6">
                             <label></label>
                             <div class="input-group mb-3 mt-2">
-                                <button type="submit" name="update" title="Submit" class="btn btn-warning btn-block mb-4">Update</button>
+                                <button type="submit" name="update" title="Submit" class="btn btn-success btn-block mb-4">Update</button>
                             </div>
                         </div>
-                        
+
                     </div>
                 </form>
             </div>

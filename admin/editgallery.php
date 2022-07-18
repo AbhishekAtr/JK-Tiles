@@ -80,8 +80,8 @@ $query = mysqli_query($conn, "SELECT * from `gallery` where id='$id'");
 $row = mysqli_fetch_array($query);
 ?>
 <div class="content-body my-5 height-100 bg-light" id="main">
-    <div class="container-fluid">
-        <div class="card p-4">
+    <div class="container">
+        <div class="card mt-5 mb-3 p-4">
             <div class="row">
                 <div class="col-md-12 text-right">
                     <a href="gallery.php">
@@ -105,11 +105,16 @@ $row = mysqli_fetch_array($query);
                     <div class="col-md-2 col-sm-6">
                         <label></label>
                         <div class="input-group mt-2">
-                            <button type="submit" name="c_update" title="Submit" class="btn btn-warning btn-block">Update Category</button>
+                            <button type="submit" name="c_update" title="Submit" class="btn btn-success btn-block">Update Category</button>
                             <!-- <button type="button" title="Cancel" class="btn btn-danger mr-lf-2-per" ng-click="cancel()">Cancel</button> -->
                         </div>
                     </div>
-
+                    <div class="col-md-2 col-sm-6">
+                        <label></label>
+                        <div class="input-group mt-2">
+                            <a href="gallery.php" name="c_update" title="Submit" class="btn btn-danger btn-block">Cancel</a>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>

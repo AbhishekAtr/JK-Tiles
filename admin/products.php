@@ -9,7 +9,6 @@ $statusMsg = false;
 if (isset($_POST["p_insert"])) {
     $product_title = $_POST['p_name'];
     $product_cat = $_POST['p_cat'];
-    $product_qty = $_POST['p_qty'];
     $product_desc = $_POST['p_desc'];
     $cat_id = $_POST['c_id'];
     $status = 'error';
@@ -31,7 +30,7 @@ if (isset($_POST["p_insert"])) {
 
             if (move_uploaded_file($image, $destinationfile)) {
                 // Insert image content into database
-                $insert = "INSERT INTO `products`( `product_cat`, `product_title`, `product_qty`, `product_desc`, `product_img`, `p_id`) VALUES ('$product_cat','$product_title','$product_qty','$product_desc','$destinationfile', ' $cat_id')";
+                $insert = "INSERT INTO `products`( `product_cat`, `product_title`, `product_desc`, `product_img`, `p_id`) VALUES ('$product_cat','$product_title','$product_desc','$destinationfile', ' $cat_id')";
                 $smt = $conn->prepare($insert);
                 $smt->execute();
                 if ($insert) {

@@ -9,6 +9,8 @@ include 'partials/db_connect.php';
     $statusMsg = false;
     
     if (isset($_POST["c_update"])) {
+        $id = $_GET['id'];
+        $cat = $_POST['p_title'];
         $status = 'error';
         if (!empty($_FILES["p_image"]["name"])) {
     
@@ -28,7 +30,7 @@ include 'partials/db_connect.php';
     
                 if (move_uploaded_file($image, $destinationfile)) {
                     // Insert image content into database
-                    $insert = "UPDATE `gallery` SET  `image_url` = '$destinationfile' WHERE  `id` = '$Id'";
+                    $insert = "UPDATE `gallery` SET  `image_url` = '$destinationfile', `slug` = '$cat' WHERE  `id` = '$Id'";
                     $smt = $conn->prepare($insert);
                     $smt->execute();
                     if ($insert) {
@@ -90,7 +92,7 @@ $row = mysqli_fetch_array($query);
             </div>
             <form method="post" action="editgallery.php?id=<?php echo $id; ?>" enctype="multipart/form-data">
                 <div class="row">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-6 col-sm-6">
                     <div class="form-group">
                         <label for="image" class="control-label">Product Image <sup class="mandatory">*</sup></label>
                         <div class="input-group mb-3">
@@ -101,6 +103,16 @@ $row = mysqli_fetch_array($query);
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="image" class="control-label">Category <sup class="mandatory">*</sup></label>
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="text" class="form-control" value="<?php echo $row['slug']; ?>" id="p_title" name="p_title" placeholder="enter category here"  required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-2 col-sm-6">
                         <label></label>
                         <div class="input-group mt-2">

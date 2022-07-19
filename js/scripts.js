@@ -271,6 +271,8 @@ jQuery(function($) {
     $('.clients-carousel').owlCarousel({
         autoplay: true,
         loop: true,
+        slidesToScroll: 1,
+        slidesToShow: 6,
         margin: 15,
         dots: false,
         slideTransition: 'linear',
@@ -296,6 +298,7 @@ jQuery(function($) {
 
         }
     });
+
 
 
     $('.partners').owlCarousel({

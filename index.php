@@ -183,10 +183,12 @@ include './admin/partials/db_connect.php';
                         <img src="img/products/about.png" alt="video" class="img-fluid">
                     </div> -->
                         <div class="card border-0 text-white">
-                            <img src="img/service/1C- FULLY AUTOMATIC PAVER.png" alt="video" class="img-fluid rounded">
+                        <iframe width="543" height="315" src="https://www.youtube.com/embed/V6t69rrrfiI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <!-- <img src="img/service/1C- FULLY AUTOMATIC PAVER.png" alt="video" class="img-fluid rounded">
                             <div class="card-img-overlay text-center">
+
                                 <a href="https://www.youtube.com/watch?v=V6t69rrrfiI"  class="popup-youtube video-play-icon color-bip shadow"><span class="ti-control-play"></span> </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -201,7 +203,7 @@ include './admin/partials/db_connect.php';
                     <div class="col-md-12">
                         <div class="owl-carousel owl-theme clients-carousel dot-indicator">
                             <?php
-                            $sql = "SELECT * from `products`";
+                            $sql = "SELECT * from `gallery` where `slug` = 'products'";
                             if (mysqli_query($conn, $sql)) {
                                 echo "";
                             } else {
@@ -213,7 +215,7 @@ include './admin/partials/db_connect.php';
                                 while ($row = mysqli_fetch_array($result)) {
                             ?>
                                     <div class="item single-client w-100">
-                                        <img src="<?php echo $url . $row['product_img'] ?>" alt="client logo" class="client-img w-100">
+                                        <img src="<?php echo $url . $row['image_url'] ?>" alt="client logo" class="client-img w-100">
                                     </div>
                             <?php }
                             } ?>
@@ -238,7 +240,7 @@ include './admin/partials/db_connect.php';
                 </div>
                 <div class="row">
                     <?php
-                    $sql = "SELECT * from `gallery`";
+                    $sql = "SELECT * from `gallery` where `slug` ='gallery'";
                     if (mysqli_query($conn, $sql)) {
                         echo "";
                     } else {

@@ -42,7 +42,7 @@
                             <h1 class="text-white mb-0">Blog</h1>
                             <div class="custom-breadcrumb">
                                 <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
                                     <li class="list-inline-item breadcrumb-item active">Blog</li>
                                 </ol>
                             </div>
@@ -67,116 +67,40 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <!-- <span class="category position-absolute badge badge-pill badge-primary">Lifestyle</span> -->
-                            <img src="img/blog/1.jpg" class="card-img-top position-relative" alt="blog">
-                            <div class="card-body">
-                                <h3 class="h5 mb-2 card-title"><a href="#">Appropriately productize fully</a></h3>
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item">Jan 21, 2019</li>
-                                        <li class="list-inline-item"><span>45</span> Comments</li>
-                                        <li class="list-inline-item"><span>10</span> Share</li>
-                                    </ul>
+                <?php
+                    $sql = "SELECT * from `blog`";
+                    if (mysqli_query($conn, $sql)) {
+                        echo "";
+                    } else {
+                        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                    }
+                    $count = 1;
+                    $result = mysqli_query($conn, $sql);
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_array($result)) {
+                    ?>
+                            <div class="col-md-4">
+                                <div class="single-blog-card card border-0 shadow-sm">
+                                    <span class="category position-absolute badge badge-pill badge-primary">Lifestyle</span>
+                                    <img src="<?php echo $url . $row['image_url'] ?>" class="card-img-top position-relative" alt="blog">
+                                    <div class="card-body">
+                                        <h3 class="h5 mb-2 card-title"><a href="blog-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['blog_title'] ?></a></h3>
+                                        <div class="post-meta mb-2">
+                                            <ul class="list-inline meta-list">
+                                                <li class="list-inline-item"><span class="fa fa-calendar mr-2"></span><?php echo $row['date'] ?></li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <!-- <p class="card-text" style="white-space: nowrap; overflow:hidden; text-overflow:ellipsis;"><?php echo  $row['description'] ?></p> -->
+                                        <a href="blog-detail.php?id=<?php echo $row['id'] ?>" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
+                                    </div>
                                 </div>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk.</p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
                             </div>
-                        </div>
+                    <?php }
+                    } ?>
                     </div>
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <!-- <span class="category position-absolute badge badge-pill badge-danger">Technology</span> -->
-                            <img src="img/blog/2.jpg" class="card-img-top position-relative" alt="blog">
-                            <div class="card-body">
-                                <h3 class="h5 mb-2 card-title"><a href="#">Quickly formulate backend</a></h3>
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item">May 26, 2019</li>
-                                        <li class="list-inline-item"><span>30</span> Comments</li>
-                                        <li class="list-inline-item"><span>5</span> Share</li>
-                                    </ul>
-                                </div>
-                                <p class="card-text">Synergistically engage effective ROI after customer directed partnerships.</p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <!-- <span class="category position-absolute badge badge-pill badge-info">Science</span> -->
-                            <img src="img/blog/3.jpg" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <h3 class="h5 mb-2 card-title"><a href="#">Objectively extend extensive</a></h3>
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item">Apr 25, 2019</li>
-                                        <li class="list-inline-item"><span>41</span> Comments</li>
-                                        <li class="list-inline-item"><span>30</span> Share</li>
-                                    </ul>
-                                </div>
-                                <p class="card-text">Holisticly mesh open-source leadership rather than proactive users. </p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <!-- <span class="category position-absolute badge badge-pill badge-primary">Lifestyle</span> -->
-                            <img src="img/blog/4.jpg" class="card-img-top position-relative" alt="blog">
-                            <div class="card-body">
-                                <h3 class="h5 mb-2 card-title"><a href="#">Intrinsicly provide access</a></h3>
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item">Jan 21, 2019</li>
-                                        <li class="list-inline-item"><span>45</span> Comments</li>
-                                        <li class="list-inline-item"><span>10</span> Share</li>
-                                    </ul>
-                                </div>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk.</p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <!-- <span class="category position-absolute badge badge-pill badge-danger">Technology</span> -->
-                            <img src="img/blog/5.jpg" class="card-img-top position-relative" alt="blog">
-                            <div class="card-body">
-                                <h3 class="h5 mb-2 card-title"><a href="#">Foster exceptional niches</a></h3>
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item">May 26, 2019</li>
-                                        <li class="list-inline-item"><span>30</span> Comments</li>
-                                        <li class="list-inline-item"><span>5</span> Share</li>
-                                    </ul>
-                                </div>
-                                <p class="card-text">Synergistically engage effective ROI after customer directed partnerships.</p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <!-- <span class="category position-absolute badge badge-pill badge-info">Science</span> -->
-                            <img src="img/blog/6.jpg" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <h3 class="h5 mb-2 card-title"><a href="#">Objectively customize cross</a></h3>
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item">Apr 25, 2019</li>
-                                        <li class="list-inline-item"><span>41</span> Comments</li>
-                                        <li class="list-inline-item"><span>30</span> Share</li>
-                                    </ul>
-                                </div>
-                                <p class="card-text">Holisticly mesh open-source leadership rather than proactive users. </p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
-
             </div>
         </section>
         <!--blog section end-->

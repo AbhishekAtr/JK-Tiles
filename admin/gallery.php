@@ -8,6 +8,7 @@ $statusMsg = false;
 
 if (isset($_POST["p_insert"])) {
     $status = 'error';
+    $cat = $_POST['p_title'];
     if (!empty($_FILES["p_image"]["name"])) {
 
         // Get file info 
@@ -26,7 +27,7 @@ if (isset($_POST["p_insert"])) {
 
             if (move_uploaded_file($image, $destinationfile)) {
                 // Insert image content into database
-                $insert = "INSERT INTO `gallery`( `image_url`) VALUES ('$destinationfile')";
+                $insert = "INSERT INTO `gallery`( `image_url`, `slug`) VALUES ('$destinationfile', '$cat')";
                 $smt = $conn->prepare($insert);
                 $smt->execute();
                 if ($insert) {
@@ -83,13 +84,23 @@ if (isset($_POST['delete_btn_set'])) {
                 }
                 ?>
                 <div class="row page-titles mx-0">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="form-group">
                             <label for="image" class="control-label">Product Image <sup class="mandatory">*</sup></label>
                             <div class="input-group mb-3">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="p_image" name="p_image" file-input="packageFile" accept=".jpg, .jpeg, .png, .gif" required>
                                     <label class="custom-file-label">Choose file</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="image" class="control-label">Category <sup class="mandatory">*</sup></label>
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="text" class="form-control" id="p_title" name="p_title" placeholder="enter category here"  required>
                                 </div>
                             </div>
                         </div>
@@ -123,6 +134,7 @@ if (isset($_POST['delete_btn_set'])) {
                                     <tr>
                                         <th>S.no</th>
                                         <th>Image</th>
+                                        <th>Category</th>
                                         <th class="wd-10">Action</th>
                                     </tr>
                                 </thead>
@@ -148,6 +160,7 @@ if (isset($_POST['delete_btn_set'])) {
                                                 <td>
                                                     <img class="wd-120" src="<?php echo $row['image_url']; ?>" alt="" height="100" width="100">
                                                 </td>
+                                                <td><?php echo $row['slug']; ?></td>
                                                 <td>
                                                     <input type="hidden" class="delete_id_value" value="<?php echo $row['id'] ?>">
                                                     <a href='editgallery.php?id=<?php echo $row['id']; ?>' type="button" class="btn btn-primary mr-1"><i class="fa fa-edit"></i>
@@ -178,8 +191,7 @@ if (isset($_POST['delete_btn_set'])) {
 <?php include "include/deletemodal.php"; ?>
 <script>
     $(document).ready(function() {
-        $('.delete_btn_ajax').click(function(e) {
-            e.preventDefault();
+        $(document).on('click', '.delete_btn_ajax', function() {
 
             var deleteid = $(this).closest("tr").find('.delete_id_value').val();
             console.log(deleteid);

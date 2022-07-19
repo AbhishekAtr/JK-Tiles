@@ -105,9 +105,9 @@
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6">
-                        <div class="card border-0 shadow-sm text-white">
+                        <!-- <div class="card border-0 shadow-sm text-white">
                             <img src="img/about-2.jpg" alt="video" class="img-fluid rounded shadow-sm">
-                        </div>
+                        </div> -->
                         <div class="video mt-5">
                         <iframe width="543" height="315" src="https://www.youtube.com/embed/V6t69rrrfiI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -146,6 +146,8 @@
             </div>
         </section>
 
+        
+
       
 
         <!--team two section start-->
@@ -154,106 +156,66 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8">
                         <div class="section-heading text-center mb-5">
-                            <h2>Meet our lovely Directors</h2>
+                            <h2>Meet Our Directors</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="staff-member">
-                            <div class="card gray-light-bg text-center border-0">
-                                <img src="img/noida.png" alt="team image" class="card-img-top">
-                            </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Richard Ford</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director- Noida</span>
-                                    <ul class="list-inline py-4 social">
+                    <div class="col-md-4">
+                        <div class="our_direct text-center">
+                            <img class="w-50" src="img/noida-modified.png" alt="team image">
+                            <div class="card-body">
+                                <h4 class="card-title">Richard Ford</h4>
+                                <h5 class="teacher-field">Managing Director- Noida Branch</h5>
+                                <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
+                                    <!-- <ul class="list-inline social">
                                         <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-facebook"></span></a></li>
                                         <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
                                         <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
-                                    </ul>
+                                    </ul> -->
                                     <p class="teacher-see-profile">
-                                        <a href="Noida.php" class="btn outline-white-btn">Contact Us</a>
+                                        <a href="Noida.php" class="btn outline-btn">Contact Us</a>
                                     </p>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="staff-member">
-                            <div class="card gray-light-bg text-center border-0">
-                                <img src="img/assam.png" alt="team image" class="card-img-top">
-                            </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Mr. Imran Khan</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director- Assam</span>
-                                    <ul class="list-inline py-4 social">
+                    <div class="col-md-4">
+                        <div class="our_direct text-center">
+                            <img class="w-50" src="img/assam-modified.png" alt="team image">
+                            <div class="card-body">
+                                <h4 class="card-title">Mr. Imran Khan</h4>
+                                <h5 class="teacher-field">Managing Director- Assam Branch + Odisha Branch</h5>
+                                <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
+                                    <!-- <ul class="list-inline social">
                                         <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-facebook"></span></a></li>
                                         <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
                                         <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
-                                    </ul>
+                                    </ul> -->
                                     <p class="teacher-see-profile">
-                                        <a href="contact-us.php" class="btn outline-white-btn">Contact Us</a>
+                                        <a href="Assam.php" class="btn outline-btn">Contact Us</a>
                                     </p>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="staff-member">
-                            <div class="card gray-light-bg text-center border-0">
-                                <img src="img/assam.png" alt="team image" class="card-img-top">
-                            </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Mr. Imran Khan</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director- Odisha</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
-                                    </ul>
+                    <div class="col-md-4">
+                        <div class="our_direct text-center">
+                            <img class="w-50" src="img/hydra-modified.png" alt="team image">
+                            <div class="card-body">
+                                <h4 class="card-title">Mr. Irfan Khan</h4>
+                                <h5 class="teacher-field">Managing Director- Hyderabad Branch</h5>
+                                <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
+                                    <!-- <ul class="list-inline social">
+                                    <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-facebook"></span></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
+                                </ul> -->
                                     <p class="teacher-see-profile">
-                                        <a href="Odisha.php" class="btn outline-white-btn">Contact Us</a>
+                                        <a href="Hyderabad.php" class="btn outline-btn">Contact Us</a>
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="staff-member">
-                            <div class="card gray-light-bg text-center border-0">
-                                <img src="img/hydra.png" alt="team image" class="card-img-top">
-                            </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Mr. Irfan Khan</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director- Hyderabad</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="#" target="_blank"><span class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="Hyderabad.php" class="btn outline-white-btn">Contact Us</a>
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
         <!--team two section end -->
 
         <!--testimonial section start-->

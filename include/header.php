@@ -7,25 +7,27 @@ $tab_content = '';
 $i = 0;
 while ($row = mysqli_fetch_array($tab_result)) {
     if ($i == 0) {
-        $tab_menu .= '
-  <button class="tablinks active" onmouseover="openCity(event, ' . $row["cat_id"] . ')">' . $row["cat_title"] . '</button>';
+        $tab_menu .= '<li class="nav-item tab-item">
+        <a class="nav-link active" href="#" onmouseover="openCity(event, '.$row["cat_id"].')">'.$row["cat_title"].'</a>
+        </li>';
         $tab_content .= '
-   <div id="' . $row["cat_id"] . '" class="tab-content active">
+   <div id="' . $row["cat_id"] . '" class="tab-pane show active">
    <div class="row card-content">';
     } else {
-        $tab_menu .= '
-        <button class="tablinks" onmouseover="openCity(event, ' . $row["cat_id"] . ')">' . $row["cat_title"] . '</button>';
-        $tab_content .= '<div id="' . $row["cat_id"] . '" class="tab-content"><div class="row card-content">';
+        $tab_menu .= '<li class="nav-item tab-item">
+        <a class="nav-link" href="#" onmouseover="openCity(event,'. $row["cat_id"].')">'.$row["cat_title"].'</a>
+        </li>';
+        $tab_content .= '<div id="' . $row["cat_id"] . '" class="tab-pane"><div class="row card-content">';
     }
     $product_query = "SELECT * FROM `products` WHERE `p_id` = '" . $row["cat_id"] . "'";
     $product_result = mysqli_query($conn, $product_query);
     while ($sub_row = mysqli_fetch_array($product_result)) {
         $tab_content .= '
-        <div class="col-md-6 col-lg-6 col-sm-6">
+        <div class="col-md-6 col-lg-4 col-sm-6">
         
         <div class="card menu-card">
         <img src="' . $url . $sub_row["product_img"] . '" class="card-img-top w-100" />
-        </div>
+        
         <div class="card-content content text-center">
             <a href="products.php?id=' . $sub_row["product_id"] . '">
                 <p>' . $sub_row["product_title"] . '</p>
@@ -34,7 +36,7 @@ while ($row = mysqli_fetch_array($tab_result)) {
             <button class="btn accent-solid-btn btn-dark"><a href="img/jk.pdf" target="_blank">Download Brochure <span class="fa fa-download"></span></a> </button>
         </div>
     </div>
-   
+    </div>
   ';
     }
     $tab_content .= '</div><div style="clear:both clearfix"></div></div>';
@@ -141,12 +143,14 @@ while ($row = mysqli_fetch_array($tab_result)) {
                             <div class="mega-menu-content dropdown-menu">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="tab col-lg-3">
+                                        <div class="tab col-lg-3 col-sm-6 col-md-6">
+                                        <ul class="nav tabul">
                                             <?php
                                             echo $tab_menu;
                                             ?>
+                                        </ul>
                                         </div>
-                                        <div class="tab_content">
+                                        <div class="tab-content col-lg-9 col-sm-6 col-md-6">
                                             <?php
                                             echo $tab_content;
                                             ?>
@@ -189,17 +193,19 @@ while ($row = mysqli_fetch_array($tab_result)) {
 <script>
     function openCity(evt, cityName) {
         var i, tabcontent, tablinks, city;
-        tabcontent = document.getElementsByClassName("tab-content");
+        tabcontent = document.getElementsByClassName("tab-pane");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
         }
-        tablinks = document.getElementsByClassName("tablinks");
+        tablinks = document.getElementsByClassName("nav-link");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
     }
+
+    
 </script>
 
 

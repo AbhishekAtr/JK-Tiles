@@ -30,7 +30,7 @@ include './admin/partials/db_connect.php';
     <!--body content wrap start-->
     <div class="main">
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
             <ol class="carousel-indicators">
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -43,120 +43,52 @@ include './admin/partials/db_connect.php';
 
             </ol>
             <div class="carousel-inner">
-                <img class="d-block w-100" src="img/slider/slider-3.jpg" alt="First slide" />
+                <img class="d-block w-100" src="img/slider/slider.jpg" alt="First slide" />
                 <div class="carousel-item active">
-
-                    <div class="carousel-caption d-flex">
-                        <div class="animate__animated animate__backInLeft animate__delay-1s wt-30">
-                            <img src="img/products/m8.png" alt="">
-                        </div>
-                        <div class="d-block text-white animate__animated animate__backInUp animate__delay-3s w-40">
-                            <h3 class="text-white">Automatic Fly Ash Brick Machine</h3>
-                            <p class="text-white">The Automatic block making Machine is designed with the feeding device rotating at high speed. </p>
-                        </div>
-
-                        <div class="animate__animated animate__backInRight animate__delay-2s w-30">
-                            <img src="img/products/p1.png" alt="" style="height: 366px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img src="./img/slider/1.png" alt="..." style="width:100%;position: absolute;left: -150px;bottom: 0;animation-delay: 1s;" class="animated bounceInRight">
+                            </div>
+                            <div class="col-md-4">
+                                <h3 style="position: absolute;bottom: 115px;color:white;animation-delay: 2s;" class="animated bounceInUp">The Automatic block making Machine is designed with the feeding device rotating at high speed.</h3>
+                                <p style="position: absolute;bottom: 70px;animation-delay: 3s;" class="animated bounceInLeft">The Automatic block making Machine is designed with the feeding device rotating at high speed.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!-- <img class="d-block w-100" src="img/slider/slider-3.jpg" alt="Second slide" /> -->
-                    <div class="carousel-caption d-flex">
-                        <div class="animate__animated animate__backInLeft animate__delay-1s w-30">
-                            <img src="img/products/m7.png" alt="">
-                        </div>
-                        <div class="d-block text-white animate__animated animate__backInUp animate__delay-3s w-40">
-                            <h3 class="text-white">Hollow Block Making Machine</h3>
-                            <p class="text-white"></p>
-                        </div>
-                        <div class="animate__animated animate__backInRight animate__delay-2s w-30">
-                            <img src="img/products/p9.png" alt="">
-
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3 style="position: absolute;bottom: 115px;color:white;animation-delay: 2s;" class="animated bounceInUp">The Automatic block making Machine is designed with the feeding device rotating at high speed.</h3>
+                                <p style="position: absolute;bottom: 70px;animation-delay: 3s;" class="animated bounceInLeft">The Automatic block making Machine is designed with the feeding device rotating at high speed.</p>
+                            </div>
+                            <div class="col-md-8">
+                                <img src="./img/slider/2.png" alt="..." style="width:50%;position: absolute;right: -100px;bottom: 0;animation-delay: 1s;" class="animated bounceInRight">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!-- <img class="d-block w-100" src="img/slider/slider-3.jpg" alt="Third slide" /> -->
-                    <div class="carousel-caption d-flex">
-                        <div class="animate__animated animate__backInLeft animate__delay-1s wt-30">
-                            <img src="img/products/m1.png" alt="">
-                        </div>
-                        <div class="d-block text-white animate__animated animate__backInUp animate__delay-3s w-40">
-                            <h1 class="text-white">Paving Block Making Machine</h1>
-                            <p class="text-white"></p>
-                        </div>
-                        <div class="animate__animated animate__backInRight animate__delay-2s w-30">
-
-                            <img src="img/products/p2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <!-- <img class="d-block w-100" src="img/slider/slider-3.jpg" alt="Third slide" /> -->
-                    <div class="carousel-caption d-flex">
-                        <div class="animate__animated animate__backInLeft animate__delay-1s wt-30">
-                            <img src="img/products/m10.png" alt="">
-                        </div>
-                        <div class="d-block text-white animate__animated animate__backInUp animate__delay-3s w-40">
-                            <h3 class="text-white">Concrete Mixing Machine</h3>
-                            <p class="text-white"></p>
-                        </div>
-
-                        <div class="animate__animated animate__backInRight animate__delay-2s w-30">
-                            <img src="img/products/p10.png" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="./img/slider/NOIDA BRANCH.png" alt="..." class="w-100 animated bounceInRight" style="animation-delay: 1s;">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="./img/slider/GUWAHATI BRANCH.png" alt="..." class="w-100 animated bounceInLeft" style="animation-delay: 2s;">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="./img/slider/Hyderabad branch.png" alt="..." class="w-100 animated bounceInUp" style="animation-delay: 3s;">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="./img/slider/ODISHA BARNCH.png" alt="..." class="w-100 animated bounceInDown" style="animation-delay: 4s;">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <!-- <img class="d-block w-100" src="img/slider/slider-3.jpg" alt="Third slide" /> -->
-                    <div class="carousel-caption d-flex">
-                        <div class="animate__animated animate__backInLeft animate__delay-1s wt-30">
-                            <img src="img/products/m12.png" alt="">
-                        </div>
-                        <div class="d-block text-white animate__animated animate__backInUp animate__delay-3s w-40">
-                            <h3 class="text-white">Color Mixing Machine</h3>
-                            <p class="text-white"></p>
-                        </div>
-
-                        <div class="animate__animated animate__backInRight animate__delay-2s w-30">
-                            <img src="img/products/p6.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <!-- <img class="d-block w-100" src="img/slider/slider-3.jpg" alt="Third slide" /> -->
-                    <div class="carousel-caption d-flex">
-                        <div class="animate__animated animate__backInLeft animate__delay-1s wt-30">
-                            <img src="img/products/m1.png" alt="">
-                        </div>
-                        <div class="d-block text-white animate__animated animate__backInUp animate__delay-3s w-40">
-                            <h3 class="text-white">PVC Rubber Modules</h3>
-                            <p class="text-white"></p>
-                        </div>
-                        <div class="animate__animated animate__backInRight animate__delay-2s w-30">
-                            <img src="img/products/m13.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <!-- <img class="d-block w-100" src="img/slider/slider-3.jpg" alt="Third slide" /> -->
-                    <div class="carousel-caption d-flex">
-                        <div class="animate__animated animate__backInLeft animate__delay-1s wt-30">
-                            <img src="img/products/m2.png" alt="">
-                        </div>
-                        <div class="d-block text-white animate__animated animate__backInUp animate__delay-3s w-40">
-                            <h3 class="text-white">Plastic Silicon Modules</h3>
-                            <p class="text-white"></p>
-                        </div>
-                        <div class="animate__animated animate__backInRight animate__delay-2s w-30">
-                            <img src="img/products/m14.png" alt="">
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
         </div>
 
         <!--hero section end-->
@@ -183,7 +115,7 @@ include './admin/partials/db_connect.php';
                         <img src="img/products/about.png" alt="video" class="img-fluid">
                     </div> -->
                         <div class="card border-0 text-white">
-                        <iframe width="543" height="315" src="https://www.youtube.com/embed/V6t69rrrfiI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe height="315" width="100%" src="https://www.youtube.com/embed/V6t69rrrfiI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- <img src="img/service/1C- FULLY AUTOMATIC PAVER.png" alt="video" class="img-fluid rounded">
                             <div class="card-img-overlay text-center">
 
@@ -326,7 +258,7 @@ include './admin/partials/db_connect.php';
                                         <div class="post-meta mb-2">
                                             <ul class="list-inline meta-list">
                                                 <li class="list-inline-item"><span class="fa fa-calendar mr-2"></span><?php echo $row['date'] ?></li>
-                                                
+
                                             </ul>
                                         </div>
                                         <!-- <p class="card-text" style="white-space: nowrap; overflow:hidden; text-overflow:ellipsis;"><?php echo  $row['description'] ?></p> -->
@@ -409,37 +341,37 @@ include './admin/partials/db_connect.php';
                                 <img src="img/Key_one128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_two128.png" alt="client logo" class="client-img">
+                                <img src="img/key_two128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_three128.png" alt="client logo" class="client-img">
+                                <img src="img/key_three128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_foue128.png" alt="client logo" class="client-img">
+                                <img src="img/key_foue128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_five128.png" alt="client logo" class="client-img">
+                                <img src="img/key_five128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_six128.png" alt="client logo" class="client-img">
+                                <img src="img/key_six128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_seven128.png" alt="client logo" class="client-img">
+                                <img src="img/key_seven128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_eight128.png" alt="client logo" class="client-img">
+                                <img src="img/key_eight128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_nine128.png" alt="client logo" class="client-img">
+                                <img src="img/key_nine128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_ten128.png" alt="client logo" class="client-img">
+                                <img src="img/key_ten128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_eleven128.png" alt="client logo" class="client-img">
+                                <img src="img/key_eleven128.png" alt="client logo" class="client-img">
                             </div>
                             <div class="item single-client">
-                            <img src="img/key_12128.png" alt="client logo" class="client-img">
+                                <img src="img/key_12128.png" alt="client logo" class="client-img">
                             </div>
                         </div>
                     </div>
@@ -492,7 +424,7 @@ include './admin/partials/db_connect.php';
                 <!--clients logo end-->
             </div>
         </div>
-        
+
         <!-----Our esteemed partners end---->
 
 
@@ -564,7 +496,7 @@ include './admin/partials/db_connect.php';
                                     <span class="ti-location-pin icon-sm color-secondary"></span>
                                 </div>
                                 <div>
-                                    <h5 class="mb-0">Bhuneswar  Branch </h5>
+                                    <h5 class="mb-0">Bhuneswar Branch </h5>
                                     <p class="text-muted mb-0">PLOT NO-958,KHATA NO-405,KHARVEL ESTATE, NAKHARA,BHUBANESWAR, Khordha - 752101, Khorda, Odisha, India</p>
                                     <p class="text-muted mb-0"> <a href="tel:+918046062438">+91 8046062438</a>
                                         <a href="tel:+919667460380">+91 96674 60380</a>,<a href="tel:+917749038142">+91 77490 38142</a>

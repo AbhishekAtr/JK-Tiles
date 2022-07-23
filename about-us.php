@@ -90,26 +90,14 @@
                                 Making machine ,Paver block making Machine, Concrete block making Machine,
                                 Hollow block making Machine, Interlocking bricks making machine and cement brick making machine etc.
                             </p>
-                            <p><strong>JK TILES MACHINERY</strong> headquarter is in Delhi & NCR and apparat from this we have
-                                3 more branches in India 1 - Bhuvneshwar, Odisha 2- Guwahati, Assam 3- Hyderabad, Telangana .
-                                It is equipped with the latest Technology and state of art manufacturing facilities.
-                                They also have a very good Corporate office setup along with modern communication facilities.
-                                The in-house manufacturing capabilities help them to response prompt at each and every stage
-                                of the manufacturing process.</p>
-                            <p>At <strong>JK TILES MACHINERY,</strong> they have a large experienced and
-                                expert team of professionals. They strive continually to provide excellent
-                                quality Product & Service that are of International standards.
-                                The team consisted of very good Young, Energetic and Enthusiastic
-                                and Experienced members.
-                            </p>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-6">
+                    <div class="col-md-12 col-lg-7">
                         <!-- <div class="card border-0 shadow-sm text-white">
                             <img src="img/about-2.jpg" alt="video" class="img-fluid rounded shadow-sm">
                         </div> -->
                         <div class="video mt-5">
-                        <iframe width="543" height="315" src="https://www.youtube.com/embed/V6t69rrrfiI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/V6t69rrrfiI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -230,35 +218,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center justify-content-between">
+                <div class="row align-items-center justify-content-between bg-primary" style="border-radius: 20px;">
                     <div class="col-md-12 col-lg-12">
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="single-counter white-bg shadow-sm p-4 rounded text-center border-0">
-                                    <span class="ti-medall-alt color-secondary icon-md"></span>
-                                    <h3 class="mb-0">1600</h3>
-                                    <p>Active users</p>
+                            <div class="col-md-2">
+                                <div class="single-counter p-4 rounded text-center border-0">
+                                    <span class="ti-medall-alt color-secondary icon-md text-white"></span>
+                                    <h3 class="mb-0 text-white">1600</h3>
+                                    <p class="text-white">Active users</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="single-counter white-bg shadow-sm p-4 rounded text-center border-0">
-                                    <span class="ti-headphone-alt color-secondary icon-md"></span>
-                                    <h3 class="mb-0">2500</h3>
-                                    <p>Global client</p>
+                            <div class="col-md-2">
+                                <div class="single-counter p-4 rounded text-center border-0">
+                                    <span class="ti-headphone-alt color-secondary icon-md text-white"></span>
+                                    <h3 class="mb-0 text-white">2500</h3>
+                                    <p class="text-white">Global client</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="single-counter white-bg shadow-sm p-4 rounded text-center border-0">
-                                    <span class="ti-cup color-secondary icon-md"></span>
-                                    <h3 class="mb-0">2150</h3>
-                                    <p>Win award</p>
+                            <div class="col-md-2">
+                                <div class="single-counter p-4 rounded text-center border-0">
+                                    <span class="ti-cup color-secondary icon-md text-white"></span>
+                                    <h3 class="mb-0 text-white">2150</h3>
+                                    <p class="text-white">Win award</p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="single-counter white-bg shadow-sm p-4 rounded text-center border-0">
-                                    <span class="ti-user color-secondary icon-md"></span>
-                                    <h3 class="mb-0">2150</h3>
-                                    <p>Clients satisfaction</p>
+                            <div class="col-md-2">
+                                <div class="single-counter p-4 rounded text-center border-0">
+                                    <span class="ti-user color-secondary icon-md text-white"></span>
+                                    <h3 class="mb-0 text-white">2150</h3>
+                                    <p class="text-white">Clients satisfaction</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="single-counter p-4 rounded text-center border-0">
+                                    <span class="ti-user color-secondary icon-md text-white"></span>
+                                    <h3 class="mb-0 text-white">2150</h3>
+                                    <p class="text-white">Clients satisfaction</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="single-counter p-4 rounded text-center border-0">
+                                    <span class="ti-user color-secondary icon-md text-white"></span>
+                                    <h3 class="mb-0 text-white">2150</h3>
+                                    <p class="text-white">Clients satisfaction</p>
                                 </div>
                             </div>
                         </div>

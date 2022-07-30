@@ -25,12 +25,12 @@ while ($row = mysqli_fetch_array($tab_result)) {
         $tab_content .= '
         <div class="col-md-6 col-lg-4 col-sm-6">
         
-        <div class="card menu-card">
+        <div class="card menu-card p-3">
         <img src="' . $url . $sub_row["product_img"] . '" class="card-img-top w-100" />
         
         <div class="card-content content text-center">
             <a href="products.php?id=' . $sub_row["product_id"] . '">
-                <p>' . $sub_row["product_title"] . '</p>
+                <p class="font-weight-bold text-dark">' . $sub_row["product_title"] . '</p>
                 <p>' . $sub_row["product_cat"] . '</p>
             </a>
             <button class="btn accent-solid-btn btn-dark"><a href="img/jk.pdf" target="_blank">Download Brochure <span class="fa fa-download"></span></a> </button>
@@ -69,11 +69,11 @@ while ($row = mysqli_fetch_array($tab_result)) {
                         <div class="top_header_area text-right">
                             <p>
                                 <a href="tel:+91-78271 12429"><i class="fas fa-phone-alt color_blue_font_17 icon space-right-5 text-dark"></i><span class="text-dark">+91-78271 12429 </span>&nbsp;</a>
-                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-twitter bo-social-twitter">&nbsp;</i></a>
-                                <a href="#" target="_blank"><i class="fa fa-linkedin bo-social-linkedin">&nbsp;</i></a>
-                                <a href="#" target="_blank"><i class="fa fa-instagram bo-social-instagram">&nbsp;</i></a>
-                                <a href="#" target="_blank"><i class="fa fa-youtube bo-social-youtube">&nbsp;</i></a>
+                                <a href="https://www.facebook.com/jktilesmachinerynoida/?show_switched_toast=1&show_invite_to_[�K]unity_review_changes=0&show_follower_visibility_disclosure=0" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/imrankh57057258" target="_blank"><i class="fa fa-twitter bo-social-twitter">&nbsp;</i></a>
+                                <a href="https://www.linkedin.com/in/imran-khan-3aabb1232/" target="_blank"><i class="fa fa-linkedin bo-social-linkedin">&nbsp;</i></a>
+                                <a href="https://www.instagram.com/jktilesmachinerynoida/" target="_blank"><i class="fa fa-instagram bo-social-instagram">&nbsp;</i></a>
+                                <a href="https://www.youtube.com/channel/UCGoUgeOhUQj83uCJbPm2-Dg/featured" target="_blank"><i class="fa fa-youtube bo-social-youtube">&nbsp;</i></a>
                             </p>
                         </div>
                     </div>
@@ -117,7 +117,7 @@ while ($row = mysqli_fetch_array($tab_result)) {
 
             <div class="container">
                 <a class="navbar-brand" href="index.php">
-                    <img src="img/jk-logo.jpg" alt="logo" class="img-fluid" />
+                    <img src="img/jk-logo.png" alt="logo" class="img-fluid" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -131,7 +131,7 @@ while ($row = mysqli_fetch_array($tab_result)) {
                                 <a class="dropdown-item" href="about-us.php">About Us</a>
                                 <a class="dropdown-item" href="manufacturing-facility.php">Manufacturing Facility</a>
                                 <a class="dropdown-item" href="value.php">Company Value</a>
-                                <a class="dropdown-item" href="#">Achievements</a>
+                                <a class="dropdown-item" href="certificate.php">Certificates</a>
                                 <a class="dropdown-item" href="#">Customer Review</a>
                                 <a class="dropdown-item" href="career.php">Careers</a>
                             </div>
@@ -223,10 +223,10 @@ while ($row = mysqli_fetch_array($tab_result)) {
                 <div class="col-md-12">
                     <ul class="get-in-touch-list mt-2">
                         <li class="text-center">
-                            <button class="btn btn-success">Noida</button>
-                            <button class="btn btn-success">Guwahati</button>
-                            <button class="btn btn-success">Hyderabad</button>
-                            <button class="btn btn-success">Bhuneswar</button>
+                            <button class="btn btn-branch">Noida</button>
+                            <button class="btn btn-branch">Guwahati</button>
+                            <button class="btn btn-branch">Hyderabad</button>
+                            <button class="btn btn-branch">Bhuneswar</button>
                         </li>
                 </div>
             </div>
@@ -237,19 +237,19 @@ while ($row = mysqli_fetch_array($tab_result)) {
                             <div class="contact_info h-100">
                                 <ul class="list-unstyled">
                                     <div class="info_form text-center">
-                                        <i class="fas fa-map-marker-alt"></i>
+                                        <i class="fas fa-map-marker-alt text-white"></i>
                                         <li class="d-flex1 align-items-center bold text-white py-2">Near Pradhan Mkt Vill Sarfabad Sector-73 Noida Gautam Buddha Nagar, Noida - 201304, Gautam Budh Nagar, Uttar Pradesh, India</li>
                                     </div>
                                     <div class="info_form text-center">
-                                        <i class="fas fa-envelope"></i>
+                                        <i class="fas fa-envelope text-white"></i>
                                         <li class="d-flex1 align-items-center py-2"><a href="mailto:info@jktilesmachinery.com" class=" bold text-white">info@jktilesmachinery.com</a> </li>
                                     </div>
                                     <div class="info_form text-center">
-                                        <i class="fas fa-phone-alt"></i>
-                                        <li class="d-flex1 align-items-center bold text-white py-2"><a href="tel:+91-7827112429" class=" bold text-white">+91-78271 12429</a></li>
+                                        <i class="fas fa-phone-alt text-white"></i>
+                                        <li class="d-flex1 align-items-center bold text-white py-2"><a href="tel:+91-7827112429" class="bold text-white">+91-78271 12429</a></li>
                                     </div>
                                     <div class="info_form text-center">
-                                        <i class="fa fa-whatsapp"></i>
+                                        <i class="fa fa-whatsapp text-white"></i>
                                         <li class="d-flex1 align-items-center bold text-white py-2"><a href="https://api.whatsapp.com/send?phone=7777000006&amp;text=hi..." class=" bold text-white">+91-7777000006</a> </li>
                                     </div>
                                 </ul>

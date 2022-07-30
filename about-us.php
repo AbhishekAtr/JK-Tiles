@@ -90,9 +90,21 @@
                                 Making machine ,Paver block making Machine, Concrete block making Machine,
                                 Hollow block making Machine, Interlocking bricks making machine and cement brick making machine etc.
                             </p>
+                            <!--<p><strong>JK TILES MACHINERY</strong> headquarter is in Delhi & NCR and apparat from this we have-->
+                            <!--    3 more branches in India 1 - Bhuvneshwar, Odisha 2- Guwahati, Assam 3- Hyderabad, Telangana .-->
+                            <!--    It is equipped with the latest Technology and state of art manufacturing facilities.-->
+                            <!--    They also have a very good Corporate office setup along with modern communication facilities.-->
+                            <!--    The in-house manufacturing capabilities help them to response prompt at each and every stage-->
+                            <!--    of the manufacturing process.</p>-->
+                            <!--<p>At <strong>JK TILES MACHINERY,</strong> they have a large experienced and-->
+                            <!--    expert team of professionals. They strive continually to provide excellent-->
+                            <!--    quality Product & Service that are of International standards.-->
+                            <!--    The team consisted of very good Young, Energetic and Enthusiastic-->
+                            <!--    and Experienced members.-->
+                            <!--</p>-->
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-7">
+                    <div class="col-md-12 col-lg-6">
                         <!-- <div class="card border-0 shadow-sm text-white">
                             <img src="img/about-2.jpg" alt="video" class="img-fluid rounded shadow-sm">
                         </div> -->
@@ -153,7 +165,7 @@
                         <div class="our_direct text-center">
                             <img class="w-50" src="img/noida-modified.png" alt="team image">
                             <div class="card-body">
-                                <h4 class="card-title">Richard Ford</h4>
+                                <h4 class="card-title">Haseen Bano</h4>
                                 <h5 class="teacher-field">Managing Director- Noida Branch</h5>
                                 <p class="teacher-quote">"Dramatically leverage existing fully researched platforms vis-a-vis viral." </p><a href="#" class="teacher-name">
                                     <!-- <ul class="list-inline social">
@@ -218,49 +230,93 @@
                         </div>
                     </div>
                 </div>
+            <!--    <div class="counterSection">-->
+            <!--   <ul>-->
+            <!--      <li>-->
+            <!--         <div class="icon-setup">-->
+            <!--            <h2 class="timer count-title count-number" data-to="40" data-speed="1000">40</h2>-->
+            <!--            <i class="fa fa-plus "></i> -->
+            <!--         </div>-->
+            <!--         years of <br>-->
+            <!--         paving in India -->
+            <!--      </li>-->
+            <!--      <li>-->
+            <!--         <div class="icon-setup">-->
+            <!--            <h2 class="timer count-title count-number" data-to="300" data-speed="1500">300</h2>-->
+            <!--            <i class="fa fa-plus "></i> -->
+            <!--         </div>-->
+            <!--          Plants -->
+            <!--      </li>-->
+            <!--      <li>-->
+            <!--         <div class="icon-setup">-->
+            <!--            <h2 class="timer count-title count-number" data-to="200" data-speed="1500">200</h2>-->
+            <!--            <i class="fa fa-plus "></i> -->
+            <!--         </div>-->
+            <!--         Satisfied<br>-->
+            <!--         Customers -->
+            <!--      </li>-->
+            <!--      <li>-->
+            <!--         <div class="icon-setup">-->
+            <!--            <h2 class="timer count-title count-number" data-to="100" data-speed="1500">100</h2>-->
+            <!--            <i class="fa fa-plus "></i> -->
+            <!--         </div>-->
+            <!--         varieties of <br>-->
+            <!--         products produced -->
+            <!--      </li>-->
+            <!--      <li>-->
+            <!--         <div class="icon-setup">-->
+            <!--            <h2 class="timer count-title count-number" data-to="19" data-speed="1500">19</h2>-->
+            <!--            <i class="fa fa-plus "></i>-->
+            <!--         </div>-->
+            <!--         crore sq mts <br>-->
+            <!--         of paving-->
+            <!--      </li>-->
+            <!--      <li>-->
+            <!--         <div class="icon-setup">-->
+            <!--            <h2 class="timer count-title count-number" data-to="1" data-speed="1500">1</h2>-->
+            <!--            <i class="fa fa-plus "></i> -->
+            <!--         </div>-->
+            <!--         crore sqmts of <br>-->
+            <!--         retaining wall facia-->
+            <!--      </li>-->
+            <!--   </ul>-->
+            <!--</div>-->
                 <div class="row align-items-center justify-content-between bg-primary" style="border-radius: 20px;">
                     <div class="col-md-12 col-lg-12">
-                        <div class="row">
+                        <div class="row offset-1">
                             <div class="col-md-2">
-                                <div class="single-counter p-4 rounded text-center border-0">
-                                    <span class="ti-medall-alt color-secondary icon-md text-white"></span>
-                                    <h3 class="mb-0 text-white">1600</h3>
-                                    <p class="text-white">Active users</p>
+                                <div class="single-counter p-4  text-center border-0">
+                                    <h3 class="mb-0 text-white">2200</h3>
+                                    <i class="fa fa-plus mb-0 text-white count"></i>
+                                    <p class="text-white">Plant Installed</p>
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="single-counter p-4 rounded text-center border-0">
-                                    <span class="ti-headphone-alt color-secondary icon-md text-white"></span>
-                                    <h3 class="mb-0 text-white">2500</h3>
-                                    <p class="text-white">Global client</p>
+                                <div class="single-counter p-4 text-center border-0">
+                                    <h3 class="mb-0 text-white">32</h3>
+                                    <i class="fa fa-plus mb-0 text-white count1"></i>
+                                    <p class="text-white">Years of Leading Industry</p>
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="single-counter p-4 rounded text-center border-0">
-                                    <span class="ti-cup color-secondary icon-md text-white"></span>
-                                    <h3 class="mb-0 text-white">2150</h3>
-                                    <p class="text-white">Win award</p>
+                                <div class="single-counter p-4 text-center border-0">
+                                    <h3 class="mb-0 text-white">15</h3>
+                                    <i class="fa fa-plus mb-0 text-white count2"></i>
+                                    <p class="text-white">crores sq mt of Paving in India</p>
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="single-counter p-4 rounded text-center border-0">
-                                    <span class="ti-user color-secondary icon-md text-white"></span>
-                                    <h3 class="mb-0 text-white">2150</h3>
-                                    <p class="text-white">Clients satisfaction</p>
+                                <div class="single-counter p-4 text-center border-0">
+                                    <h3 class="mb-0 text-white">100</h3>
+                                    <i class="fa fa-plus mb-0 text-white count3"></i>
+                                    <p class="text-white">variety of product produce</p>
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="single-counter p-4 rounded text-center border-0">
-                                    <span class="ti-user color-secondary icon-md text-white"></span>
-                                    <h3 class="mb-0 text-white">2150</h3>
-                                    <p class="text-white">Clients satisfaction</p>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="single-counter p-4 rounded text-center border-0">
-                                    <span class="ti-user color-secondary icon-md text-white"></span>
-                                    <h3 class="mb-0 text-white">2150</h3>
-                                    <p class="text-white">Clients satisfaction</p>
+                                <div class="single-counter p-4 text-center border-0">
+                                    <h3 class="mb-0 text-white">4</h3>
+                                    <i class="fa fa-plus mb-0 text-white count4"></i>
+                                    <p class="text-white">manufacturing units in India</p>
                                 </div>
                             </div>
                         </div>

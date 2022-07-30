@@ -884,7 +884,6 @@ select.form-control.has-value {
 
 .navbar-brand img {
     width: 80%;
-    height: 130px;
 }
 
 .menu {
@@ -5470,7 +5469,7 @@ small {
     .navbar-brand {
         width: 50%;
         position: relative;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 }
 
@@ -6077,8 +6076,7 @@ html .image-hotspot-primary .circle,
 }
 
 .affix .navbar-brand img {
-    width: 50% !important;
-    height: 80px !important;
+    width: 70%;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -6237,7 +6235,7 @@ html .image-hotspot-primary .circle,
 }
 
 .contact-wrap .contact_info {
-    background: #747373;
+    background: #408ebb;
 }
 
 .contact-wrap .contact_info h3 {
@@ -6321,4 +6319,100 @@ label.error {
 
 .single-counter:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
 }
+
+
+.counterSection {
+    background-color: #f7941d;
+    position: relative;
+    width: 100%;
+    max-width: 1140px;;
+    border-radius: 15px;
+}
+
+.counterSection ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.counterSection ul li {
+    max-width: 12%;
+    margin-right: 15px;
+    text-align: center;
+    width: 100%;
+    margin-left: 15px;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 300;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.icon-setup {
+    display: flex;
+    justify-content: center;
+}
+
+.count
+{
+    position: absolute;
+    top: 48px;
+    left: 145px;
+}
+
+.count1
+{
+    position: absolute;
+    top: 48px;
+    left: 130px;
+}
+.count2
+{
+    position: absolute;
+    top: 48px;
+    left: 125px;
+}
+.count3
+{
+    position: absolute;
+    top: 48px;
+    left: 130px;
+}
+.count4
+{
+    position: absolute;
+    top: 48px;
+    left: 115px;
+}
+
+.btn-branch
+{
+    background: #d76e61 !important;
+    color: white !important;
+}
+
+.counter-sec
+{
+    position: absolute;
+    margin-left: 404px;
+    margin-top: -3rem!important; 
+    border-radius:20px;
+}
+
+.mt-10
+{
+    margin-top:10rem;
+}
+

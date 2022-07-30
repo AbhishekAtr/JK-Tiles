@@ -1,7 +1,36 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 
 @media (min-width: 320px) and (max-width: 575px) {
-    
+    .counter-sec{
+        position: relative;
+        margin-top: 7rem!important; 
+        margin-left: 0;
+    }
+    .count {
+    position: absolute;
+    top: 30px;
+    left: 210px;
+}
+.count1 {
+    position: absolute;
+    top: 30px;
+    left: 190px;
+}
+.count2 {
+    position: absolute;
+    top: 30px;
+    left: 185px;
+}
+.count3 {
+    position: absolute;
+    top: 30px;
+    left: 195px;
+}
+.count4 {
+    position: absolute;
+    top: 30px;
+    left: 185px;
+}
     .toheader
     {
         display: none;
@@ -84,6 +113,36 @@
 /*Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .counter-sec{
+        position: relative;
+        margin-top: 7rem!important; 
+        margin-left: 0;
+    }
+        .count {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+.count1 {
+    position: absolute;
+    top: 30px;
+    left: 181px;
+}
+.count2 {
+    position: absolute;
+    top: 30px;
+    left: 180px;
+}
+.count3 {
+    position: absolute;
+    top: 30px;
+    left: 190px;
+}
+.count4 {
+    position: absolute;
+    top: 30px;
+    left: 175px;
+}
     .mt--120 {
         margin-top: -50px;
     }
@@ -146,6 +205,36 @@
 /*Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .counter-sec{
+        position: relative;
+        margin-top: 7rem!important; 
+        margin-left: 0;
+    }
+        .count {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+.count1 {
+    position: absolute;
+    top: 30px;
+    left: 181px;
+}
+.count2 {
+    position: absolute;
+    top: 30px;
+    left: 180px;
+}
+.count3 {
+    position: absolute;
+    top: 30px;
+    left: 190px;
+}
+.count4 {
+    position: absolute;
+    top: 30px;
+    left: 175px;
+}
     .mt--120 {
         margin-top: -50px;
     }
@@ -158,16 +247,60 @@
 /*Large devices (desktops, 992px and up)*/
 
 @media (min-width: 992px) and (max-width: 1199px) {
+   
+    .counter-sec {
+    position: absolute;
+    margin-left: 35px;
+    margin-top: -3rem!important;
+    border-radius: 20px;
+}
     .maga-menu-content {
         left: -765px !important;
+    }
+    .mt-10{
+        margin-top:0rem;
     }
 }
 
 
 /*Extra large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1299px){
+    
+    .counter-sec {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -3rem!important;
+    border-radius: 20px;
+    }
+
     .maga-menu-content {
         left: -765px !important;
+    }
+    .mt-10{
+        margin-top:1rem;
+    }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1899px){
+    
+    .counter-sec {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -3rem!important;
+    border-radius: 20px;
+    }
+    .mt-10{
+        margin-top:8rem;
+    }
+}
+
+@media (min-width: 1980px){
+    .counter-sec {
+    position: absolute;
+    margin-left: 420px;
+    margin-top: -3rem!important;
+    border-radius: 20px;
     }
 }
